@@ -35,5 +35,39 @@
         "exported": false,
         "lanes": []
     },
+    "ui/text": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "text.composition.tsx",
+                "test": false,
+                "name": "text.composition.tsx"
+            },
+            {
+                "relativePath": "text.docs.tsx",
+                "test": false,
+                "name": "text.docs.tsx"
+            },
+            {
+                "relativePath": "text.module.scss",
+                "test": false,
+                "name": "text.module.scss"
+            },
+            {
+                "relativePath": "text.tsx",
+                "test": false,
+                "name": "text.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/text",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "version": "14.8.8"
 }
