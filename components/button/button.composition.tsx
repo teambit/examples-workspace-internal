@@ -4,7 +4,7 @@ import Button from './button';
 
 export const PrimaryButton = () => {
      return(
-         <Button variant='primary'>Primary Button</Button>
+         <Button variant='primary' onClick={() => alert('Clicked!')}>Primary Button</Button>
      );
 };
 

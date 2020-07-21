@@ -1,20 +1,25 @@
-import React, {ButtonHTMLAttributes} from 'react'
+import React, {ButtonHTMLAttributes, MouseEvent} from 'react'
 import styles from './button.module.scss'
 
 
-export type IButton  = {
+export interface IButton extends  ButtonHTMLAttributes<HTMLButtonElement> {
+    /** Choose between primary and secondary styling. */
     variant : 'primary' | 'secondary';
-} & ButtonHTMLAttributes<HTMLButtonElement>
-
+}
 
 
 const Button = ({children , onClick, variant, ...rest} : IButton) => {
     return (
-        <button className={styles[variant]} onClick={onClick} {...rest}>
+        <button className={styles[variant]} {...rest}>
             {children}
         </button>
     )
 }
+
+Button.defaultProps = {
+    variant: 'primary'
+}
+
 
 export default Button;
 
