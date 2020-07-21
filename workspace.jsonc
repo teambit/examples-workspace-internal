@@ -83,7 +83,7 @@
       //   }
       // }
     },
-    "*": {
+    "ui/*": {
       "@teambit/envs": {
         "env": "@teambit/react",
         "config": {}
