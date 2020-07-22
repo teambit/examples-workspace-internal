@@ -25,4 +25,4 @@ Text.defaultProps = {
   };
 
 
-export default Text;
+  export default Text;

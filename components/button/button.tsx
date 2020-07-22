@@ -1,4 +1,4 @@
-import React, {ButtonHTMLAttributes, MouseEvent} from 'react'
+import React, {ButtonHTMLAttributes} from 'react'
 import styles from './button.module.scss'
 
 
