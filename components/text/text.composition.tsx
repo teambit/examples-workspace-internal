@@ -1,5 +1,5 @@
 import React from 'react'
-import Text from './text'
+import {Text} from './text'
 
 export const ExtraLargeText = () => {
     return(
@@ -9,7 +9,7 @@ export const ExtraLargeText = () => {
 
 export const MutedText = () => {
     return(
-        <Text color="muted">An muted text.</Text>
+        <Text color="muted">A muted text.</Text>
     )
 }
 

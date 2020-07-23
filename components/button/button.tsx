@@ -8,7 +8,7 @@ export interface IButton extends  ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 
-const Button = ({children , onClick, variant, ...rest} : IButton) => {
+export const Button = ({children, variant, ...rest} : IButton) => {
     return (
         <button className={styles[variant]} {...rest}>
             {children}
@@ -20,6 +20,4 @@ Button.defaultProps = {
     variant: 'primary'
 }
 
-
-export default Button;
 

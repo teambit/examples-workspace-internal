@@ -9,7 +9,7 @@ export interface ICard {
     children: any;
 }
 
-const Card = ({size, children} : ICard) => {
+export const Card = ({size, children} : ICard) => {
     return (
         <div className={cn(styles.card, styles[size])}>
             {children}
@@ -20,5 +20,3 @@ const Card = ({size, children} : ICard) => {
 Card.defaultProps = {
     size: 'md'
 }
-
-export default Card;

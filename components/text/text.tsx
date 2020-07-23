@@ -3,7 +3,7 @@ import styles from './text.module.scss';
 import cn from 'classnames';
 
 
-export interface IText extends HTMLAttributes<HTMLParagraphElement>{
+export interface IText extends HTMLAttributes<HTMLDivElement>{
     /** The font size. */
     size: 'x-lg' | 'lg' | 'md' | 'sm';
     /** The font's color. */
@@ -11,11 +11,11 @@ export interface IText extends HTMLAttributes<HTMLParagraphElement>{
 }
 
 
-const Text = ({size, color, children}: IText) => {
+export const Text = ({size, color, children}: IText) => {
     return (
-        <p className={cn(styles.text, styles[size], styles[color])}>
+        <div className={cn(styles.text, styles[size], styles[color])}>
             {children}
-        </p>
+        </div>
     )
 }
 
@@ -24,5 +24,3 @@ Text.defaultProps = {
     color: 'regular'
   };
 
-
-  export default Text;
