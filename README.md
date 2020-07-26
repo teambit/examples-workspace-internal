@@ -1,1 +1,1 @@
-### A new homepage for Bit (open-source) using Bit Harmony
+### A Bit Workspace for the BadJokes app
