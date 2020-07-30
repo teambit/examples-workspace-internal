@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
 .primary {
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     border: solid 7px #ab3636;
-    padding: 10px;
     background-color: #ab3636;
+      &:hover {
+        border-color: #8b1b1b;
+        background-color: #8b1b1b;
+      }
+  }
+  
+  .secondary {
+    border: solid 7px #363eab;
+    background-color: #363eab;
+      &:hover {
+        border-color: #434cc5;
+        background-color: #434cc5;
+      }
+  }
+
+  .base {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 10px;
     color: #fff;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
@@ -12,10 +28,6 @@
     text-transform: uppercase;
     outline: none;
     transition: background-color 0.5s, border 0.5s;
-      &:hover {
-        border-color: #8b1b1b;
-        background-color: #8b1b1b;
-      }
       &:active {
         border-color: #313131;
         background-color: #fff;
@@ -25,31 +37,4 @@
         border-color: #a5a5a5;
         background-color: #a5a5a5;
     }
-  }
-  
-  .secondary {
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    border: solid 7px #363eab;
-    padding: 10px;
-    background-color: #363eab;
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    outline: none;
-    transition: background-color 0.5s, border 0.5s;
-      &:hover {
-        border-color: #434cc5;
-        background-color: #434cc5;
-      }
-      &:active {
-        border-color: #313131;
-        background-color: #fff;
-        color: #000;
-      }
-      &:disabled{
-        border-color: #a5a5a5;
-        background-color: #a79e9e;
-      }
   }

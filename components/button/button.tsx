@@ -1,5 +1,7 @@
 import React, {ButtonHTMLAttributes} from 'react'
+import cs from 'classnames'
 import styles from './button.module.scss'
+
 
 
 export interface IButton extends  ButtonHTMLAttributes<HTMLButtonElement> {
@@ -10,7 +12,7 @@ export interface IButton extends  ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = ({children, variant, ...rest} : IButton) => {
     return (
-        <button className={styles[variant]} {...rest}>
+        <button className={cs(styles.base, styles[variant])} {...rest}>
             {children}
         </button>
     )
