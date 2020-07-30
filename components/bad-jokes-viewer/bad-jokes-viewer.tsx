@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import styles from './bad-jokes-viewer.module.scss';
-import {Card} from '@bit/bit.new-hp.ui.card';
-import {Text} from '@bit/bit.new-hp.ui.text';
-import {Button} from '@bit/bit.new-hp.ui.button';
+import {Card} from '@teambit/bad-jokes.card';
+import {Text} from '@teambit/bad-jokes.text';
+import {Button} from '@teambit/bad-jokes.button';
 
 
 export const BadJokesViewer = () => {

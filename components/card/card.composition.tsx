@@ -1,6 +1,6 @@
 import React from 'react'
 import {Card} from './card'
-import {Text} from '@bit/bit.new-hp.ui.text'
+import {Text} from '@teambit/bad-jokes.text'
 
 export const CardWithText = () => {
     return(
