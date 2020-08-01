@@ -171,5 +171,29 @@
         "exported": false,
         "lanes": []
     },
+    "use-get-jokes": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "use-get-jokes.docs.ts",
+                "test": false,
+                "name": "use-get-jokes.docs.ts"
+            },
+            {
+                "relativePath": "use-get-jokes.ts",
+                "test": false,
+                "name": "use-get-jokes.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/use-get-jokes",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "version": "14.8.8"
 }
