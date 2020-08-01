@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react';
 
 
-export const useGetJokes = () : [() => Promise<void>, string[], boolean] =>{
-    const [joke, setJoke] = useState(['Loading...']);
+export const useGetJokes = () : [() => Promise<void>, string[], boolean, string] =>{
+    const [joke, setJoke] = useState(['']);
     const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState('')
 
     const getJoke = async () => {
           setIsLoading(true);
@@ -12,10 +13,11 @@ export const useGetJokes = () : [() => Promise<void>, string[], boolean] =>{
             let data = await res.json();
             const dataArr = data.joke.split('\n');
             setJoke(dataArr);
+            if (error) setError('');
             setIsLoading(false);
         }
         catch (err) {
-            setJoke([`ERROR: ${err.message}`]);
+            setError(err.message);
             setIsLoading(false);
         }      
       }
@@ -24,5 +26,5 @@ export const useGetJokes = () : [() => Promise<void>, string[], boolean] =>{
         getJoke();
     }, [])
 
-    return [getJoke, joke, isLoading]
+    return [getJoke, joke, isLoading, error]
 }

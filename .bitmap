@@ -179,9 +179,14 @@
                 "name": "index.ts"
             },
             {
-                "relativePath": "use-get-jokes.docs.ts",
+                "relativePath": "use-get-jokes-docs.module.scss",
                 "test": false,
-                "name": "use-get-jokes.docs.ts"
+                "name": "use-get-jokes-docs.module.scss"
+            },
+            {
+                "relativePath": "use-get-jokes.docs.tsx",
+                "test": false,
+                "name": "use-get-jokes.docs.tsx"
             },
             {
                 "relativePath": "use-get-jokes.ts",

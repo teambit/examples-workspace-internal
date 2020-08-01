@@ -7,18 +7,18 @@ import {useGetJokes} from '@teambit/bad-jokes.use-get-jokes'
 
 export const BadJokesViewer = () => {
 
-    const [getJoke, joke, isLoading] = useGetJokes();
+    const [getJoke, joke, isLoading, error] = useGetJokes();
 
     return (
         <div>
             <Card size='md'>
                 <div className={styles.contentWrapper}>
                     <Text>
-                        {joke.map(line => <p>{line}</p>)}
+                        {error || joke.map(line => <p>{line}</p>)}
                     </Text>
                 </div>
                 <div>
-                    <Button disabled={isLoading} onClick={getJoke}>another one, please</Button>
+                    <Button disabled={isLoading} onClick={getJoke}>{isLoading ? 'loading...' : "another one, please"}</Button>
                 </div>
             </Card>
         </div>
