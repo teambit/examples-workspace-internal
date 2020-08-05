@@ -4,6 +4,8 @@ import {Card} from '@teambit/bad-jokes.ui.card';
 import {Button} from '@teambit/bad-jokes.ui.button';
 import {useGetJokes} from '@teambit/bad-jokes.hooks.use-get-jokes'
 
+
+/** Retrieves and displays bad jokes */
 export const BadJokesViewer = () => {
 
     const [getJoke, joke, isLoading, error] = useGetJokes();

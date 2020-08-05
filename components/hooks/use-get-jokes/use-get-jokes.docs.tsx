@@ -1,39 +1,56 @@
-import React from 'react';
-import styles from './use-get-jokes-docs.module.scss'
+import React from 'react'
+import {useGetJokes} from './use-get-jokes'
 
 export const abstract = 'A hook that fetches jokes'
 
 export const labels = ['hook', 'typescript', 'react','fetch']
 
-const code = `
-const BadJokesViewer = () => {
+//  const demo = () => {
 
-    const [getJoke, joke, isLoading] = useGetJokes();
+//     const [getJoke, joke, isLoading, error] = useGetJokes();
 
-    return (
-        <>
+//     return (
+//         <div>
+//             <div>
+//                 <div>
+//                     {error || joke.map(line => <p>{line}</p>)}
+//                 </div>
+//                 <div>
+//                     <button disabled={isLoading} onClick={getJoke}>
+//                         {isLoading ? 'loading...' : "another one, please"}
+//                     </button>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
+
+
+export const examples = [
+    {
+      scope: {
+        useGetJokes
+      },
+      title: "Using useGetJokes",
+      description: "This hook uses a jokes api. It returns the data-fetching function (getJoke), the data (joke), the state of the 'getJoke' function and an error message (or an empty string)." ,
+      code: `() => {
+
+        const [getJoke, joke, isLoading, error] = useGetJokes();
+    
+        return (
             <div>
-                {joke.map(line => <p>{line}</p>)}
+                <div>
+                    <div>
+                        {error || joke.map(line => <p>{line}</p>)}
+                    </div>
+                    <div>
+                        <button disabled={isLoading} onClick={getJoke}>
+                            {isLoading ? 'loading...' : "another one, please"}
+                        </button>
+                    </div>
+                </div>
             </div>
-                <button disabled={isLoading} onClick={getJoke}>Fetch another Joke</button>
-        </>
-    )
-}
-`
-
-export default () => {
-    return (
-        <div className={styles.instructions}>
-            <p>This hook returns an array of:</p>
-            <ol>
-                <li><b>getJokes </b><i>(function)</i>: fetches a single joke</li>
-                <li><b>jokes </b><i>(array of strings)</i>: the returned joke pargraphs</li>
-                <li><b>isLoading </b><i>(boolean)</i>: the fetching status</li>
-                <li><b>error </b><i>(string)</i>: the error returned error message</li>
-            </ol>
-            <br/>
-            <p>Use it like so:</p>
-            <pre>{code}</pre>
-        </div>
-    )
-}
+        )
+    }`
+      }
+  ];

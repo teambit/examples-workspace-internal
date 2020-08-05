@@ -9,6 +9,7 @@ export interface ICard {
     children: any;
 }
 
+/** An imperfect card */
 export const Card = ({size, children} : ICard) => {
     return (
         <div className={cn(styles.card, styles[size])}>

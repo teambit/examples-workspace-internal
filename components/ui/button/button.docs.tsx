@@ -1,21 +1,31 @@
 import React from 'react'
 
-export const abstract = 'An imperfect button.'
+export const abstract = "An imperfect button.";
 
-export const labels = ['button', 'typescript', 'react']
+export const tag = ["react", "typescript", "button"];
 
 export default function () {
-    const style = {
-        display: "flex",
-        height: "50px",
-        width: "100%",
-        backgroundColor: "#f7dcb5",
-        marginTop: "15px",
-        marginBottom: "15px",
-        alignItems: "center",
-        justifyContent: "center"
+    const wrapper = {
+      border: '1px solid #e0ddd8',
+      borderRadius: '5px',
+      padding: '25px',
+      marginBottom: '25px'
     }
     return (
-        <div style={style}>This is a custom segment.</div>
+        <div style={wrapper}>
+            <p style={{fontWeight: 700}}>Guidelines</p>
+            <br/>
+            <ul style={{listStyleType: 'circle', paddingLeft: "25px"}} >
+                <li>
+                    Place buttons where users expect to find them. Do not force users to "hunt for buttons".
+                </li>
+                <li>
+                    Do not use generic lables for your buttons. Use verbs that clearly explain the button's function.
+                </li>
+                <li>
+                    Size buttons in proportion to their importance
+                </li>
+            </ul>
+        </div>
     )
 }
