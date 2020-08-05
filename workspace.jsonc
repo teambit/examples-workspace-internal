@@ -29,11 +29,15 @@
     "components": [
       {
         "defaultScope": "ui",
-        "directory": "base"
+        "directory": "ui"
       },
       {
-        "defaultScope": "extensions",
-        "directory": "extensions"
+        "defaultScope": "hooks",
+        "directory": "hooks"
+      },
+      {
+        "defaultScope": "apps",
+        "directory": "apps"
       }
     ]
   },
@@ -46,7 +50,7 @@
      * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
      * and totally removes the need of a 'node_modules' directory in your project.
     */
-    "packageManager": "npm",
+    "packageManager": "@teambit/pnpm",
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -86,7 +90,9 @@
     "*": {
       "@teambit/envs": {
         "env": "@teambit/react",
-        "config": {}
+        "config": {
+          "tester": "jest"
+        }
       }
     }
   }
