@@ -98,39 +98,5 @@
         "exported": false,
         "lanes": []
     },
-    "ui/card": {
-        "files": [
-            {
-                "relativePath": "card.composition.tsx",
-                "test": false,
-                "name": "card.composition.tsx"
-            },
-            {
-                "relativePath": "card.docs.tsx",
-                "test": false,
-                "name": "card.docs.tsx"
-            },
-            {
-                "relativePath": "card.module.scss",
-                "test": false,
-                "name": "card.module.scss"
-            },
-            {
-                "relativePath": "card.tsx",
-                "test": false,
-                "name": "card.tsx"
-            },
-            {
-                "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/ui/card",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
     "version": "14.8.9-dev.1"
 }
