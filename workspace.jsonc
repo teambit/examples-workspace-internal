@@ -12,34 +12,13 @@
     **/
     "name": "bad-jokes",
     /**
-     * applies only on bit.dev. configure the main owner of your workspace.
-    **/
-    // "defaultOwner": "teambit",
-    /**
      * set the default scope when there is no matching for the component in the components array.
      **/
     "defaultScope": "teambit.bad-jokes",
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
-    "defaultDirectory": "components",
-    /**
-    * set the default structure of components in your project.
-    **/
-    "components": [
-      {
-        "defaultScope": "ui",
-        "directory": "ui"
-      },
-      {
-        "defaultScope": "hooks",
-        "directory": "hooks"
-      },
-      {
-        "defaultScope": "apps",
-        "directory": "apps"
-      }
-    ]
+    "defaultDirectory": "components"
   },
   /**
    * main configuration for component dependency resolution.
@@ -66,7 +45,15 @@
      * map of extra arguments to pass to the configured package manager upon the installation
      * of dependencies.
     */
-    "extraArgs": []
+    "extraArgs": [],
+    "policy": {
+      "dependencies": {
+        "@types/classnames": "^2.2.10",
+        "classnames": "^2.2.6",
+        "lodash": "^4.17.19",
+        "@types/react": "^16.9.17"
+      }
+    }
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
@@ -78,21 +65,10 @@
     //  * wildcards can be used to configure components under a specific namespace.
     //  * this configuration applies the react extensions on all components the `ui` namespace.
     // **/
-    "extensions/*": {
-      // "Environments": {
-      //   "env": "@teambit/generic",
-      //   "config": {
-      //     "compiler": "bit.envs/compiler/typescript",
-      //     "tester": "bit.envs/tester/jest"
-      //   }
-      // }
-    },
     "*": {
       "@teambit/envs": {
         "env": "@teambit/react",
-        "config": {
-          "tester": "jest"
-        }
+        "config": { }
       }
     }
   }
