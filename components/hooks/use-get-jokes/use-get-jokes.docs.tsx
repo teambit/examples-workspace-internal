@@ -5,25 +5,6 @@ export const abstract = 'A hook that fetches jokes'
 
 export const labels = ['hook', 'typescript', 'react','fetch']
 
-// () => {
-
-//     const [getJoke, joke, isLoading, error] = useGetJokes();
-
-//     return (
-//         <div>
-//             <div>
-//                 {error || joke.map(line => <p>{line}</p>)}
-//             </div>
-//             <div>
-//                 <button disabled={isLoading} onClick={getJoke}>
-//                     {isLoading ? 'loading...' : "fetch a joke"}
-//                 </button>
-//             </div>
-//         </div>
-//     )
-// }
-
-
 export const examples = [
     {
       scope: {

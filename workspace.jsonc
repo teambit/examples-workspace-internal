@@ -1,74 +1,36 @@
-/**
- * this is the main configuration file of your bit workspace.
- * for full documentation, please see: https://docs.bit.dev/configuration
-**/{
+{
   "$schema": "",
-  /**
-   * main configuration of the Bit workspace.
-  **/
+
   "@teambit/workspace": {
-    /**
-     * name of the workspace.
-    **/
     "name": "bad-jokes",
-    /**
-     * set the default scope when there is no matching for the component in the components array.
-     **/
+
     "defaultScope": "teambit.bad-jokes",
-    /**
-     * set the default directory when there is no matching for the component in the components array.
-     **/
+
     "defaultDirectory": "components"
   },
-  /**
-   * main configuration for component dependency resolution.
-  **/
+
   "@teambit/dependency-resolver": {
-    /**
-     * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
-     * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
-     * and totally removes the need of a 'node_modules' directory in your project.
-    */
     "packageManager": "@teambit/pnpm",
-    /**
-    * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
-    * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
-    * an invalid state that can cause build failures or incompatible dependency versions.
-    * (For historical reasons, JavaScript package managers generally do not treat this invalid
-    * state as an error.)
-    *
-    * The default value is false to avoid legacy compatibility issues.
-    * It is strongly recommended to set strictPeerDependencies=true.
-    */
+
     "strictPeerDependencies": true,
-    /**
-     * map of extra arguments to pass to the configured package manager upon the installation
-     * of dependencies.
-    */
+
     "extraArgs": [],
     "policy": {
       "dependencies": {
+        "classnames": "^2.2.6"
+      },
+      "devDependencies": {
+        "@types/react": "^16.9.17",
         "@types/classnames": "^2.2.10",
-        "classnames": "^2.2.6",
-        "lodash": "^4.17.19",
-        "@types/react": "^16.9.17"
+        "@testing-library/react": "10.4.8"
       }
     }
   },
-  /**
-   * workspace variants allow to set different subsets of configuration for components in your workspace.
-   * this is extremely useful for upgrading, aligning and building components with a
-   * new set of dependencies.
-  **/
+
   "@teambit/variants": {
-    // /**
-    //  * wildcards can be used to configure components under a specific namespace.
-    //  * this configuration applies the react extensions on all components the `ui` namespace.
-    // **/
     "*": {
       "@teambit/envs": {
-        "env": "@teambit/react",
-        "config": { }
+        "env": "@teambit/react"
       }
     }
   }
