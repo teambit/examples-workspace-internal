@@ -3,28 +3,25 @@
 
   "@teambit/workspace": {
     "name": "bad-jokes",
-
     "defaultScope": "teambit.bad-jokes",
-
     "defaultDirectory": "components"
   },
-
   "@teambit/dependency-resolver": {
     "packageManager": "@teambit/pnpm",
-
     "strictPeerDependencies": true,
-
     "extraArgs": [],
     "policy": {
       "dependencies": {
         "classnames": "^2.2.6",
         "@types/classnames": "^2.2.10",
         "@testing-library/react": "10.4.8",
-        "@testing-library/jest-dom": "^5.11.3"
+        "@testing-library/jest-dom": "^5.11.3",
+        "@babel/runtime": "^7.11.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
       }
     }
   },
-
   "@teambit/variants": {
     "*": {
       "@teambit/react": {}
