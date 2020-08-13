@@ -27,9 +27,7 @@
 
   "@teambit/variants": {
     "*": {
-      "@teambit/envs": {
-        "env": "@teambit/react"
-      }
+      "@teambit/react": {}
     }
   }
 }
