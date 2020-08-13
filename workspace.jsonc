@@ -19,7 +19,8 @@
       "dependencies": {
         "classnames": "^2.2.6",
         "@types/classnames": "^2.2.10",
-        "@testing-library/react": "10.4.8"
+        "@testing-library/react": "10.4.8",
+        "@testing-library/jest-dom": "^5.11.3"
       }
     }
   },

@@ -53,9 +53,9 @@
                 "name": "button.module.scss"
             },
             {
-                "relativePath": "button.spec.js",
+                "relativePath": "button.spec.tsx",
                 "test": false,
-                "name": "button.spec.js"
+                "name": "button.spec.tsx"
             },
             {
                 "relativePath": "button.tsx",
