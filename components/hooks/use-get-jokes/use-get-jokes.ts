@@ -15,8 +15,8 @@ export const useGetJokes = (): [
   const getJoke = async () => {
     setIsLoading(true);
     try {
-      let res = await fetch(endpoint);
-      let data = await res.json();
+      const res = await fetch(endpoint);
+      const data = await res.json();
       const dataArr = data.joke.split("\n");
       setJoke(dataArr);
       if (error) setError("");
