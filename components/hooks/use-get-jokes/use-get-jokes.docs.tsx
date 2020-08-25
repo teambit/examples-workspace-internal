@@ -1,4 +1,3 @@
-import React from 'react'
 import {useGetJokes} from './use-get-jokes'
 
 export const abstract = 'A hook that fetches jokes'
