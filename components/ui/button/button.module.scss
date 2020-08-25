@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
+.base {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  transition: background-color 0.5s, border 0.5s;
+    &:active {
+      border-color: #313131;
+      background-color: #fff;
+      color: #000;
+    }
+    &:disabled{
+      border-color: #a5a5a5;
+      background-color: #a5a5a5;
+      &:hover {
+        border-color: #a5a5a5;
+        background-color: #a5a5a5;
+      }
+  }
+
+}
+
 .primary {
     border: solid 7px #ab3636;
     background-color: #ab3636;
@@ -18,23 +44,3 @@
       }
   }
 
-  .base {
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    padding: 10px;
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    outline: none;
-    transition: background-color 0.5s, border 0.5s;
-      &:active {
-        border-color: #313131;
-        background-color: #fff;
-        color: #000;
-      }
-      &:disabled{
-        border-color: #a5a5a5;
-        background-color: #a5a5a5;
-    }
-  }

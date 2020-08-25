@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './bad-jokes-viewer.module.scss';
-import {Button} from '@teambit/bad-jokes.ui.button';
+import {Button} from '/Users/eden/Documents/Projects/badjokes/components/ui/button/index'
 import {useGetJokes} from '@teambit/bad-jokes.hooks.use-get-jokes'
 
 

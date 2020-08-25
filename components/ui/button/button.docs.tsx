@@ -2,7 +2,7 @@ import React from 'react'
 
 export const abstract = "An imperfect button.";
 
-export const tag = ["react", "typescript", "button"];
+export const labels = ["react", "typescript", "button"];
 
 export default function () {
     const wrapper = {
