@@ -6,7 +6,6 @@ import {capitalize} from '@teambit/toolbox.toolbox.capitalize';
 
 /** Retrieves and displays bad jokes */
 export const BadJokesViewer = () => {
-
     const [getJoke, joke, isLoading, error] = useGetJokes();
 
     return (

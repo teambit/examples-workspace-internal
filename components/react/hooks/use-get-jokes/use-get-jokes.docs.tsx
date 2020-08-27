@@ -12,7 +12,6 @@ export const examples = [
       title: "Using useGetJokes",
       description: "This hook uses a jokes api. It returns the data-fetching function (getJoke), the data (joke), the state of the 'getJoke' function and an error message (or an empty string)." ,
       code: `() => {
-
         const [getJoke, joke, isLoading, error] = useGetJokes();
     
         return (

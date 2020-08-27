@@ -1,1 +1,1 @@
-export * from './use-get-jokes'
+export { useGetJokes } from './use-get-jokes';
