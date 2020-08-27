@@ -1,16 +1,16 @@
 {
-  "$schema": "",
-
-  "@teambit/workspace": {
+  "teambit.bit/workspace": {
+    // Workspace name as appears in the top-left corener of the UI
     "name": "bad-jokes",
-    "defaultScope": "teambit.bad-jokes",
-    "defaultDirectory": "components"
+    // default scope defined for all components
+    "defaultScope": "teambit.bad-jokes"
   },
-  "@teambit/dependency-resolver": {
-    "packageManager": "@teambit/pnpm",
-    "strictPeerDependencies": true,
-    "extraArgs": [],
+  "teambit.bit/dependency-resolver": {
+    "packageManager": "teambit.bit/pnpm",
     "policy": {
+      // dependencies required by components in the workspace
+      // there is no 'devDependencies', they are defined for each component
+      // using the file-type that requires it
       "dependencies": {
         "classnames": "^2.2.6",
         "@types/classnames": "^2.2.10",
@@ -22,9 +22,19 @@
       }
     }
   },
-  "@teambit/variants": {
-    "*": {
-      "@teambit/react": {}
+  // configure your desired workspace strcuture
+  "teambit.bit/variants": {
+    // configuration for components in the `./components/react/` directory
+    "components/react": {
+      // setup react env for components in the `./components/react` directotyr
+      "teambit.bit/react": { }
+    },
+    // configuration for component sin the `./components/modules` directory
+    "components/modules": {
+      // setup node env for component in the `components/modules` directory
+      "teambit.bit/node": { },
+      // these components has different scope
+      "defaultScope": "teambit.toolbox"
     }
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './bad-jokes-viewer.module.scss';
-import {Button} from '/Users/eden/Documents/Projects/badjokes/components/ui/button/index'
-import {useGetJokes} from '@teambit/bad-jokes.hooks.use-get-jokes'
-
+import {Button} from '@teambit/bad-jokes.react.ui.button';
+import {useGetJokes} from '@teambit/bad-jokes.react.hooks.use-get-jokes';
+import {capitalize} from '@teambit/toolbox.toolbox.capitalize';
 
 /** Retrieves and displays bad jokes */
 export const BadJokesViewer = () => {
@@ -16,7 +16,7 @@ export const BadJokesViewer = () => {
             </div>
             <div>
                 <Button disabled={isLoading} onClick={getJoke}>
-                    {isLoading ? 'loading...' : "another one, please"}
+                    {isLoading ? 'loading...' : capitalize("another one, please")}
                 </Button>
             </div>
         </div>
