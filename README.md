@@ -43,9 +43,15 @@ when dir created, run `bit add path/to/new/component --namespace <namespace>`.
 
 see new component in the web ui.
 
+#### Run dev server
+
+```
+bbit start
+```
+
 #### Run tests
 
-`bit test`
+`bbit test`
 
 #### Adding dependency
 
