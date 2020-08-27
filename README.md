@@ -1,36 +1,40 @@
-# A Bit Workspace for the BadJokes app
+# A Bit Workspace for testing the pre-release
 
-![](https://user-images.githubusercontent.com/49904302/82163669-545b6600-98b5-11ea-91ac-b63534416605.png)
+**IMPORTANT** the pre-release binary is called `bbit`, not `bit`. **IMPORTANT**
+
+See docs [here](https://bit-new-docs.netlify.app/docs/workspace/overview).
+
+## Install pre-release
+
+Bit is going to be published to a different package, so install from the new name:
+
+```sh
+npm i -g @teambit/bit
+```
+
+## Import / export / tag still experimental
+
+There are performance issues with the three commands. Use this repository to experiment with Bit's local workflow.
+
+- bit.dev will not accept exporting of components from this repository.
+- Importing components from bit.dev to this repo may also not work properly.
+- Tag is aimed for running during CI. Please wait for this [capability](https://github.com/teambit/bit/issues/2712)
 
 ## Setup instructions
 
-see description about a bit workspace [here](https://bit-new-docs.netlify.app/docs/workspace/overview).
-
-1. install Bit pre-prod version - `npm i -g @teambit/bit`
 1. Clone this repo
 1. `cd` to the root directory and run `bbit install`
 1. Open the code in your favorite editor
 1. run `bbit link` (see the result in the `./node_modules/@teambit/` dir)
 1. run `bbit start`
 
-> the pre-release binary is called `bbit`, not `bit`.
+## workspace operations
 
-### Make it your own
+### If using VSCode
 
-1. `rm -rf ./node_modules/@teambit`
-1. `bbit untrack *`
-1. create directories according to how you see fit your workspace
-1. open `workspace.jsonc`
-1. in `teambit.bit/workspace` edit:
-  - `name` - your project name
-  - `defaultScope` - default scope for all components `<your-company>.<default-collection>`
-1. in `teambit.bit/variants`
-  - configure the different directories in the workspace
-  - `defaultScope` - define the default scope for components in a specific variant.
+Configure node module debug as shows in this issue - https://github.com/microsoft/vscode/issues/102042#issuecomment-656402933
 
-### workspace operations
-
-#### Create new components
+### Create new components
 
 To create a new component create the component's directory and it's containing files.
 
@@ -43,22 +47,32 @@ when dir created, run `bit add path/to/new/component --namespace <namespace>`.
 
 see new component in the web ui.
 
-#### Run dev server
+### Run dev server
 
 ```
 bbit start
 ```
 
-#### Run tests
+### Run tests
 
-`bbit test`
+```
+bbit test
+```
 
-#### Adding dependency
+### Adding dependency
 
 1. open `workspace.jsonc` file
 1. add new dependency and version
 1. run `bbit install`
 
-### If using VSCode
+### Known issues
 
-Configure node module debug as shows in this issue - https://github.com/microsoft/vscode/issues/102042#issuecomment-656402933
+1. Missing a dedicated command to install a new dependency.
+1. Missing component scaffolding.
+1. Performance issues in the component showcase.
+1. Documentation for creating your environment (example added in the repository).
+1. CLI outputs are too verbose and not reader-friendly
+1. No test-summary in the workspace UI.
+1. No JSON-schema to simplify configuration
+1. UI does not show component isolation issues (i.e. - "bit status")
+1. No automated documentation generation for node-components.

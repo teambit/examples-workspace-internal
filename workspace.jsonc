@@ -22,9 +22,10 @@
      * it helps to automate and manage dependency configuration for components.
     **/
     "policy": {
-      // dependencies required by components in the workspace
-      // there is no 'devDependencies', they are defined for each component
-      // using the file-type that requires it
+      /** 
+       * Dependency type is defined by the file that import it.
+       * For example, library will be devDependency when the file that imports it is a test file.
+      **/
       "dependencies": {
         "classnames": "^2.2.6",
         "@types/classnames": "^2.2.10",
@@ -56,9 +57,13 @@
     * configure all components under directory `components/modules`
     **/    
     "components/modules": {
-      // configure the react environment for all components in the `components/modules` directory.
+      /**
+      * configure the react environment for all components in the `components/modules` directory.
+      **/
       "teambit.bit/node": {},
-      // these components has different scope
+      /**
+       * these components has different scope
+       **/
       "defaultScope": "teambit.toolbox"
     }
   }
