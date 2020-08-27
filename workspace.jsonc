@@ -33,7 +33,8 @@
         "@testing-library/jest-dom": "^5.11.3",
         "@babel/runtime": "^7.11.2",
         "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+        "react-dom": "^16.13.1",
+        "@teambit/documenter.ui.code-snippet": "^0.0.3"
       }
     }
   },
