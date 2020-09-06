@@ -3,7 +3,9 @@ import cs from "classnames";
 import styles from "./button.module.scss";
 
 export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
-  /** Choose between primary and secondary styling. */
+  /**
+   * determine whether button has a primary or secondary type of styling.
+   */
   variant: "primary" | "secondary";
 }
 
