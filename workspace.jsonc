@@ -4,12 +4,10 @@
      * name of the component workspace. used for development purposes.
     **/
     "name": "bad-jokes",
-
     /**
      * icon of the workspace.
     **/
     "icon": "https://image.flaticon.com/icons/svg/185/185034.svg",
-    
     /**
      * default scope of the workspace. this setting will apply a default remote scope
      * to any which had no more concrete (e.g. see variants) match.
@@ -21,7 +19,6 @@
     * main configuration for bit's component dependency resolution.
     **/
     "packageManager": "teambit.bit/pnpm",
-
     /**
      * dependency policy allows to configure dependencies quickly and efficiently.
      * it helps to automate and manage dependency configuration for components.
@@ -32,18 +29,17 @@
        * For example, library will be devDependency when the file that imports it is a test file.
       **/
       "dependencies": {
-        "classnames": "^2.2.6",
-        "@types/classnames": "^2.2.10",
-        "@testing-library/react": "10.4.8",
-        "@testing-library/jest-dom": "^5.11.3",
         "@babel/runtime": "^7.11.2",
+        "@teambit/documenter.ui.code-snippet": "^0.0.3",
+        "@testing-library/jest-dom": "^5.11.3",
+        "@testing-library/react": "10.4.8",
+        "@types/classnames": "^2.2.10",
+        "classnames": "^2.2.6",
         "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "@teambit/documenter.ui.code-snippet": "^0.0.3"
+        "react-dom": "^16.13.1"
       }
     }
   },
-
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
@@ -56,7 +52,7 @@
     /**
     * configure all components under directory `components/react`
     **/
-    "components/react": {        
+    "components/react": {
       /**
       * configure the react environment on all components under the react directory.
       */
@@ -64,7 +60,7 @@
     },
     /**
     * configure all components under directory `components/modules`
-    **/    
+    **/
     "components/modules": {
       /**
       * configure the react environment for all components in the `components/modules` directory.
