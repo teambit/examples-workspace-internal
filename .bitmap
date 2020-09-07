@@ -14,6 +14,11 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "jest/jest.config.js",
+                "test": false,
+                "name": "jest.config.js"
+            },
+            {
                 "relativePath": "typescript/tsconfig.json",
                 "test": false,
                 "name": "tsconfig.json"
@@ -161,5 +166,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.10"
+    "version": "14.8.9-dev.12"
 }

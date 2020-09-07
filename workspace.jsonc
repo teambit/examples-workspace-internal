@@ -49,6 +49,10 @@
     "extensions": {
       "teambit.bit/aspect": {}
     },
+
+    "extensions/harmony-react": {
+    },
+    
     /**
     * configure all components under directory `components/react`
     **/
@@ -58,6 +62,7 @@
       */
       "teambit.bad-jokes/harmony-react": {}
     },
+
     /**
     * configure all components under directory `components/modules`
     **/

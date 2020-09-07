@@ -5,12 +5,12 @@ importers:
       '@teambit/documenter.ui.code-snippet': 0.0.3_react@16.13.1
       '@testing-library/jest-dom': 5.11.4
       '@testing-library/react': 10.4.8_react-dom@16.13.1+react@16.13.1
+      '@types/classnames': 2.2.10
       classnames: 2.2.6
       global: 4.4.0
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
     devDependencies:
-      '@types/classnames': 2.2.10
       '@types/jest': 26.0.13
       '@types/react': 16.9.43
       '@types/react-router-dom': 5.1.5
@@ -263,7 +263,7 @@ packages:
     resolution:
       integrity: sha512-iIgQNzCm0v7QMhhe4Jjn9uRh+I6GoPmt03CbEtwx3ao8/EfoQcmgtqH4vQ5Db/lxiIGaWDv6nwvunuh0RyX0+A==
   /@types/classnames/2.2.10:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-1UzDldn9GfYYEsWWnn/P4wkTlkZDH7lDb0wBMGbtIQc9zXEQq7FlKBdZUn6OBqD8sKZZ2RQO2mAjGpXiDGoRmQ==
   /@types/color-name/1.1.1:
