@@ -1,6 +1,5 @@
 import { EnvsMain, EnvsAspect } from '@teambit/environments';
 import { ReactAspect, ReactMain } from '@teambit/react';
-import tsconfig from './typescript/tsconfig.json';
 
 export class HarmonyReactExtension {
   constructor(
@@ -17,10 +16,10 @@ export class HarmonyReactExtension {
   static dependencies = [EnvsAspect, ReactAspect];
 
   static async provider([envs, react]: [EnvsMain, ReactMain]) {
-    const harmonyReactEnv = envs.pipe([
-      react.overrideTsConfig(tsconfig),
-      react.overrideWebpackConfig(webpackConfig)
-    ]);
+    // const harmonyReactEnv = envs.pipe([
+    //   react.overrideTsConfig(tsconfig),
+    //   react.overrideWebpackConfig(webpackConfig)
+    // ]);
     // const harmonyReactEnv = react
     //     .overrideTsConfig(tsconfig)
     //     .overrideJestConfig('./jest.config.js')
@@ -29,7 +28,7 @@ export class HarmonyReactExtension {
     //     .overrideTemplate()
     //     .getComposedEnv();
 
-    envs.registerEnv(harmonyReactEnv);
+    // envs.registerEnv(harmonyReactEnv);
 
     return new HarmonyReactExtension(react);
   }
