@@ -9,6 +9,7 @@ importers:
       '@teambit/documenter.ui.list': 0.0.5_react@16.13.1
       '@teambit/documenter.ui.paragraph': 0.0.5_react@16.13.1
       '@teambit/documenter.ui.section': 0.0.5_react@16.13.1
+      '@teambit/documenter.ui.separator': 0.0.5_react@16.13.1
       '@testing-library/jest-dom': 5.11.4
       '@testing-library/react': 10.4.8_react-dom@16.13.1+react@16.13.1
       classnames: 2.2.6
@@ -29,6 +30,7 @@ importers:
       '@teambit/documenter.ui.list': 0.0.5
       '@teambit/documenter.ui.paragraph': 0.0.5
       '@teambit/documenter.ui.section': 0.0.5
+      '@teambit/documenter.ui.separator': 0.0.5
       '@testing-library/jest-dom': ^5.11.4
       '@testing-library/react': 10.4.8
       '@types/classnames': ^2.2.10
@@ -583,6 +585,16 @@ packages:
       react: ^16.13.1
     resolution:
       integrity: sha512-2ad/qeNU2Ekrwx4jPgEMA5ziiVaPExL9S9XAFFOdto0iK69fpQ60zUd9l79v7jPgB+DOAQfBxPrB792jYP31kg==
+  /@teambit/documenter.ui.separator/0.0.5_react@16.13.1:
+    dependencies:
+      '@teambit/documenter.theme.theme-context': 0.0.5_react@16.13.1
+      classnames: 2.2.6
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.13.1
+    resolution:
+      integrity: sha512-4qEp/y/kHzTSK6mkIP2jOVZVsaRlM6Xy+6vdDEjyh8q4w1LIUEY7xdz7ZiZDI+BUnmKLzonBVgwoW+pYWw9OiQ==
   /@teambit/evangelist.elements.icon/0.0.2_react@16.13.1:
     dependencies:
       '@teambit/base-ui.elements.icon': 0.1.5_react@16.13.1
