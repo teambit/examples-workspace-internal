@@ -106,6 +106,16 @@
     "toolbox/capitalize": {
         "files": [
             {
+                "relativePath": "capitalize.docs.tsx",
+                "test": false,
+                "name": "capitalize.docs.tsx"
+            },
+            {
+                "relativePath": "capitalize.spec.ts",
+                "test": false,
+                "name": "capitalize.spec.ts"
+            },
+            {
                 "relativePath": "capitalize.ts",
                 "test": false,
                 "name": "capitalize.ts"

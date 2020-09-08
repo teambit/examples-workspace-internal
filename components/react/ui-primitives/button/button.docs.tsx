@@ -1,31 +1,61 @@
-import React from 'react'
+import React from 'react';
+import { Button } from './Button';
+import { Section } from '@teambit/documenter.ui.section';
+import { ThemeContext } from '@teambit/documenter.theme.theme-context';
+import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
+import { List } from '@teambit/documenter.ui.list';
+import { Separator } from '@teambit/documenter.ui.separator';
 
 export const abstract = "An imperfect button.";
 
 export const labels = ["react", "typescript", "button"];
 
-export default function () {
-    const wrapper = {
-      border: '1px solid #e0ddd8',
-      borderRadius: '5px',
-      padding: '25px',
-      marginBottom: '25px'
-    }
-    return (
-        <div style={wrapper}>
-            <p style={{fontWeight: 700}}>Guidelines</p>
-            <br/>
-            <ul style={{listStyleType: 'circle', paddingLeft: "25px"}} >
-                <li>
-                    Place buttons where users expect to find them. Do not force users to "hunt for buttons".
-                </li>
-                <li>
-                    Do not use generic lables for your buttons. Use verbs that clearly explain the button's function.
-                </li>
-                <li>
-                    Size buttons in proportion to their importance
-                </li>
-            </ul>
-        </div>
+export default () => {
+    return(
+        <ThemeContext>
+            <>
+                <Section>
+                    <LinkedHeading link='guidelines'>Guidelines</LinkedHeading>
+                    <List spacing="lg">
+                        {
+                            [
+                                `Place buttons where users expect to find them. Do not force users to "hunt for buttons".`,
+                                `Do not use generic lables for your buttons. Use verbs that clearly explain the button's function.`,
+                                `Size buttons in proportion to their importance.`
+                            ]
+                        }
+                    </List>
+                </Section>
+                <Separator />
+            </>
+        </ThemeContext>
     )
 }
+
+
+const codeStringVariants = `
+<Button variant='primary'> button </Button>
+`
+const codeStringNativAtt = `
+<Button disabled> button </Button>
+`
+
+export const examples = [
+    {
+        scope: {
+            Button
+        },
+        title: "Using the Button component",
+        description: "Replace the variant prop value from 'primary' to 'secondary', to switch to the 'secondary' styling.",
+        code: codeStringVariants
+    },
+    {
+        scope: {
+            Button
+        },
+        description: "Use the Button component with any (native) HTML button attribute.",
+        code: codeStringNativAtt
+    }
+]
+
+
