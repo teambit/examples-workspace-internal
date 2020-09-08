@@ -17,7 +17,7 @@ export const examples = [
         return (
             <div>
                 <div>
-                    {error || joke.map(line => <p>{line}</p>)}
+                    {error || joke.map((line, index) => <p key={index}>{line}</p>)}
                 </div>
                 <div>
                     <button disabled={isLoading} onClick={getJoke}>

@@ -11,7 +11,8 @@ export const BadJokesViewer = () => {
     return (
         <div className={styles.badJokesViewer}>
             <div className={styles.contentWrapper}>
-                {error || joke.map(line => <p>{line}</p>)}
+                
+                {error || joke.map((line, index) => <p key={index}>{line}</p>)}
             </div>
             <div>
                 <Button disabled={isLoading} onClick={getJoke}>
