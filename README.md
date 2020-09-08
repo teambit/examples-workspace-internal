@@ -30,6 +30,12 @@ There are performance issues with the three commands. Use this repository to exp
 1. Open the code in your favorite editor
 1. run `bbit start`
 
+## Typescript
+
+Note that there are `tsconfig` files across different directories in the project. This is because our IDEs use these files for their language services.
+Given that the configs are in the component-environments themselves, it's required to have a file that would use `extends` to get the config from the env to the workspace.
+At the moment this is a manual task, however it will soon be automated.
+
 ## workspace operations
 
 ### If using VSCode
