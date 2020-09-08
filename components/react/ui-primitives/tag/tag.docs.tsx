@@ -14,9 +14,9 @@ export const abstract = "A tag labels UI objects for quick recognition and navig
 const basicExample = `<Tag style={{backgroundColor: '#414141', color: 'white'}}>dark Tag</Tag>`;
 const scope = { Tag }
 
-export default () => {
+export default function Overview() {
   return (
-    <ThemeContext>  
+    <ThemeContext>
       <>
         <Section>
           <LinkedHeading link="Overview">Overview</LinkedHeading>
