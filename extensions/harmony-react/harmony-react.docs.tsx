@@ -1,9 +1,9 @@
-import React from "react"; 
-import { Section } from "@teambit/documenter.ui.section";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { LinkedHeading } from "@teambit/documenter.ui.linked-heading";
-import { List } from "@teambit/documenter.ui.list";
-import { Separator } from "@teambit/documenter.ui.separator";
+import React from 'react'; 
+import { Section } from '@teambit/documenter.ui.section';
+import { ThemeContext } from '@teambit/documenter.theme.theme-context';
+import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
+import { List } from '@teambit/documenter.ui.list';
+import { Separator } from '@teambit/documenter.ui.separator';
 
 export const abstract = "Customized React environment.";
 

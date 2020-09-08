@@ -30,29 +30,22 @@ export default () => {
   );
 };
 
-const codeStringVariants = `
-<Button variant='primary'> button </Button>
-`;
-const codeStringNativAtt = `
-<Button disabled> button </Button>
-`;
-
 export const examples = [
   {
     scope: {
       Button,
     },
-    title: "Using the Button component",
+    title: 'Using the Button component',
     description:
-      "Replace the variant prop value from 'primary' to 'secondary', to switch to the 'secondary' styling.",
-    code: codeStringVariants,
+      <div>hi there dude</div>,
+    jsx: <Button variant='primary'>Click here</Button>,
   },
   {
     scope: {
       Button,
     },
     description:
-      "Use the Button component with any (native) HTML button attribute.",
-    code: <div>hi there</div>,
+      'Use the Button component with any (native) HTML button attribute.',
+    jsx: <Button disabled>Click here</Button>
   },
 ];
