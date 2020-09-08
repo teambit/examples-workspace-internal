@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./bad-jokes-viewer.module.scss";
-import { Button } from "@teambit/bad-jokes.react.ui.button";
-import { useGetJokes } from "@teambit/bad-jokes.react.hooks.use-get-jokes";
-import { capitalize } from "@teambit/toolbox.toolbox.capitalize";
+import React from 'react'
+import styles from './bad-jokes-viewer.module.scss';
+import {Button} from '@teambit/bad-jokes.ui-primitives.button';
+import {useGetJokes} from '@teambit/bad-jokes.hooks.use-get-jokes';
+import {capitalize} from '@teambit/toolbox.toolbox.capitalize';
 
 /** Retrieves and displays bad jokes */
 export const BadJokesViewer = () => {

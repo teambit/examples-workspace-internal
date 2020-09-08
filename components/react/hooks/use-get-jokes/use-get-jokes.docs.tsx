@@ -1,4 +1,6 @@
+import React from 'react';
 import { useGetJokes } from './use-get-jokes'
+import { List } from '@teambit/documenter.ui.list'
 
 export const abstract = 'A hook that fetches jokes'
 
@@ -7,10 +9,25 @@ export const labels = ['hook', 'typescript', 'react', 'fetch']
 export const examples = [
     {
       scope: {
-        useGetJokes
+        useGetJokes,
+        List
       },
       title: "Using useGetJokes",
-      description: "This hook uses a jokes api. It returns the data-fetching function (getJoke), the data (joke), the state of the 'getJoke' function and an error message (or an empty string)." ,
+      description: (
+            <>  
+                <p>This hook retrieves jokes from a jokes API. It returns the following variables:</p>
+                <List element="ol" spacing="lg" >
+                    {
+                        [
+                        `"getJokes": The data-fetching function`,
+                        `"joke": The retrieved data`,
+                        `"isLoading": The state of the data-fetching function`,
+                        `"error": An error message (or an empty string)`
+                        ]
+                    }
+                </List>
+            </>
+          ),
       code: `() => {
         const [getJoke, joke, isLoading, error] = useGetJokes();
     
@@ -29,3 +46,4 @@ export const examples = [
     }`
       }
   ];
+  

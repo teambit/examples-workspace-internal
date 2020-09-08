@@ -1,14 +1,26 @@
 import React from 'react';
-import { CodeSnippet } from '@teambit/documenter.ui.code-snippet';
+import { capitalize} from './capitalize'
 
-const codeString = `capitalize("my upper case letters")
-// => MY UPPER CASE LETTERS
-`;
-
-export default function Overview() {
-  return <div><CodeSnippet>{codeString}</CodeSnippet></div>;
-}
+const codeString = `() => {
+  let text = capitalize("a capitalized 'a'.")
+  return (
+    <>
+      <p>{text}</p>
+    </>
+  )
+}`
 
 export const labels = ['strings']
 
-export const abstract = 'Capitilize a string'
+export const abstract = 'Transforms the first character in a string to uppercase.'
+
+export const examples = [
+  {
+    scope: { 
+      capitalize
+    },
+    title: "Using the Capitalize function",
+    description: "Change the 'text' value to see its first character transformed to uppercase.",
+    code: codeString
+  }
+]
