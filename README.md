@@ -45,6 +45,7 @@ To further modify TypeScript, Jest or Webpack configuration you need to modify t
 
 ```sh
 bbit install                 # Install project dependencies.
+bbit compile                 # Compile components (important because of the local React extension)
 bbit start                   # Run workspace UI
 bbit test                    # Run componetn tests
 bbit install <package name>  # Add a new dependency
