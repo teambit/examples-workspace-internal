@@ -53,6 +53,6 @@ export const examples = [
     },
     description:
       "Use the Button component with any (native) HTML button attribute.",
-    code: codeStringNativAtt,
+    code: <div>hi there</div>,
   },
 ];
