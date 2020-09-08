@@ -7,7 +7,7 @@ See docs [here](https://bit-new-docs.netlify.app/docs/workspace/overview).
 ## Install pre-release
 
 The pre-release version is published as a different package.  
-At the moment installation process is rather slow. We'll be removing dependencies and deprecate many parts of the codebase to speed up the process.
+At the moment the installation process is rather slow. We'll be removing dependencies and deprecate many parts of the codebase to speed up the process.
 
 ```sh
 npm i -g @teambit/bit
@@ -16,7 +16,7 @@ yarn global add @teambit/bit
 
 ## Local development workflow only
 
-bit.dev does not yet support exporting and importing of components made with the pre-release version. Use this project to test Bit's new local capabilities.
+bit.dev does not yet support exporting and importing components made with the pre-release version. Use this project to test Bit's new local capabilities.
 
 ## Setup instructions
 
@@ -31,13 +31,13 @@ bit.dev does not yet support exporting and importing of components made with the
 
 #### `extends`
 
-The component's `tsconfig` file are managed by their configured environment, as Bit uses it internally to compile and build your components. However, the IDE should be using the same `tsconfig` setup for it's own TypeScript Language Services process. To link a `tsconfig` file in the workspace with the configuration defined by the environment, you should use the `extends` option and direct TypeScript to use the environment's `tsconfig` file.
+The component's `tsconfig` file is managed by its configured environment, as Bit uses it internally to compile and build your components. However, the IDE should be using the same `tsconfig` setup for its own TypeScript Language Services process. To link a `tsconfig` file in the workspace with the configuration defined by the environment, you should use the `extends` option and direct TypeScript to use the environment's `tsconfig` file.
 
 > **TODO** - add link to an example for it
 
 #### Multi `tsconfig` files
 
-Usually you only have a single `tsconfig` file in the workspace' root. However, in a monorepo (especially a component-monorepo), it may be possible that different components need different typescript configurations. To do this, TypeScript supports nesting `tsconfig` files.  
+Usually you only have a single `tsconfig` file in the workspace root. However, in a monorepo (especially a component-monorepo), it may be possible that different components need different typescript configurations. To do this, TypeScript supports nesting `tsconfig` files.  
 When you have several component-environments defined in a workspace each of them might have its own `tsconfig` applied on components. To get your IDE to use the right `tsconfig` file for each component we use TypeScript support for monorepos and create nested `tsconfig`s. This means that for each `variant` you need to have a `tsconfig` file with `extends` option to direct to the environment's `tsconfig`.
 
 At the moment this is a manual process. It will be automated soon.
@@ -73,19 +73,19 @@ bbit add <path to component> # Add a new component (see full instructions below)
 
 ### Create new components
 
-Component scaffolding it not yet implemented in the pre-release. To create new components:
+Component scaffolding is not yet implemented in the pre-release. To create new components:
 
 - Create a directory for the component in the right location.
 - Create the main implementation file of the component in the component's root directory.
 - Create a barrel file named `index.ts` and have it export the APIs from the component's implementation.
-- Create `*.composition.tsx` to create composition for development.
+- Create `*.composition.tsx` to create a composition for development.
 - Create `*.specs.ts` for creating jest tests.
 - Create `*.docs.tsx` to manually control documentation.
 - Create more files as needed (`scss`, `svg`, `tsx`).
 
-When dir created, run `bit add <path to component root dir> --namespace <namespace>`.
+When the dir is created, run `bit add <path to component root dir> --namespace <namespace>`.
 
-see new component in the web UI.
+see the new component in the web UI.
 
 ## Missing
 
