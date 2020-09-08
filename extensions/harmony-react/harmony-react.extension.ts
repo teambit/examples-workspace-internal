@@ -21,8 +21,8 @@ export class HarmonyReactExtension {
   static async provider([envs, react]: [EnvsMain, ReactMain]) {
     const harmonyReactEnv = react.compose([
       react.overrideTsConfig(tsconfig),
-      // react.overrideJestConfig(require.resolve('./jest/jest.config')),
-      react.overrideDevServerConfig(webpackConfig)
+      react.overrideJestConfig(require.resolve('./jest/jest.config')),
+      react.overrideDevServerConfig(webpackConfig),
     ]);
 
     envs.registerEnv(harmonyReactEnv);
