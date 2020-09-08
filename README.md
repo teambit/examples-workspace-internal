@@ -1,4 +1,4 @@
-# A Bit Workspace for testing the pre-release
+# Bad-jokes app with Harmony
 
 **IMPORTANT** the pre-release binary is called `bbit`, not `bit`. **IMPORTANT**
 
@@ -27,11 +27,6 @@ bit.dev does not yet support exporting and importing components made with the pr
 
 ## workspace operations
 
-### Module debugging in VSCode
-
-Bit relies heavily on usage of links in `node_modules`. Sadly there's a regression in VScode that caused this not to work by default.  
-This workspace has a VScode configuration to fix the issue. [Learn more.](https://github.com/microsoft/vscode/issues/102042#issuecomment-656402933)
-
 ### Workspace configuration
 
 See details about project configuration in the `workspace.jsonc` file.
@@ -46,12 +41,12 @@ To further modify TypeScript, Jest or Webpack configuration you need to modify t
 
 > When import/export support is available you'll be able to export the customized extension and use it in other workspaces.
 
-## Important commands
+## Workflow
 
 ```sh
 bbit install                 # Install project dependencies.
-bbit start                   # Run dev server
-bbit test                    # Run tests
+bbit start                   # Run workspace UI
+bbit test                    # Run componetn tests
 bbit install <package name>  # Add a new dependency
 bbit add <path to component> # Add a new component (see full instructions below)
 ```
