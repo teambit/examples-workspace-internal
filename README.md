@@ -27,21 +27,6 @@ bit.dev does not yet support exporting and importing components made with the pr
 
 ## workspace operations
 
-### Typescript
-
-#### `extends`
-
-The component's `tsconfig` file is managed by its configured environment, as Bit uses it internally to compile and build your components. However, the IDE should be using the same `tsconfig` setup for its own TypeScript Language Services process. To link a `tsconfig` file in the workspace with the configuration defined by the environment, you should use the `extends` option and direct TypeScript to use the environment's `tsconfig` file.
-
-> **TODO** - add link to an example for it
-
-#### Multi `tsconfig` files
-
-Usually you only have a single `tsconfig` file in the workspace root. However, in a monorepo (especially a component-monorepo), it may be possible that different components need different typescript configurations. To do this, TypeScript supports nesting `tsconfig` files.  
-When you have several component-environments defined in a workspace each of them might have its own `tsconfig` applied on components. To get your IDE to use the right `tsconfig` file for each component we use TypeScript support for monorepos and create nested `tsconfig`s. This means that for each `variant` you need to have a `tsconfig` file with `extends` option to direct to the environment's `tsconfig`.
-
-At the moment this is a manual process. It will be automated soon.
-
 ### Module debugging in VSCode
 
 Bit relies heavily on usage of links in `node_modules`. Sadly there's a regression in VScode that caused this not to work by default.  
