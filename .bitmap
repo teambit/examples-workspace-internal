@@ -4,6 +4,11 @@
     "extensions/harmony-react": {
         "files": [
             {
+                "relativePath": "harmony-react.docs.tsx",
+                "test": false,
+                "name": "harmony-react.docs.tsx"
+            },
+            {
                 "relativePath": "harmony-react.extension.ts",
                 "test": false,
                 "name": "harmony-react.extension.ts"
@@ -94,6 +99,35 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/react/pages/bad-jokes-viewer",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "toolbox/capitalize": {
+        "files": [
+            {
+                "relativePath": "capitalize.docs.tsx",
+                "test": false,
+                "name": "capitalize.docs.tsx"
+            },
+            {
+                "relativePath": "capitalize.spec.ts",
+                "test": false,
+                "name": "capitalize.spec.ts"
+            },
+            {
+                "relativePath": "capitalize.ts",
+                "test": false,
+                "name": "capitalize.ts"
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/modules/capitalize",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -201,35 +235,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/react/ui-primitives/tag-list",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
-    "toolbox/capitalize": {
-        "files": [
-            {
-                "relativePath": "capitalize.docs.tsx",
-                "test": false,
-                "name": "capitalize.docs.tsx"
-            },
-            {
-                "relativePath": "capitalize.spec.ts",
-                "test": false,
-                "name": "capitalize.spec.ts"
-            },
-            {
-                "relativePath": "capitalize.ts",
-                "test": false,
-                "name": "capitalize.ts"
-            },
-            {
-                "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/modules/capitalize",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []

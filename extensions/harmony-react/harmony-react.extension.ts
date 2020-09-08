@@ -10,7 +10,7 @@ export class HarmonyReactExtension {
   ) {}
 
   /**
-   *  icon of the extension.
+   * icon of the extension.
    */
   icon() {
     return this.react.icon;
