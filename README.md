@@ -10,7 +10,10 @@ Bit is going to be published to a different package, so install from the new nam
 
 ```sh
 npm i -g @teambit/bit
+yarn global add @teambit/bit
 ```
+
+> Installation is slow. we'll be removing a bunch of deps soon.
 
 ## Import / export / tag still experimental
 
@@ -49,13 +52,13 @@ see new component in the web ui.
 
 ### Run dev server
 
-```
+```sh
 bbit start
 ```
 
 ### Run tests
 
-```
+```sh
 bbit test
 ```
 
@@ -67,12 +70,9 @@ bbit test
 
 ### Known issues
 
-1. Missing a dedicated command to install a new dependency.
-1. Missing component scaffolding.
+1. No ability to import/export components.
+1. Missing component scaffolding (`bbit create`).
 1. Performance issues in the component showcase.
 1. Documentation for creating your environment (example added in the repository).
-1. CLI outputs are too verbose and not reader-friendly
-1. No test-summary in the workspace UI.
-1. No JSON-schema to simplify configuration
-1. UI does not show component isolation issues (i.e. - "bit status")
 1. No automated documentation generation for node-components.
+1. No test-summary in the workspace UI.

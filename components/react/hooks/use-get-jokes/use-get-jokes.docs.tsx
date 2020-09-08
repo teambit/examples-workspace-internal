@@ -2,7 +2,7 @@ import {useGetJokes} from './use-get-jokes'
 
 export const abstract = 'A hook that fetches jokes'
 
-export const labels = ['hook', 'typescript', 'react', 'fetch']
+export const labels = ['hook', 'fetch', 'data-connected']
 
 export const examples = [
     {
