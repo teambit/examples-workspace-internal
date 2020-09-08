@@ -28,7 +28,6 @@ There are performance issues with the three commands. Use this repository to exp
 1. Clone this repo
 1. `cd` to the root directory and run `bbit install`
 1. Open the code in your favorite editor
-1. run `bbit link` (see the result in the `./node_modules/@teambit/` dir)
 1. run `bbit start`
 
 ## workspace operations
