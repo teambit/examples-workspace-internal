@@ -7,7 +7,6 @@ importers:
       '@testing-library/react': 10.4.8_react-dom@16.13.1+react@16.13.1
       '@types/classnames': 2.2.10
       classnames: 2.2.6
-      global: 4.4.0
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
     devDependencies:
@@ -24,7 +23,6 @@ importers:
       '@types/react': 16.9.43
       '@types/react-router-dom': ^5.1.5
       classnames: ^2.2.6
-      global: ^4.4.0
       react: ^16.13.1
       react-dom: ^16.13.1
   components/apps/bad-jokes-viewer:
@@ -456,10 +454,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-eCVf9n4Ni5UQAFc2+fqfMPHdtiX7DA0rLakXgNBZfXNJzEbNo3MQIYd+zdYpFBqAaGYVrkd8leNSLGPrG4ODmA==
-  /dom-walk/0.1.2:
-    dev: false
-    resolution:
-      integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==
   /fault/1.0.4:
     dependencies:
       format: 0.2.2
@@ -472,13 +466,6 @@ packages:
       node: '>=0.4.x'
     resolution:
       integrity: sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
-  /global/4.4.0:
-    dependencies:
-      min-document: 2.19.0
-      process: 0.11.10
-    dev: false
-    resolution:
-      integrity: sha512-wv/LAoHdRE3BeTGz53FAamhGlPLhlssK45usmGFThIi4XqnBmjKQ16u+RNbP7WvigRZDxUsM0J3gcQ5yicaL0w==
   /good-listener/1.2.2:
     dependencies:
       delegate: 3.2.0
@@ -574,12 +561,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-N2E7zTM7r1CwbzwspPxJvmjAbxljCPThTFawEX2Z7+P3NGrrvY54u8kyU16IY4qWfoVIxY8SYCS8jTkuG7TqYA==
-  /min-document/2.19.0:
-    dependencies:
-      dom-walk: 0.1.2
-    dev: false
-    resolution:
-      integrity: sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=
   /min-indent/1.0.1:
     dev: false
     engines:
@@ -619,12 +600,6 @@ packages:
       clipboard: 2.0.6
     resolution:
       integrity: sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
-  /process/0.11.10:
-    dev: false
-    engines:
-      node: '>= 0.6.0'
-    resolution:
-      integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
   /prop-types/15.7.2:
     dependencies:
       loose-envify: 1.4.0
