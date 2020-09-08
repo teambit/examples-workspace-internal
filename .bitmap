@@ -132,6 +132,74 @@
         "exported": false,
         "lanes": []
     },
+    "react/ui/label": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "label.composition.tsx",
+                "test": false,
+                "name": "label.composition.tsx"
+            },
+            {
+                "relativePath": "label.docs.tsx",
+                "test": false,
+                "name": "label.docs.tsx"
+            },
+            {
+                "relativePath": "label.module.scss",
+                "test": false,
+                "name": "label.module.scss"
+            },
+            {
+                "relativePath": "label.tsx",
+                "test": false,
+                "name": "label.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/react/ui-primitives/label",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "react/ui/label-list": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "label-list.composition.tsx",
+                "test": false,
+                "name": "label-list.composition.tsx"
+            },
+            {
+                "relativePath": "label-list.docs.tsx",
+                "test": false,
+                "name": "label-list.docs.tsx"
+            },
+            {
+                "relativePath": "label-list.module.scss",
+                "test": false,
+                "name": "label-list.module.scss"
+            },
+            {
+                "relativePath": "label-list.tsx",
+                "test": false,
+                "name": "label-list.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/react/ui-primitives/label-list",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "toolbox/capitalize": {
         "files": [
             {
@@ -161,5 +229,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.10"
+    "version": "14.8.9-dev.12"
 }

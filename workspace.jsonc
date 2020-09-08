@@ -56,7 +56,7 @@
       /**
       * configure the react environment on all components under the react directory.
       */
-      "teambit.bad-jokes/harmony-react": {}
+      "teambit.bit/react": {}
     },
     /**
     * configure all components under directory `components/modules`

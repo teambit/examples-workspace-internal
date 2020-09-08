@@ -39,6 +39,8 @@ importers:
     specifiers: {}
   components/react/ui-primitives/button:
     specifiers: {}
+  components/react/ui-primitives/label:
+    specifiers: {}
   components/ui/button:
     specifiers: {}
   extensions/harmony-react:
