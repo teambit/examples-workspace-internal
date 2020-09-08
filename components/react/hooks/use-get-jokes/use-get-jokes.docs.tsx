@@ -4,6 +4,10 @@ import { List } from '@teambit/documenter.ui.list'
 
 export const abstract = 'A hook that fetches jokes'
 
+export default function Overview() {
+    return <div>hi there</div>;
+}
+
 export const labels = ['hook', 'typescript', 'react', 'fetch']
 
 export const examples = [
@@ -46,4 +50,3 @@ export const examples = [
     }`
       }
   ];
-  

@@ -9,7 +9,7 @@ export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: "primary" | "secondary";
 }
 
-export const Button = ({ children, variant, ...rest }: IButton) => {
+export function Button({ children, variant, ...rest }: IButton) {
   return (
     <button className={cs(styles.base, styles[variant])} {...rest}>
       {children}
