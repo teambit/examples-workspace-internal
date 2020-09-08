@@ -3,10 +3,6 @@ import { render } from '@testing-library/react';
 import { Button } from './button';
 
 describe('Button', () => {
-  describe('html ', () => {
-
-  });
-
   it('should render a test button', () => {
     const { getByText } = render(<Button>test button</Button>);
     const testButton = getByText(/test button/i);

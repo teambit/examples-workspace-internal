@@ -14,6 +14,11 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "jest/jest.config.js",
+                "test": false,
+                "name": "jest.config.js"
+            },
+            {
                 "relativePath": "typescript/tsconfig.json",
                 "test": false,
                 "name": "tsconfig.json"

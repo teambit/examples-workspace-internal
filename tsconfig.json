@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "strict": true,
     "moduleResolution": "node",
     "module": "commonjs",
     "target": "es2015",
-    "esModuleInterop": true,
     "resolveJsonModule": true,
-    "noEmit": true
+    "noEmit": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "node_modules"

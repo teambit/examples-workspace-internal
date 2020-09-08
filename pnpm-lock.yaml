@@ -13,7 +13,6 @@ importers:
       '@testing-library/jest-dom': 5.11.4
       '@testing-library/react': 10.4.8_react-dom@16.13.1+react@16.13.1
       classnames: 2.2.6
-      global: 4.4.0
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
     devDependencies:
@@ -38,7 +37,6 @@ importers:
       '@types/react': 16.9.43
       '@types/react-router-dom': ^5.1.5
       classnames: ^2.2.6
-      global: ^4.4.0
       react: ^16.13.1
       react-dom: ^16.13.1
   components/apps/bad-jokes-viewer:
@@ -933,10 +931,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7dsMOQI07EMU98gQM8NSB3GsAiIeBYIPKpnxR3c9xOvdvBjChAcOM0iJ222I3p5xyiZO9e5oggkNaCusuTdYig==
-  /dom-walk/0.1.2:
-    dev: false
-    resolution:
-      integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==
   /encoding/0.1.13:
     dependencies:
       iconv-lite: 0.6.2
@@ -981,13 +975,6 @@ packages:
       node: '>=0.4.x'
     resolution:
       integrity: sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
-  /global/4.4.0:
-    dependencies:
-      min-document: 2.19.0
-      process: 0.11.10
-    dev: false
-    resolution:
-      integrity: sha512-wv/LAoHdRE3BeTGz53FAamhGlPLhlssK45usmGFThIi4XqnBmjKQ16u+RNbP7WvigRZDxUsM0J3gcQ5yicaL0w==
   /good-listener/1.2.2:
     dependencies:
       delegate: 3.2.0
@@ -1135,12 +1122,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
-  /min-document/2.19.0:
-    dependencies:
-      dom-walk: 0.1.2
-    dev: false
-    resolution:
-      integrity: sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=
   /min-indent/1.0.1:
     dev: false
     engines:
@@ -1205,12 +1186,6 @@ packages:
       clipboard: 2.0.6
     resolution:
       integrity: sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
-  /process/0.11.10:
-    dev: false
-    engines:
-      node: '>= 0.6.0'
-    resolution:
-      integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
   /promise/7.3.1:
     dependencies:
       asap: 2.0.6

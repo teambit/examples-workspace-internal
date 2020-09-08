@@ -34,7 +34,7 @@ export const examples = [
         return (
             <div>
                 <div>
-                    {error || joke.map(line => <p>{line}</p>)}
+                    {error || joke.map((line, key) => <p key={key}>{line}</p>)}
                 </div>
                 <div>
                     <button disabled={isLoading} onClick={getJoke}>
