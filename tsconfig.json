@@ -5,7 +5,8 @@
     "module": "commonjs",
     "target": "es2015",
     "resolveJsonModule": true,
-    "noEmit": true
+    "noEmit": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "node_modules"
