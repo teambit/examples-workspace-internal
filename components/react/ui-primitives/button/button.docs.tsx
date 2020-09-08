@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './Button';
+import { Button } from './button';
 import { Section } from '@teambit/documenter.ui.section';
 import { ThemeContext } from '@teambit/documenter.theme.theme-context';
 import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
