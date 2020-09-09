@@ -6,19 +6,15 @@ import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
 import { List } from '@teambit/documenter.ui.list';
 import { Separator } from '@teambit/documenter.ui.separator';
 
-Overview.abstract = "An imperfect button.";
-
-Overview.labels = ["react", "typescript", "button"];
-
 export default function Overview() {
   return (
-    <ThemeContext>
+    <ThemeContext> 
       <>
         <Section>
           <LinkedHeading link="guidelines">Guidelines</LinkedHeading>
           <List spacing="lg">
             {[
-              `Place buttons where users expect to find them. Do not force users to "hunt for buttons".`,
+              `Place buttons where expect to find them. Do not force users to "hunt for buttons".`,
               `Do not use generic for your buttons. Use verbs that clearly explain the button's function.`,
               `Size buttons in proportion to their importance.`,
             ]}
@@ -29,6 +25,10 @@ export default function Overview() {
     </ThemeContext>
   );
 };
+
+Overview.abstract = 'An imperfect button.';
+
+Overview.labels = ['react', 'typescript', 'button'];
 
 Overview.examples = [
   {
