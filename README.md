@@ -25,6 +25,17 @@ bit.dev does not yet support exporting and importing components made with the pr
 1. Open the code in your favorite editor
 1. run `bbit start`
 
+## Workflow
+
+```sh
+bbit install                 # Install project dependencies.
+bbit compile                 # Compile components (important because of the local React extension)
+bbit start                   # Run workspace UI
+bbit test                    # Run componetn tests
+bbit install <package name>  # Add a new dependency
+bbit add <path to component> # Add a new component (see full instructions below)
+```
+
 ## workspace operations
 
 ### Workspace configuration
@@ -40,17 +51,6 @@ The extension is already managed as a Bit component, so you can configure it in 
 To further modify TypeScript, Jest or Webpack configuration you need to modify the configuration files in the `extensions/react/<tool-name>` file.
 
 > When import/export support is available you'll be able to export the customized extension and use it in other workspaces.
-
-## Workflow
-
-```sh
-bbit install                 # Install project dependencies.
-bbit compile                 # Compile components (important because of the local React extension)
-bbit start                   # Run workspace UI
-bbit test                    # Run componetn tests
-bbit install <package name>  # Add a new dependency
-bbit add <path to component> # Add a new component (see full instructions below)
-```
 
 ### Create new components
 
