@@ -5,7 +5,7 @@ import { List } from '@teambit/documenter.ui.list'
 export const abstract = 'A hook that fetches jokes'
 
 export default function Overview() {
-    return <div>hi there</div>;
+    return <div>PLEASE PUT OVERVIEW HERE.</div>;
 }
 
 export const labels = ['hook', 'typescript', 'react', 'fetch']

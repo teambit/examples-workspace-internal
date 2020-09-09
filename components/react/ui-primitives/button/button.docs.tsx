@@ -19,7 +19,7 @@ export default () => {
           <List spacing="lg">
             {[
               `Place buttons where users expect to find them. Do not force users to "hunt for buttons".`,
-              `Do not use generic labels for your buttons. Use verbs that clearly explain the button's function.`,
+              `Do not use generic for your buttons. Use verbs that clearly explain the button's function.`,
               `Size buttons in proportion to their importance.`,
             ]}
           </List>
@@ -37,7 +37,7 @@ export const examples = [
     },
     title: 'Using the Button component',
     description:
-      <div>hi there dude</div>,
+      <div>example description with JSX</div>,
     jsx: <Button variant='primary'>Click here</Button>,
   },
   {
