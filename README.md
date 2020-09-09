@@ -11,8 +11,9 @@ At the moment the installation process is rather slow. We'll be removing depende
 
 ```sh
 npm i -g @teambit/bit
-yarn global add @teambit/bit
 ```
+
+> Please use NPM to install, there are still some edge cases to resovle for fully supporting Yarn.
 
 ## Local development workflow only
 
@@ -28,7 +29,7 @@ bit.dev does not yet support exporting and importing components made with the pr
 ## Workflow
 
 ```sh
-bbit install                 # Install project dependencies.
+bbit install                 # Install project dependencies
 bbit compile                 # Compile components (important because of the local React extension)
 bbit start                   # Run workspace UI (and watch-server for compiling components on change)
 bbit test                    # Run component tests
@@ -36,6 +37,10 @@ bbit watch                   # Run watch server without starting the workspace U
 bbit install <package name>  # Add a new dependency
 bbit add <path to component> # Add a new component (see full instructions below)
 ```
+
+> After the first `bbit install` you'll get an error about a component not able to load. Don't mind that.
+> It's because there's a local extension define in the workspace that Bit tries to load.
+> This edge case will be resolved soon.
 
 ## workspace operations
 
