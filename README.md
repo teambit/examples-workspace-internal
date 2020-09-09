@@ -77,6 +77,7 @@ Each tracked component is linked to the root `node_modules` folder. Other compon
 
 1. No automated documentation generation for node-components.
 1. No test-summary in the workspace UI.
+1. No component linting.
 
 ## Workspace structure and design decisions
 
