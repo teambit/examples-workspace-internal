@@ -25,7 +25,7 @@ export default function Overview() {
         </Section>
         <Section>
           <LinkedHeading link="Example">Example</LinkedHeading>
-          <Playground code={basicExample} scope={scope} />
+          {/* <Playground code={basicExample} scope={scope} /> */}
         </Section>
         <br />
       </>
