@@ -4,15 +4,23 @@ import { Section } from '@teambit/documenter.ui.section';
 import { Paragraph } from '@teambit/documenter.ui.paragraph';
 import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
 import { List } from '@teambit/documenter.ui.list';
-import { Playground } from '@teambit/documenter.code.react-playground';
 import { Tag } from '@teambit/bad-jokes.ui-primitives.tag';
 
-export const labels = ['react', 'ui-component', 'tags'];
+Overview.labels = ['react', 'ui-component', 'tags'];
 
-export const abstract = "A tag labels UI objects for quick recognition and navigation.";
+Overview.abstract = 'A tag labels UI objects for quick recognition and navigation.';
 
-const basicExample = `<Tag style={{backgroundColor: '#414141', color: 'white'}}>dark Tag</Tag>`;
-const scope = { Tag }
+// Overview.examples = [
+//   {
+//     scope: {
+//       Tag,
+//     },
+//     title: 'Using the Button component',
+//     description:
+//       <div>example description with JSX</div>,
+//     jsx: <Tag style={{backgroundColor: '#414141', color: 'white'}}>dark Tag</Tag>
+//   },
+// ];
 
 export default function Overview() {
   return (
@@ -23,13 +31,8 @@ export default function Overview() {
           <Paragraph>
             Tags are valuable for:
           </Paragraph>
-          <List>{["Anonating properties.", "Links for aggregated data.", "Joyful fridays at the beach."]}</List>
+          <List>{["Annotating properties.", "Links for aggregated data.", "Joyful fridays at the beach."]}</List>
         </Section>
-        <section>
-        <LinkedHeading link="Example">Example</LinkedHeading>
-          <Playground code={basicExample} scope={ scope } />
-        </section>
-        <br />
       </>
     </ThemeContext>
   )

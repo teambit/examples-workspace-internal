@@ -6,11 +6,11 @@ import { LinkedHeading } from "@teambit/documenter.ui.linked-heading";
 import { List } from "@teambit/documenter.ui.list";
 import { Separator } from "@teambit/documenter.ui.separator";
 
-export const abstract = "An imperfect button.";
+Overview.abstract = "An imperfect button.";
 
-export const labels = ["react", "typescript", "button"];
+Overview.labels = ["react", "typescript", "button"];
 
-export default () => {
+export default function Overview() {
   return (
     <ThemeContext>
       <>
@@ -30,7 +30,7 @@ export default () => {
   );
 };
 
-export const examples = [
+Overview.examples = [
   {
     scope: {
       Button,
