@@ -8,10 +8,11 @@ type TagProps = {
 } & React.InputHTMLAttributes<HTMLDivElement>;
 
 export function Tag({ onPick, onClick, className, ...rest }: TagProps) {
-  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    onPick && onPick(rest.children);
-    return onClick && onClick(e);
-  };
+  // const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  //   onPick && onPick(rest.children);
+  //   return onClick && onClick(e);
+  // };
 
-  return <div {...rest} onClick={handleClick} className={classnames(className, styles.label)} />;
+  // return <div {...rest} onClick={handleClick} className={classnames(className, styles.label)} />;
+  return <div>hi there</div>
 }
