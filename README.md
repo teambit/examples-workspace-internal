@@ -84,6 +84,7 @@ At the moment there's no documentation portal for these components, as publishin
 1. No automated documentation generation for node-components.
 1. No test-summary in the workspace UI.
 1. No component linting.
+1. Initialization of new workspaces (`bbit init --harmony`) has a faulty `workspace.jsonc` template.
 
 ## Workspace structure and design decisions
 
