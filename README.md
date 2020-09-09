@@ -1,4 +1,4 @@
-# A Bit Workspace for testing the pre-release
+# Bad-jokes app with Harmony
 
 **IMPORTANT** the pre-release binary is called `bbit`, not `bit`. **IMPORTANT**
 
@@ -6,22 +6,17 @@ See docs [here](https://bit-new-docs.netlify.app/docs/workspace/overview).
 
 ## Install pre-release
 
-Bit is going to be published to a different package, so install from the new name:
+The pre-release version is published as a different package.  
+At the moment the installation process is rather slow. We'll be removing dependencies and deprecate many parts of the codebase to speed up the process.
 
 ```sh
 npm i -g @teambit/bit
 yarn global add @teambit/bit
 ```
 
-> Installation is slow. we'll be removing a bunch of deps soon.
+## Local development workflow only
 
-## Import / export / tag still experimental
-
-There are performance issues with the three commands. Use this repository to experiment with Bit's local workflow.
-
-- bit.dev will not accept exporting of components from this repository.
-- Importing components from bit.dev to this repo may also not work properly.
-- Tag is aimed for running during CI. Please wait for this [capability](https://github.com/teambit/bit/issues/2712)
+bit.dev does not yet support exporting and importing components made with the pre-release version. Use this project to test Bit's new local capabilities.
 
 ## Setup instructions
 
@@ -30,54 +25,50 @@ There are performance issues with the three commands. Use this repository to exp
 1. Open the code in your favorite editor
 1. run `bbit start`
 
-## Typescript
-
-Note that there are `tsconfig` files across different directories in the project. This is because our IDEs use these files for their language services.
-Given that the configs are in the component-environments themselves, it's required to have a file that would use `extends` to get the config from the env to the workspace.
-At the moment this is a manual task, however it will soon be automated.
-
 ## workspace operations
 
-### If using VSCode
+### Workspace configuration
 
-Configure node module debug as shows in this issue - https://github.com/microsoft/vscode/issues/102042#issuecomment-656402933
+See details about project configuration in the `workspace.jsonc` file.
+
+### Customize React configuration
+
+This project contains a local Bit extension that customized the base React Component Environment.  
+It is located in `extension/react` directory. It uses a specific set of APIs to override configuration files for the environment.  
+The extension is already managed as a Bit component, so you can configure it in the `workspace.jsonc` file as a Component Environment for any of the `variants`.
+
+To further modify TypeScript, Jest or Webpack configuration you need to modify the configuration files in the `extensions/react/<tool-name>` file.
+
+> When import/export support is available you'll be able to export the customized extension and use it in other workspaces.
+
+## Workflow
+
+```sh
+bbit install                 # Install project dependencies.
+bbit compile                 # Compile components (important because of the local React extension)
+bbit start                   # Run workspace UI
+bbit test                    # Run componetn tests
+bbit install <package name>  # Add a new dependency
+bbit add <path to component> # Add a new component (see full instructions below)
+```
 
 ### Create new components
 
-To create a new component create the component's directory and it's containing files.
+Component scaffolding is not yet implemented in the pre-release. To create new components:
 
-- must create a barrel file named `index.ts`
-- create `*.docs.tsx` to manually control documentation
-- create `*.composition.tsx` to create composition for development
-- create `*.specs.ts` for creating jest tests.
+- Create a directory for the component in the right location.
+- Create the main implementation file of the component in the component's root directory.
+- Create a barrel file named `index.ts` and have it export the APIs from the component's implementation.
+- Create `*.composition.tsx` to create a composition for development.
+- Create `*.specs.ts` for creating jest tests.
+- Create `*.docs.tsx` to manually control documentation.
+- Create more files as needed (`scss`, `svg`, `tsx`).
 
-when dir created, run `bit add path/to/new/component --namespace <namespace>`.
+When the dir is created, run `bit add <path to component root dir> --namespace <namespace>`.
 
-see new component in the web ui.
+see the new component in the web UI.
 
-### Run dev server
+## Missing
 
-```sh
-bbit start
-```
-
-### Run tests
-
-```sh
-bbit test
-```
-
-### Adding dependency
-
-1. open `workspace.jsonc` file
-1. add new dependency and version
-1. run `bbit install`
-
-### Known issues
-
-1. No ability to import/export components.
-1. Missing component scaffolding (`bbit create`).
-1. Performance issues in the component showcase.
-1. Documentation for creating your environment (example added in the repository).
 1. No automated documentation generation for node-components.
 1. No test-summary in the workspace UI.

@@ -5,18 +5,17 @@ import styles from './tag-list.module.scss';
 
 type TagListProps = {
   onPick?: (tag: string) => any;
-  children: string[];
+  tags: string[];
 } & React.HTMLAttributes<HTMLDivElement>;
 
 /**
  * renders an array of tags
  */
-export function TagList({children, className, onPick, ...rest}: TagListProps) {
-
+export function TagList({ tags, className, onPick, ...rest }: TagListProps) {
   return (
     <div {...rest} className={classnames(className, styles.tagList)}>
-      {children &&
-        children.map((tag: string) => (
+      {tags &&
+        tags.map((tag: string) => (
           <Tag key={tag} onPick={onPick}>
             {tag}
           </Tag>

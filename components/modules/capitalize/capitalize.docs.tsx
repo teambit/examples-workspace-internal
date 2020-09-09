@@ -1,31 +1,26 @@
 import React from 'react';
-import { CodeSnippet } from '@teambit/documenter.ui.code-snippet';
-import { ThemeContext } from '@teambit/documenter.theme.theme-context';
-import { Section } from '@teambit/documenter.ui.section';
-import { Paragraph } from '@teambit/documenter.ui.paragraph';
-import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
+import { capitalize } from './capitalize';
 
-const codeString = `capitalize("my upper case letters")
-// => MY UPPER CASE LETTERS
-`;
-
-export default function Overview() {
+const codeString = `() => {
+  let text = capitalize("a capitalized 'a'.")
   return (
-    <ThemeContext>
-      <>
-        <Section>
-          <LinkedHeading link="Arguments">Arguments</LinkedHeading>
-          <Paragraph>
-            [string=''] (string): The string to capitalize.<br />
-          </Paragraph>
-          <LinkedHeading link="Example">Example</LinkedHeading>
-          <CodeSnippet>{codeString}</CodeSnippet>
-        </Section>
-      </>
-    </ThemeContext>
+    <>
+      <p>{text}</p>
+    </>
   )
-}
+}`;
 
-export const labels = ['strings']
+export const labels = ['strings'];
 
-export const abstract = 'Converts all character of string to upper case.'
+export const abstract = 'Transforms the first character in a string to uppercase.';
+
+export const examples = [
+  {
+    scope: {
+      capitalize,
+    },
+    title: 'Using the Capitalize function',
+    description: "Change the 'text' value to see its first character transformed to uppercase.",
+    code: codeString,
+  },
+];

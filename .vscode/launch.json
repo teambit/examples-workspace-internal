@@ -7,9 +7,19 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "test",
       "program": "${workspaceFolder}/node_modules/@teambit/bit/dist/app.js",
       "args": ["test", "--debug"],
+      "console": "integratedTerminal",
+      "sourceMaps": true,
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "compile",
+      "program": "${workspaceFolder}/node_modules/@teambit/bit/dist/app.js",
+      "args": ["compile"],
       "console": "integratedTerminal",
       "sourceMaps": true,
       "internalConsoleOptions": "neverOpen"

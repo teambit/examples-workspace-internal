@@ -2,32 +2,32 @@
   "teambit.bit/workspace": {
     /**
      * name of the component workspace. used for development purposes.
-    **/
+     **/
     "name": "bad-jokes",
     /**
      * icon of the workspace.
-    **/
+     **/
     "icon": "https://image.flaticon.com/icons/svg/185/185034.svg",
     /**
      * default scope of the workspace. this setting will apply a default remote scope
      * to any which had no more concrete (e.g. see variants) match.
-    */
+     */
     "defaultScope": "teambit.bad-jokes"
   },
   "teambit.bit/dependency-resolver": {
     /**
-    * main configuration for bit's component dependency resolution.
-    **/
+     * main configuration for bit's component dependency resolution.
+     **/
     "packageManager": "teambit.bit/pnpm",
     /**
      * dependency policy allows to configure dependencies quickly and efficiently.
      * it helps to automate and manage dependency configuration for components.
-    **/
+     **/
     "policy": {
-      /** 
+      /**
        * Dependency type is defined by the file that import it.
        * For example, library will be devDependency when the file that imports it is a test file.
-      **/
+       **/
       "dependencies": {
         "@babel/runtime": "^7.11.2",
         "@teambit/documenter.code.react-playground": "0.0.8",
@@ -37,6 +37,7 @@
         "@teambit/documenter.ui.list": "0.0.5",
         "@teambit/documenter.ui.paragraph": "0.0.5",
         "@teambit/documenter.ui.section": "0.0.5",
+        "@teambit/documenter.ui.separator": "0.0.5",
         "@testing-library/jest-dom": "^5.11.3",
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
@@ -50,27 +51,27 @@
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
-  **/
+   **/
   "teambit.bit/variants": {
     "extensions": {
       "teambit.bit/aspect": {}
     },
     /**
-    * configure all components under directory `components/react`
-    **/
+     * configure all components under directory `components/react`
+     **/
     "components/react": {
       /**
-      * configure the react environment on all components under the react directory.
-      */
-      "teambit.bit/react": {}
+       * configure the react environment on all components under the react directory.
+       */
+      "teambit.bad-jokes/extensions/harmony-react": {}
     },
     /**
-    * configure all components under directory `components/modules`
-    **/
+     * configure all components under directory `components/modules`
+     **/
     "components/modules": {
       /**
-      * configure the react environment for all components in the `components/modules` directory.
-      **/
+       * configure the react environment for all components in the `components/modules` directory.
+       **/
       "teambit.bit/node": {},
       /**
        * these components has different scope

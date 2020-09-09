@@ -9,10 +9,10 @@ import { Tag } from '@teambit/bad-jokes.ui-primitives.tag';
 
 export const labels = ['react', 'ui-component', 'tags'];
 
-export const abstract = "A tag labels UI objects for quick recognition and navigation.";
+export const abstract = 'A tag labels UI objects for quick recognition and navigation.';
 
 const basicExample = `<Tag style={{backgroundColor: '#414141', color: 'white'}}>dark Tag</Tag>`;
-const scope = { Tag }
+const scope = { Tag };
 
 export default function Overview() {
   return (
@@ -20,17 +20,15 @@ export default function Overview() {
       <>
         <Section>
           <LinkedHeading link="Overview">Overview</LinkedHeading>
-          <Paragraph>
-            Tags are valuable for:
-          </Paragraph>
-          <List>{["Anonating properties.", "Links for aggregated data.", "Joyful fridays at the beach."]}</List>
+          <Paragraph>Tags are valuable for:</Paragraph>
+          <List>{['Anonating properties.', 'Links for aggregated data.', 'Joyful fridays at the beach.']}</List>
         </Section>
         <section>
-        <LinkedHeading link="Example">Example</LinkedHeading>
-          <Playground code={basicExample} scope={ scope } />
+          <LinkedHeading link="Example">Example</LinkedHeading>
+          <Playground code={basicExample} scope={scope} />
         </section>
         <br />
       </>
     </ThemeContext>
-  )
+  );
 }
