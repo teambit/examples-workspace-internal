@@ -1,52 +1,50 @@
 import React from 'react';
-import { useGetJokes } from './use-get-jokes'
-import { List } from '@teambit/documenter.ui.list'
+import { useGetJokes } from './use-get-jokes';
+import { List } from '@teambit/documenter.ui.list';
+import { Section } from '@teambit/documenter.ui.section';
+import { ThemeContext } from '@teambit/documenter.theme.theme-context';
+import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
+import { List } from '@teambit/documenter.ui.list';
+import { Separator } from '@teambit/documenter.ui.separator';
+import { Paragraph } from '@teambit/documenter.ui.paragraph';
+import { CodeSnippet } from '@teambit/documenter.ui.code-snippet';
 
-export const abstract = 'A hook that fetches jokes'
+export const abstract = 'A hook that fetches jokes';
+export const labels = ['hook', 'typescript', 'react', 'fetch'];
 
 export default function Overview() {
-    return <div>PLEASE PUT OVERVIEW HERE.</div>;
-}
+  const [getJoke, joke, isLoading, error] = useGetJokes();
 
-export const labels = ['hook', 'typescript', 'react', 'fetch']
+  return (
+    <ThemeContext>
+      <>
+        <Section>
+          <LinkedHeading link="overview">Overview</LinkedHeading>
 
-export const examples = [
-    {
-      scope: {
-        useGetJokes,
-        List
-      },
-      title: "Using useGetJokes",
-      description: (
-            <>  
-                <p>This hook retrieves jokes from a jokes API. It returns the following variables:</p>
-                <List element="ol" spacing="lg" >
-                    {
-                        [
-                        `"getJokes": The data-fetching function`,
-                        `"joke": The retrieved data`,
-                        `"isLoading": The state of the data-fetching function`,
-                        `"error": An error message (or an empty string)`
-                        ]
-                    }
-                </List>
-            </>
-          ),
-      code: `() => {
-        const [getJoke, joke, isLoading, error] = useGetJokes();
-    
-        return (
+          <Paragraph>This hook retrieves jokes from a jokes API. It returns the following variables:</Paragraph>
+          <List element="ol" spacing="lg">
+            {[
+              `"getJokes": The data-fetching function`,
+              `"joke": The retrieved data`,
+              `"isLoading": The state of the data-fetching function`,
+              `"error": An error message (or an empty string)`,
+            ]}
+          </List>
+        </Section>
+        <Separetor />
+        <Section>
+          <LinkedHeading link="example">Example</LinkedHeading>
+          <Paragraph>You can even use components directly in the docs!</Paragraph>
+          <div>
+            <div>{error || joke.map((line, key) => <p key={key}>{line}</p>)}</div>
             <div>
-                <div>
-                    {error || joke.map((line, key) => <p key={key}>{line}</p>)}
-                </div>
-                <div>
-                    <button disabled={isLoading} onClick={getJoke}>
-                        {isLoading ? 'loading...' : "fetch a joke"}
-                    </button>
-                </div>
+              <Button disabled={isLoading} onClick={getJoke}>
+                {isLoading ? 'loading...' : 'fetch a joke'}
+              </Button>
             </div>
-        )
-    }`
-      }
-  ];
+          </div>
+        </Section>
+      </>
+    </ThemeContext>
+  );
+}

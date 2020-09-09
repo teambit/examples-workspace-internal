@@ -10,37 +10,35 @@
   text-transform: uppercase;
   outline: none;
   transition: background-color 0.5s, border 0.5s;
-    &:active {
-      border-color: #313131;
-      background-color: #fff;
-      color: #000;
-    }
-    &:disabled{
+  &:active {
+    border-color: #313131;
+    background-color: #fff;
+    color: #000;
+  }
+  &:disabled {
+    border-color: #a5a5a5;
+    background-color: #a5a5a5;
+    &:hover {
       border-color: #a5a5a5;
       background-color: #a5a5a5;
-      &:hover {
-        border-color: #a5a5a5;
-        background-color: #a5a5a5;
-      }
+    }
   }
-
 }
 
 .primary {
-    border: solid 7px #ab3636;
-    background-color: #ab3636;
-      &:hover {
-        border-color: #8b1b1b;
-        background-color: #8b1b1b;
-      }
+  border: solid 7px #ab3636;
+  background-color: #ab3636;
+  &:hover {
+    border-color: #8b1b1b;
+    background-color: #8b1b1b;
   }
-  
-  .secondary {
-    border: solid 7px #363eab;
-    background-color: #363eab;
-      &:hover {
-        border-color: #434cc5;
-        background-color: #434cc5;
-      }
-  }
+}
 
+.secondary {
+  border: solid 7px #363eab;
+  background-color: #363eab;
+  &:hover {
+    border-color: #434cc5;
+    background-color: #434cc5;
+  }
+}

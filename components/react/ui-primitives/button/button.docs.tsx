@@ -1,14 +1,14 @@
-import React from "react";
-import { Button } from "./button";
-import { Section } from "@teambit/documenter.ui.section";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { LinkedHeading } from "@teambit/documenter.ui.linked-heading";
-import { List } from "@teambit/documenter.ui.list";
-import { Separator } from "@teambit/documenter.ui.separator";
+import React from 'react';
+import { Button } from './button';
+import { Section } from '@teambit/documenter.ui.section';
+import { ThemeContext } from '@teambit/documenter.theme.theme-context';
+import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
+import { List } from '@teambit/documenter.ui.list';
+import { Separator } from '@teambit/documenter.ui.separator';
 
-export const abstract = "An imperfect button.";
+export const abstract = 'An imperfect button.';
 
-export const labels = ["react", "typescript", "button"];
+export const labels = ['react', 'typescript', 'button'];
 
 export default () => {
   return (
@@ -36,16 +36,14 @@ export const examples = [
       Button,
     },
     title: 'Using the Button component',
-    description:
-      <div>example description with JSX</div>,
-    jsx: <Button variant='primary'>Click here</Button>,
+    description: <div>example description with JSX</div>,
+    jsx: <Button variant="primary">Click here</Button>,
   },
   {
     scope: {
       Button,
     },
-    description:
-      'Use the Button component with any (native) HTML button attribute.',
-    jsx: <Button disabled>Click here</Button>
+    description: 'Use the Button component with any (native) HTML button attribute.',
+    jsx: <Button disabled>Click here</Button>,
   },
 ];

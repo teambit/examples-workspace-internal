@@ -5,9 +5,7 @@ const tsconfig = require('./typescript/tsconfig.json');
 const webpackConfig = require('./webpack/webpack.config');
 
 export class HarmonyReactExtension {
-  constructor(
-    private react: ReactMain
-  ) {}
+  constructor(private react: ReactMain) {}
 
   /**
    * icon of the extension.

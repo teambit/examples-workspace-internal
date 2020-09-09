@@ -1,7 +1,7 @@
-import React from "react";
-import classnames from "classnames";
-import { Tag } from "@teambit/bad-jokes.ui-primitives.tag";
-import styles from "./tag-list.module.scss";
+import React from 'react';
+import classnames from 'classnames';
+import { Tag } from '@teambit/bad-jokes.ui-primitives.tag';
+import styles from './tag-list.module.scss';
 
 type TagListProps = {
   onPick?: (tag: string) => any;
@@ -11,12 +11,7 @@ type TagListProps = {
 /**
  * renders an array of tags
  */
-export function TagList({
-  tags,
-  className,
-  onPick,
-  ...rest
-}: TagListProps) {
+export function TagList({ tags, className, onPick, ...rest }: TagListProps) {
   return (
     <div {...rest} className={classnames(className, styles.tagList)}>
       {tags &&
