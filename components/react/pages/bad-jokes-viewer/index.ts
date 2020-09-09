@@ -1,1 +1,1 @@
-export * from './bad-jokes-viewer'
+export * from './bad-jokes-viewer';

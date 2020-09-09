@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es2015",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules"]
+}

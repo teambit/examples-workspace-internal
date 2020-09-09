@@ -1,6 +1,5 @@
 import React from 'react';
-import { CodeSnippet } from '@teambit/documenter.ui.code-snippet';
-import { capitalize} from './capitalize'
+import { capitalize } from './capitalize';
 
 const codeString = `() => {
   let text = capitalize("a capitalized 'a'.")
@@ -9,20 +8,19 @@ const codeString = `() => {
       <p>{text}</p>
     </>
   )
-}`
+}`;
 
+export const labels = ['strings'];
 
-export const labels = ['strings']
-
-export const abstract = 'Transforms the first character in a string to uppercase.'
+export const abstract = 'Transforms the first character in a string to uppercase.';
 
 export const examples = [
   {
-    scope: { 
-      capitalize
+    scope: {
+      capitalize,
     },
-    title: "Using the Capitalize function",
+    title: 'Using the Capitalize function',
     description: "Change the 'text' value to see its first character transformed to uppercase.",
-    code: codeString
-  }
-]
+    code: codeString,
+  },
+];
