@@ -13,6 +13,8 @@ At the moment the installation process is rather slow. We'll be removing depende
 npm i -g @teambit/bit
 ```
 
+> Please use NPM to install, there are still some edge cases to resovle for fully supporting Yarn.
+
 ## Local development workflow only
 
 bit.dev does not yet support exporting and importing components made with the pre-release version. Use this project to test Bit's new local capabilities.
