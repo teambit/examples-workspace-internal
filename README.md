@@ -30,8 +30,9 @@ bit.dev does not yet support exporting and importing components made with the pr
 ```sh
 bbit install                 # Install project dependencies.
 bbit compile                 # Compile components (important because of the local React extension)
-bbit start                   # Run workspace UI
-bbit test                    # Run componetn tests
+bbit start                   # Run workspace UI (and watch-server for compiling components on change)
+bbit test                    # Run component tests
+bbit watch                   # Run watch server without starting the workspace UI
 bbit install <package name>  # Add a new dependency
 bbit add <path to component> # Add a new component (see full instructions below)
 ```
