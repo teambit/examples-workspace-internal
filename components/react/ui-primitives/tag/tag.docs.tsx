@@ -23,10 +23,10 @@ export default function Overview() {
           <Paragraph>Tags are valuable for:</Paragraph>
           <List>{['Anonating properties.', 'Links for aggregated data.', 'Joyful fridays at the beach.']}</List>
         </Section>
-        <section>
+        <Section>
           <LinkedHeading link="Example">Example</LinkedHeading>
           <Playground code={basicExample} scope={scope} />
-        </section>
+        </Section>
         <br />
       </>
     </ThemeContext>

@@ -4,10 +4,8 @@ import { List } from '@teambit/documenter.ui.list';
 import { Section } from '@teambit/documenter.ui.section';
 import { ThemeContext } from '@teambit/documenter.theme.theme-context';
 import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
-import { List } from '@teambit/documenter.ui.list';
 import { Separator } from '@teambit/documenter.ui.separator';
 import { Paragraph } from '@teambit/documenter.ui.paragraph';
-import { CodeSnippet } from '@teambit/documenter.ui.code-snippet';
 
 export const abstract = 'A hook that fetches jokes';
 export const labels = ['hook', 'typescript', 'react', 'fetch'];
@@ -31,7 +29,7 @@ export default function Overview() {
             ]}
           </List>
         </Section>
-        <Separetor />
+        <Separator />
         <Section>
           <LinkedHeading link="example">Example</LinkedHeading>
           <Paragraph>You can even use components directly in the docs!</Paragraph>
