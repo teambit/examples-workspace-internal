@@ -4,6 +4,7 @@ import { List } from '@teambit/documenter.ui.list';
 import { Section } from '@teambit/documenter.ui.section';
 import { ThemeContext } from '@teambit/documenter.theme.theme-context';
 import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
+import { Button } from '@teambit/bad-jokes.ui-primitives.button';
 import { Separator } from '@teambit/documenter.ui.separator';
 import { Paragraph } from '@teambit/documenter.ui.paragraph';
 
