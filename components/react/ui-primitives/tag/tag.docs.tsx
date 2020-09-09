@@ -5,7 +5,7 @@ import { Paragraph } from '@teambit/documenter.ui.paragraph';
 import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
 import { List } from '@teambit/documenter.ui.list';
 import { Playground } from '@teambit/documenter.code.react-playground';
-import { Tag } from '@teambit/bad-jokes.ui-primitives.tag';
+import { Tag } from './tag';
 
 export const labels = ['react', 'ui-component', 'tags'];
 
