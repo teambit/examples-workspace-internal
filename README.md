@@ -73,11 +73,18 @@ see the new component in the web UI.
 
 Each tracked component is linked to the root `node_modules` folder. Other component should use that module when importing the component, as an absolute path.
 
+## `@teambit/documenter`
+
+To simplify component documentation there's a library dedicated to building awesome component documentation. Bit uses these components for the default documentation template. This project uses them when for the `overview` section of the docs.
+
+At the moment there's no documentation portal for these components, as publishing to bit.dev is limited. Expect it to be available soon. In the meanwhile, all components are published to npmjs.org, so components can use them as dependencies.
+
 ## Missing
 
 1. No automated documentation generation for node-components.
 1. No test-summary in the workspace UI.
 1. No component linting.
+1. Initialization of new workspaces (`bbit init --harmony`) has a faulty `workspace.jsonc` template.
 
 ## Workspace structure and design decisions
 
