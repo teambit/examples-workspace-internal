@@ -11,7 +11,6 @@ At the moment the installation process is rather slow. We'll be removing depende
 
 ```sh
 npm i -g @teambit/bit
-yarn global add @teambit/bit
 ```
 
 ## Local development workflow only
