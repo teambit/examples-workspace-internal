@@ -23,7 +23,7 @@ bit.dev does not yet support exporting and importing components made with the pr
 
 1. Clone this repo
 1. `cd` to the root directory and run `bbit install`
-1. Open the code in your favorite editor
+1. run `bbit compile` (don't mind the error - see details below)
 1. run `bbit start`
 
 ## Workflow
