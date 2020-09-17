@@ -17,9 +17,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "compile",
+      "name": "start",
       "program": "${workspaceFolder}/node_modules/@teambit/bit/dist/app.js",
-      "args": ["compile"],
+      "args": ["start"],
       "console": "integratedTerminal",
       "sourceMaps": true,
       "internalConsoleOptions": "neverOpen"
