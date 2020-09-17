@@ -1,9 +1,11 @@
 import {useState, useEffect} from 'react';
 
 export type UseFavReturn = [
+    number,
     () => void,
     string,
-    (joke: string) => void
+    (joke: string) => void,
+    () => void,
 ]
 
 export const useFavorites = () : UseFavReturn => {
@@ -30,6 +32,10 @@ export const useFavorites = () : UseFavReturn => {
         setCurrentJoke({index: nextJokeIndex, content: favJokes[nextJokeIndex]})
     }
 
-    
-    return [fetchJoke, currentJoke.content, saveJoke]
+    const removeJoke = () : void => {
+        localStorage.removeItem(`joke--${currentJoke.content.substring(0,10)}`)
+        setFavJokes(filterStorage(localStorage))
+    }
+
+    return [favJokes.length, fetchJoke, currentJoke.content, saveJoke, removeJoke]
 }

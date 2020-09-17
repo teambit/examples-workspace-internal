@@ -9,7 +9,7 @@ import {useFavorites} from '@teambit/bad-jokes.hooks.use-favorites';
 /** Retrieves and displays bad jokes */
 export const BadJokesViewer = ({favorites = false}) => {
   const [getJoke, joke, isLoading, error] = useGetJokes();
-  const [fetchFavJoke, favJoke, saveJoke] = useFavorites();
+  const [numOfFavs, fetchFavJoke, favJoke, saveJoke, removeJoke] = useFavorites();
 
   const renderString = (text : string) => {
     console.log('text', text);
@@ -19,21 +19,44 @@ export const BadJokesViewer = ({favorites = false}) => {
     )
   }
   
-  return (
-    <div className={styles.badJokesViewer}>
-      <div className={styles.contentWrapper}>
-        { 
-          favorites ? 
-          renderString(favJoke) : 
-          error || renderString(joke) 
-        }
-      </div>
-      <div className={styles.buttonsWrapper}>
-        <Button disabled={isLoading} onClick={favorites ? fetchFavJoke : getJoke}>
-          {isLoading ? 'loading...' : 'another one, please'}
-        </Button>
-        <Button variant='secondary' onClick={() => saveJoke(joke)}>save</Button>
-      </div>
+  if (!favorites){
+    return(
+      <div className={styles.badJokesViewer}>
+        <div className={styles.contentWrapper}>
+          {  error || renderString(joke) }
+        </div>
+        <div className={styles.buttonsWrapper}>
+          <Button 
+            disabled={isLoading} onClick={getJoke}>
+            {isLoading ? 'loading...' : 'another one, please'}
+          </Button>
+          <Button 
+            variant='secondary' 
+            onClick={favorites ? removeJoke : () => saveJoke(joke)}>
+            delete
+          </Button>
+        </div>
     </div>
-  );
+    )
+  } else {
+      return(
+        <div className={styles.badJokesViewer}>
+        <div className={styles.contentWrapper}>
+          {  renderString(favJoke) }
+        </div>
+        <div className={styles.buttonsWrapper}>
+          <Button 
+            disabled={!numOfFavs} onClick={getJoke}>
+            {'next one, please'}
+          </Button>
+          <Button 
+            variant='secondary' 
+            onClick={() => saveJoke(joke)}>
+            delete
+          </Button>
+        </div>
+    </div>
+      )
+
+  }
 };
