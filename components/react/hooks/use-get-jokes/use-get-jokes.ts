@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-export const useGetJokes = (): [() => Promise<void>, string[], boolean, string] => {
-  const [joke, setJoke] = useState(['']);
+export const useGetJokes = (): [() => Promise<void>, string, boolean, string] => {
+  const [joke, setJoke] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const endpoint = 'https://sv443.net/jokeapi/v2/joke/Any?blacklistFlags=racist&type=single';
@@ -11,8 +11,7 @@ export const useGetJokes = (): [() => Promise<void>, string[], boolean, string] 
     try {
       const res = await fetch(endpoint);
       const data = await res.json();
-      const dataArr = data.joke.split('\n');
-      setJoke(dataArr);
+      setJoke(data.joke);
       if (error) setError('');
       setIsLoading(false);
     } catch (err) {
@@ -27,3 +26,4 @@ export const useGetJokes = (): [() => Promise<void>, string[], boolean, string] 
 
   return [getJoke, joke, isLoading, error];
 };
+

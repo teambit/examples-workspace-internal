@@ -40,6 +40,25 @@
         "exported": false,
         "lanes": []
     },
+    "hooks/use-favorites": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "use-favorites.ts",
+                "test": false,
+                "name": "use-favorites.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/react/hooks/use-favorites",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "hooks/use-get-jokes": {
         "files": [
             {
@@ -239,5 +258,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.12"
+    "version": "14.8.9-dev.15"
 }
