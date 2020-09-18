@@ -9,10 +9,9 @@ import {useFavorites} from '@teambit/bad-jokes.hooks.use-favorites';
 /** Retrieves and displays bad jokes */
 export const BadJokesViewer = ({favorites = false}) => {
   const [getJoke, joke, isLoading, error] = useGetJokes();
-  const [numOfFavs, fetchFavJoke, favJoke, saveJoke, removeJoke] = useFavorites();
+  const [numOfFavs, loadJoke, favJoke, saveJoke, removeJoke] = useFavorites();
 
   const renderString = (text : string) => {
-    console.log('text', text);
     const textArr = text.split('\n');
     return (
       textArr.map((line, key) => <p key={key}>{line}</p>)
@@ -33,7 +32,7 @@ export const BadJokesViewer = ({favorites = false}) => {
           <Button 
             variant='secondary' 
             onClick={favorites ? removeJoke : () => saveJoke(joke)}>
-            delete
+            save
           </Button>
         </div>
     </div>
@@ -41,17 +40,15 @@ export const BadJokesViewer = ({favorites = false}) => {
   } else {
       return(
         <div className={styles.badJokesViewer}>
-        <div className={styles.contentWrapper}>
+      <div className={styles.contentWrapper}>
           {  renderString(favJoke) }
         </div>
         <div className={styles.buttonsWrapper}>
-          <Button 
-            disabled={!numOfFavs} onClick={getJoke}>
+          <Button disabled={!numOfFavs} onClick={loadJoke}>
             {'next one, please'}
           </Button>
           <Button 
-            variant='secondary' 
-            onClick={() => saveJoke(joke)}>
+            variant='secondary' disabled={!numOfFavs} onClick={removeJoke}>
             delete
           </Button>
         </div>

@@ -20,16 +20,20 @@ export const useFavorites = () : UseFavReturn => {
 
     const [favJokes, setFavJokes] = useState(filterStorage(localStorage));
     
-    const [currentJoke, setCurrentJoke] = useState({index: -1, content: ''});
+    const [currentJoke, setCurrentJoke] = useState({index: 0, content: ''});
 
     const saveJoke = (joke: string) : void => {
         localStorage.setItem(`joke--${joke.substring(0,10)}`, joke)
         setFavJokes(filterStorage(localStorage));
     }
 
-    const fetchJoke = () : void  => {
-        const nextJokeIndex = (favJokes.length === (currentJoke.index + 1)) ? 0 : currentJoke.index + 1;
-        setCurrentJoke({index: nextJokeIndex, content: favJokes[nextJokeIndex]})
+    const loadJoke = () : void  => {
+        if (favJokes.length === 0) {
+            setCurrentJoke({index: 0, content: 'Nothing to see here...'});
+        } else {
+            const nextJokeIndex = (favJokes.length === (currentJoke.index + 1)) ? 0 : currentJoke.index + 1;
+            setCurrentJoke({index: nextJokeIndex, content: favJokes[nextJokeIndex]})
+        }
     }
 
     const removeJoke = () : void => {
@@ -37,5 +41,9 @@ export const useFavorites = () : UseFavReturn => {
         setFavJokes(filterStorage(localStorage))
     }
 
-    return [favJokes.length, fetchJoke, currentJoke.content, saveJoke, removeJoke]
+    useEffect(() => {
+        loadJoke();
+    },[])
+
+    return [favJokes.length, loadJoke, currentJoke.content, saveJoke, removeJoke]
 }
