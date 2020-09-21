@@ -67,6 +67,16 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "use-local-jokes-docs.module.scss",
+                "test": false,
+                "name": "use-local-jokes-docs.module.scss"
+            },
+            {
+                "relativePath": "use-local-jokes.docs.tsx",
+                "test": false,
+                "name": "use-local-jokes.docs.tsx"
+            },
+            {
                 "relativePath": "use-local-jokes.ts",
                 "test": false,
                 "name": "use-local-jokes.ts"

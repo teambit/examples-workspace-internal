@@ -5,6 +5,7 @@ importers:
       '@teambit/documenter.code.react-playground': 0.0.8_6c71570cf1eaf82f67c470a9cc4d93bc
       '@teambit/documenter.theme.theme-context': 0.0.5_react@16.13.1
       '@teambit/documenter.ui.code-snippet': 0.0.7_react@16.13.1
+      '@teambit/documenter.ui.highlighted-text': 0.0.6_react@16.13.1
       '@teambit/documenter.ui.linked-heading': 0.0.6_react@16.13.1
       '@teambit/documenter.ui.list': 0.0.5_react@16.13.1
       '@teambit/documenter.ui.paragraph': 0.0.5_react@16.13.1
@@ -12,12 +13,12 @@ importers:
       '@teambit/documenter.ui.separator': 0.0.5_react@16.13.1
       '@testing-library/jest-dom': 5.11.4
       '@testing-library/react': 10.4.8_react-dom@16.13.1+react@16.13.1
-      '@types/classnames': 2.2.10
       classnames: 2.2.6
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
     devDependencies:
-      '@types/jest': 26.0.13
+      '@types/classnames': 2.2.10
+      '@types/jest': 26.0.14
       '@types/react': 16.9.43
       '@types/react-router-dom': 5.1.5
     specifiers:
@@ -25,6 +26,7 @@ importers:
       '@teambit/documenter.code.react-playground': 0.0.8
       '@teambit/documenter.theme.theme-context': 0.0.5
       '@teambit/documenter.ui.code-snippet': ^0.0.7
+      '@teambit/documenter.ui.highlighted-text': 0.0.6
       '@teambit/documenter.ui.linked-heading': 0.0.6
       '@teambit/documenter.ui.list': 0.0.5
       '@teambit/documenter.ui.paragraph': 0.0.5
@@ -33,7 +35,7 @@ importers:
       '@testing-library/jest-dom': ^5.11.4
       '@testing-library/react': 10.4.8
       '@types/classnames': ^2.2.10
-      '@types/jest': ~26.0.13
+      '@types/jest': ~26.0.14
       '@types/react': 16.9.43
       '@types/react-router-dom': ^5.1.5
       classnames: ^2.2.6
@@ -47,9 +49,19 @@ importers:
     specifiers: {}
   components/react/hooks/use-get-jokes:
     specifiers: {}
+  components/react/hooks/use-jokes:
+    specifiers: {}
+  components/react/hooks/use-local-jokes:
+    specifiers: {}
+  components/react/hooks/use-remote-jokes:
+    specifiers: {}
   components/react/pages/bad-jokes-viewer:
     specifiers: {}
+  components/react/ui-primitives/app-bar:
+    specifiers: {}
   components/react/ui-primitives/button:
+    specifiers: {}
+  components/react/ui-primitives/container:
     specifiers: {}
   components/react/ui-primitives/label:
     specifiers: {}
@@ -313,6 +325,17 @@ packages:
       react: ^16.13.1
     resolution:
       integrity: sha512-+kL912C+GiO9z180XI9NHVUgNW31JpkGfQJKrECBcykeyJECkLMDw4vQEFcykBaRXFjTiVISnZWgAg080UjLfA==
+  /@teambit/documenter.theme.theme-context/0.0.6_react@16.13.1:
+    dependencies:
+      '@teambit/base-ui.theme.theme-provider': 0.2.10_react@16.13.1
+      classnames: 2.2.6
+      react: 16.13.1
+      reset-css: 5.0.1
+    dev: false
+    peerDependencies:
+      react: ^16.13.1
+    resolution:
+      integrity: sha512-uT5NZBzLfkuyzbteucCBblu+t56EU317/21K+iTny70yEtrJXYRtcaZHGqTNY8vsvuVZi3kjHi4j8co6pvEHog==
   /@teambit/documenter.types.docs-file/0.0.7_react@16.13.1:
     dependencies:
       '@teambit/documenter.ui.code-snippet': 0.0.7_react@16.13.1
@@ -396,6 +419,16 @@ packages:
       react: ^16.13.1
     resolution:
       integrity: sha512-zZeqVe/Q8pG2plxefRBQb9CXkw8shi01ZrIKWa8mM5seSQSIGc0FJlbxW0qLGUKYzMZgeLBt3iMfYpsvIHzxRw==
+  /@teambit/documenter.ui.highlighted-text/0.0.6_react@16.13.1:
+    dependencies:
+      '@teambit/documenter.ui.paragraph': 0.0.6_react@16.13.1
+      classnames: 2.2.6
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.13.1
+    resolution:
+      integrity: sha512-987kqIG1IPhstxN3+jrEBIXmK83spM/FH5aQSsZ1nB6ofkVXuz2w79Do9r3iy6ptvvPGNYk9UuKWuVcOYWIJCA==
   /@teambit/documenter.ui.linked-heading/0.0.6_react@16.13.1:
     dependencies:
       '@teambit/documenter.theme.theme-context': 0.0.5_react@16.13.1
@@ -435,6 +468,18 @@ packages:
       react: ^16.13.1
     resolution:
       integrity: sha512-kV7dKyjluDE4DGZfLXYpD26SDNnleH7RWhUZBJgDWUT8ZNJTEiyRC324/CljwUWsD/TsEmYq8DbBayiXB30ZWg==
+  /@teambit/documenter.ui.paragraph/0.0.6_react@16.13.1:
+    dependencies:
+      '@teambit/base-ui.text.paragraph': 0.2.10_react@16.13.1
+      '@teambit/base-ui.theme.sizes': 0.2.10_react@16.13.1
+      '@teambit/documenter.theme.theme-context': 0.0.6_react@16.13.1
+      classnames: 2.2.6
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.13.1
+    resolution:
+      integrity: sha512-4GN+zFewKIBAXyx2UoCgMmbH1nW96Ik9GqDwKtEWY+mH/duo3wxf/EIs0Ws9gCGKgb2wczzhxy2JYyBK0Eaq5w==
   /@teambit/documenter.ui.section/0.0.5_react@16.13.1:
     dependencies:
       '@teambit/documenter.theme.theme-context': 0.0.5_react@16.13.1
@@ -512,7 +557,7 @@ packages:
     resolution:
       integrity: sha512-iIgQNzCm0v7QMhhe4Jjn9uRh+I6GoPmt03CbEtwx3ao8/EfoQcmgtqH4vQ5Db/lxiIGaWDv6nwvunuh0RyX0+A==
   /@types/classnames/2.2.10:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-1UzDldn9GfYYEsWWnn/P4wkTlkZDH7lDb0wBMGbtIQc9zXEQq7FlKBdZUn6OBqD8sKZZ2RQO2mAjGpXiDGoRmQ==
   /@types/color-name/1.1.1:
@@ -536,13 +581,14 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     resolution:
       integrity: sha512-P/W9yOX/3oPZSpaYOCQzGqgCQRXn0FFO/V8bWrCQs+wLmvVVxk6CRBXALEvNs9OHIatlnlFokfhuDo2ug01ciw==
-  /@types/jest/26.0.13:
+  /@types/jest/26.0.14:
     dependencies:
       jest-diff: 25.5.0
       pretty-format: 25.5.0
     resolution:
-      integrity: sha512-sCzjKow4z9LILc6DhBvn5AkIfmQzDZkgtVVKmGwVrs5tuid38ws281D4l+7x1kP487+FlKDh5kfMZ8WSPAdmdA==
+      integrity: sha512-Hz5q8Vu0D288x3iWXePSn53W7hAjP0H7EQ6QvDO9c7t46mR0lNOLlfuwQ+JkVxuhygHzlzPX+0jKdA3ZgSh+Vg==
   /@types/prop-types/15.7.3:
+    dev: true
     resolution:
       integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
   /@types/react-router-dom/5.1.5:
@@ -564,11 +610,12 @@ packages:
     dependencies:
       '@types/prop-types': 15.7.3
       csstype: 2.6.13
+    dev: true
     resolution:
       integrity: sha512-PxshAFcnJqIWYpJbLPriClH53Z2WlJcVZE+NP2etUtWQs2s7yIMj3/LDKZT/5CHJ/F62iyjVCDu2H3jHEXIxSg==
   /@types/testing-library__jest-dom/5.9.2:
     dependencies:
-      '@types/jest': 26.0.13
+      '@types/jest': 26.0.14
     dev: false
     resolution:
       integrity: sha512-K7nUSpH/5i8i0NagTJ+uFUDRueDlnMNhJtMjMwTGPPSqyImbWC/hgKPDCKt6Phu2iMJg2kWqlax+Ucj2DKMwpA==
@@ -755,6 +802,7 @@ packages:
     resolution:
       integrity: sha512-DG9pFfwOrzc+hawpmqX/dHYHJG+Bsdb0klhyi1sDneOgGOXy9wQIC8hzyVp1e4NRYDBdxcylvywPkkXCHAzTyQ==
   /csstype/2.6.13:
+    dev: true
     resolution:
       integrity: sha512-ul26pfSQTZW8dcOnD2iiJssfXw0gdNVX9IJDH/X3K5DGPfj+fUYe3kB+swUY6BF3oZDxaID3AJt+9/ojSAE05A==
   /decode-uri-component/0.2.0:
