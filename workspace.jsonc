@@ -29,7 +29,6 @@
        * For example, library will be devDependency when the file that imports it is a test file.
        **/
       "dependencies": {
-        "@babel/runtime": "^7.11.2",
         "@teambit/documenter.code.react-playground": "0.0.8",
         "@teambit/documenter.theme.theme-context": "0.0.5",
         "@teambit/documenter.ui.code-snippet": "^0.0.7",
@@ -41,8 +40,11 @@
         "@testing-library/jest-dom": "^5.11.3",
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
-        "classnames": "^2.2.6",
+        "classnames": "^2.2.6"
+      },
+      "peerDependencies": {
         "react": "^16.13.1",
+        "@babel/runtime": "^7.11.2",
         "react-dom": "^16.13.1"
       }
     }
