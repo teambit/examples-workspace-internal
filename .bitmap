@@ -198,6 +198,11 @@
                 "name": "app-bar.composition.tsx"
             },
             {
+                "relativePath": "app-bar.docs.tsx",
+                "test": false,
+                "name": "app-bar.docs.tsx"
+            },
+            {
                 "relativePath": "app-bar.module.scss",
                 "test": false,
                 "name": "app-bar.module.scss"
@@ -260,6 +265,21 @@
     },
     "ui-primitives/container": {
         "files": [
+            {
+                "relativePath": "container-docs.module.scss",
+                "test": false,
+                "name": "container-docs.module.scss"
+            },
+            {
+                "relativePath": "container.composition.tsx",
+                "test": false,
+                "name": "container.composition.tsx"
+            },
+            {
+                "relativePath": "container.docs.tsx",
+                "test": false,
+                "name": "container.docs.tsx"
+            },
             {
                 "relativePath": "container.module.scss",
                 "test": false,
