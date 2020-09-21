@@ -40,7 +40,7 @@
         "exported": false,
         "lanes": []
     },
-    "hooks/use-favorites": {
+    "hooks/use-jokes": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -48,18 +48,18 @@
                 "name": "index.ts"
             },
             {
-                "relativePath": "use-favorites.ts",
+                "relativePath": "use-jokes.ts",
                 "test": false,
-                "name": "use-favorites.ts"
+                "name": "use-jokes.ts"
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/react/hooks/use-favorites",
+        "rootDir": "components/react/hooks/use-jokes",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
     },
-    "hooks/use-get-jokes": {
+    "hooks/use-local-jokes": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -67,23 +67,61 @@
                 "name": "index.ts"
             },
             {
-                "relativePath": "use-get-jokes-docs.module.scss",
+                "relativePath": "use-local-jokes.ts",
                 "test": false,
-                "name": "use-get-jokes-docs.module.scss"
-            },
-            {
-                "relativePath": "use-get-jokes.docs.tsx",
-                "test": false,
-                "name": "use-get-jokes.docs.tsx"
-            },
-            {
-                "relativePath": "use-get-jokes.ts",
-                "test": false,
-                "name": "use-get-jokes.ts"
+                "name": "use-local-jokes.ts"
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/react/hooks/use-get-jokes",
+        "rootDir": "components/react/hooks/use-local-jokes",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "hooks/use-remote-jokes": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "use-remote-jokes.ts",
+                "test": false,
+                "name": "use-remote-jokes.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/react/hooks/use-remote-jokes",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "pages/bad-jokes-page": {
+        "files": [
+            {
+                "relativePath": "bad-jokes-page.composition.tsx",
+                "test": false,
+                "name": "bad-jokes-page.composition.tsx"
+            },
+            {
+                "relativePath": "bad-jokes-page.tsx",
+                "test": false,
+                "name": "bad-jokes-page.tsx"
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "smile.png",
+                "test": false,
+                "name": "smile.png"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/react/pages/bad-jokes-page",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -151,6 +189,35 @@
         "exported": false,
         "lanes": []
     },
+    "ui-primitives/app-bar": {
+        "files": [
+            {
+                "relativePath": "app-bar.composition.tsx",
+                "test": false,
+                "name": "app-bar.composition.tsx"
+            },
+            {
+                "relativePath": "app-bar.module.scss",
+                "test": false,
+                "name": "app-bar.module.scss"
+            },
+            {
+                "relativePath": "app-bar.tsx",
+                "test": false,
+                "name": "app-bar.tsx"
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/react/ui-primitives/app-bar",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "ui-primitives/button": {
         "files": [
             {
@@ -186,6 +253,30 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/react/ui-primitives/button",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "ui-primitives/container": {
+        "files": [
+            {
+                "relativePath": "container.module.scss",
+                "test": false,
+                "name": "container.module.scss"
+            },
+            {
+                "relativePath": "container.tsx",
+                "test": false,
+                "name": "container.tsx"
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/react/ui-primitives/container",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []

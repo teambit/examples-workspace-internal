@@ -9,11 +9,14 @@
   font-weight: 700;
   text-transform: uppercase;
   outline: none;
-  transition: background-color 0.5s, border 0.5s;
+  transition: border-radius 0.5s;
   &:active {
     border-color: #313131;
     background-color: #fff;
     color: #000;
+  }
+  &:hover{
+    border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
   }
   &:disabled {
     border-color: #a5a5a5;
