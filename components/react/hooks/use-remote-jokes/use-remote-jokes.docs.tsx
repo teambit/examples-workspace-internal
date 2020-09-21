@@ -1,6 +1,6 @@
 import React, {useEffect } from 'react';
-import { useLocalJokes } from './use-local-jokes';
-import styles from './use-local-jokes-docs.module.scss';
+import { useRemoteJokes } from './use-remote-jokes';
+import styles from './use-remote-jokes-docs.module.scss';
 import { List } from '@teambit/documenter.ui.list';
 import { Section } from '@teambit/documenter.ui.section';
 import { ThemeContext } from '@teambit/documenter.theme.theme-context';
@@ -18,15 +18,14 @@ export default function Overview() {
         <Section>
           <LinkedHeading link="overview">Overview</LinkedHeading>
           <Paragraph>
-            <HighlightedText>useLocalJokes()</HighlightedText> returns an array with the following:
+            <HighlightedText>useRemoteJokes()</HighlightedText> returns an array with the following:
           </Paragraph>
           <List element="ol" spacing="lg">
             {[
-              `A function that retrieves a joke from the localStorage`,
+              `A function that retrieves a joke from sv443.net/jokeapi`,
               `The retrieved joke (string)`,
+              `A boolean that signifies whether the fetch promise has been resolved`,
               `An error message (or an empty string)`,
-              `A function that saves a joke in the localStorage`,
-              `A function that removes a joke from the localStorage`
             ]}
           </List>
         </Section>
@@ -36,24 +35,22 @@ export default function Overview() {
   );
 }
 
-Overview.abstract = 'A React hook that manages Jokes in the local storage.';
+Overview.abstract = 'A React hook that fetches Jokes from sv443.net/jokeapi.';
 Overview.labels = ['react', 'hook'];
 
 Overview.examples = [
   {
     scope: {
-      useLocalJokes,
+      useRemoteJokes,
       useEffect,
       styles,
       Button
     },
-    title: 'Using the useLocalJokes hook',
+    title: 'Using the useRemoteJokes hook',
     description: <div>example description with JSX</div>,
     code: `
     () => {
-        const [getJoke, joke, error, saveJoke, removeJoke] = useLocalJokes();
-      
-        const jokeExample  = 'knock knock...';
+        const [getJoke, joke, isLoading, error] = useRemoteJokes();
 
         useEffect(() => {
             getJoke()
@@ -63,14 +60,8 @@ Overview.examples = [
           <div className={styles.contentWrapper}>
             { error || joke }
             <div className={styles.buttonsWrapper}>
-              <Button variant="secondary" disabled={!!error} onClick={getJoke}>
-                {'next joke'}
-              </Button>
-              <Button variant="secondary" onClick={() => saveJoke(jokeExample, getJoke)}>
-                {'save joke'}
-              </Button>
-              <Button onClick={() => removeJoke(joke, getJoke)}>
-                {'remove joke'}
+              <Button variant="secondary" disabled={isLoading} onClick={getJoke}>
+                {'another joke'}
               </Button>
             </div>
           </div>

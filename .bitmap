@@ -48,6 +48,16 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "use-jokes-docs.module.scss",
+                "test": false,
+                "name": "use-jokes-docs.module.scss"
+            },
+            {
+                "relativePath": "use-jokes.docs.tsx",
+                "test": false,
+                "name": "use-jokes.docs.tsx"
+            },
+            {
                 "relativePath": "use-jokes.ts",
                 "test": false,
                 "name": "use-jokes.ts"
@@ -94,6 +104,16 @@
                 "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
+            },
+            {
+                "relativePath": "use-remote-jokes-docs.module.scss",
+                "test": false,
+                "name": "use-remote-jokes-docs.module.scss"
+            },
+            {
+                "relativePath": "use-remote-jokes.docs.tsx",
+                "test": false,
+                "name": "use-remote-jokes.docs.tsx"
             },
             {
                 "relativePath": "use-remote-jokes.ts",
