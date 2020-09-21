@@ -9,6 +9,7 @@ export type LocalJokes = [
 ];
 
 export const useLocalJokes = (): LocalJokes => {
+
   const filterStorage = (localStorage: Storage): string[] => {
     const localStgArr = Object.entries(localStorage);
     const savedJokes = localStgArr.filter(i => i[0].startsWith('joke--')).map(i => i[1]);
@@ -20,13 +21,18 @@ export const useLocalJokes = (): LocalJokes => {
   const [currentJoke, setCurrentJoke] = useState({ index: 0, content: '', error: '' });
 
   const getJoke = (): void => {
+    const nextJokeIndex = currentJoke.index + 1;
     if (localJokes.current.length === 0) {
-      setCurrentJoke({ index: 0, content: '', error: "You're out of jokes..." });
+        console.log('localJokes.current.length === 0')
+        setCurrentJoke({ index: 0, content: '', error: 'You are out of jokes.' });
+    } else if (!localJokes.current[nextJokeIndex]) {
+        setCurrentJoke({ index: 0, content: localJokes.current[0], error: '' });
+        console.log('!localJokes.current[nextJokeIndex]')
     } else {
-      const nextJokeIndex = localJokes.current.length === currentJoke.index + 1 ? 0 : currentJoke.index + 1;
-      setCurrentJoke({ index: nextJokeIndex, content: localJokes.current[nextJokeIndex], error: '' });
+        setCurrentJoke( {index: nextJokeIndex, content: localJokes.current[nextJokeIndex], error: ''})
+        console.log('next index:', nextJokeIndex)
     }
-  };
+    }
 
   const saveJoke = (joke: string, callback?: () => any): void => {
     const itemId = `joke--${joke.substring(0, 10)}`;
