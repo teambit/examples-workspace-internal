@@ -97,35 +97,6 @@
         "exported": false,
         "lanes": []
     },
-    "pages/bad-jokes-page": {
-        "files": [
-            {
-                "relativePath": "bad-jokes-page.composition.tsx",
-                "test": false,
-                "name": "bad-jokes-page.composition.tsx"
-            },
-            {
-                "relativePath": "bad-jokes-page.tsx",
-                "test": false,
-                "name": "bad-jokes-page.tsx"
-            },
-            {
-                "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "smile.png",
-                "test": false,
-                "name": "smile.png"
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/react/pages/bad-jokes-page",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
     "pages/bad-jokes-viewer": {
         "files": [
             {

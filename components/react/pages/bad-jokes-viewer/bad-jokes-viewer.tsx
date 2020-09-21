@@ -23,7 +23,7 @@ export const BadJokesViewer = ({ local, className }: BadJokesProps) => {
   }, [local]);
 
   return (
-    <Container className={className}>
+    <Container className={styles.minWidth}>
       <div className={styles.contentWrapper}>{error || renderJoke(joke)}</div>
       <div className={styles.buttonsWrapper}>
         <Button disabled={disableGetJoke} onClick={getJoke}>

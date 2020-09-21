@@ -1,27 +1,34 @@
-import React, { Component } from 'react'
-import styles from './app-bar.module.scss'
+import React, { useState } from 'react';
+import styles from './app-bar.module.scss';
 
-export class AppBar extends Component {
+export type AppBarProps = {
+  items: { label: string; action: () => void }[],
+  children?: React.ReactNode,
+  [x:string]: any
+};
 
-    static Item = ({action, children}) => {
-        return <li onClick={ action}>{children}</li>
-    }
-        
-    static Logo = ({children}) => {
-        return (
-            <div className={styles.logo}>
-                {children}
-            </div>
-        )
-    }
+export const AppBar = ({ items, children, ...rest } : AppBarProps) => {
+  const [selectedItem, setSelectedItem] = useState('--none--');
 
-    render() {
-        return (
-            <div className={styles.appBar}>
-                <ul>
-                    {this.props.children}
-                </ul>
-            </div>
-        )
-    }
-}
+  const handleItemClick = (event, callback) => {
+    setSelectedItem(event.target.innerText);
+    if (callback) callback();
+  };
+
+  return (
+    <div className={styles.appBar} {...rest}>
+      <ul>
+        {items.map(item => (
+          <li
+            key={Math.random()}
+            className={selectedItem === item.label ? styles.selected : null}
+            onClick={e => handleItemClick(e, item.action)}
+          >
+            {item.label}
+          </li>
+        ))}
+        {children && <div className={styles.logo}>{children}</div>}
+      </ul>
+    </div>
+  );
+};

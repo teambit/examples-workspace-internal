@@ -1,23 +1,44 @@
 import React, {useState} from 'react';
 import { BadJokesViewer } from './bad-jokes-viewer';
-import {AppBar} from '@teambit/bad-jokes.ui-primitives.app-bar'
+import { AppBar } from '@teambit/bad-jokes.ui-primitives.app-bar'
 
-export const StandardExample = () => {
+export const FullPage = () => {
 
-  const [isFavorites, setIsFavorites] = useState(false);
+  const [isLocal, setIsLocal] = useState(false)
+
+  const menuItems = [
+    {label: 'Explore New Jokes', action: () => setIsLocal(false)},
+    {label: 'Saved Jokes', action: ()=> setIsLocal(true)}
+]
 
   return (
     <div>
-      <AppBar>
-        <AppBar.Item action={() => setIsFavorites(false)}>{'Explore Jokes'}</AppBar.Item>
-        <AppBar.Item action={() => setIsFavorites(true)}>{'Favorites'}</AppBar.Item>
-        <AppBar.Logo>
-          BadJokes
-          <img style={{ height: '30px' }} src={'https://bad-jokes-app.firebaseapp.com/static/media/smile.46ed6de2.png'} alt="smile logo"></img>
-        </AppBar.Logo>
-      </AppBar>
+        <AppBar items={menuItems} style={{marginBottom: '25px'}}/>
         <div style={{display: 'flex', justifyContent: 'center'}}>
-          <BadJokesViewer local={isFavorites} />
+          <BadJokesViewer local={isLocal} />
+        </div>
+    </div>
+  );
+};
+
+
+export const RemoteJokes = () => {
+
+  return (
+    <div>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+          <BadJokesViewer local={false} />
+        </div>
+    </div>
+  );
+};
+
+export const LocalJokes = () => {
+
+  return (
+    <div>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+          <BadJokesViewer local={true} />
         </div>
     </div>
   );
