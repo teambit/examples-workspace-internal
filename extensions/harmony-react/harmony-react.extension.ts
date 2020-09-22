@@ -14,7 +14,7 @@ export class HarmonyReactExtension {
     return this.react.icon;
   }
 
-  static dependencies = [EnvsAspect, ReactAspect];
+  static dependencies: any = [EnvsAspect, ReactAspect];
 
   static async provider([envs, react]: [EnvsMain, ReactMain]) {
     const harmonyReactEnv = react.compose([
