@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import styles from './app-bar.module.scss';
 
 export type AppBarProps = {
-  items: { label: string; action: () => void }[],
-  children?: React.ReactNode,
+  /** App-bar items -  each consists of a label and an action to execute when selected. */
+  items: { label: string; action: () => any }[],
+  /**  An item to be selected as the default when initilizing the app bar */
+  defaultItem?: string,
+  /** A custom element (e.g, a logo) */
+  children?: ReactNode,
+  /** nameClass, style, etc. */
   [x:string]: any
 };
 
-export const AppBar = ({ items, children, ...rest } : AppBarProps) => {
-  const [selectedItem, setSelectedItem] = useState('--none--');
+export const AppBar = ({ items, children, defaultItem, ...rest } : AppBarProps) => {
+  const [selectedItem, setSelectedItem] = useState(defaultItem ? defaultItem : items[0].label);
 
   const handleItemClick = (event, callback) => {
     setSelectedItem(event.target.innerText);

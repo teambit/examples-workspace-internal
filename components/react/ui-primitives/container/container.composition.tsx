@@ -22,7 +22,7 @@ export const GroundedContainer = () => {
 export const CustomizedContainer = () => {
     return (
         <Container className={styles.blueBorder} floatEffect={false}>
-            A customized component.
+            A customized container.
         </Container>
     )
 }

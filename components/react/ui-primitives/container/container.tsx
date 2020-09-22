@@ -3,8 +3,11 @@ import cs from 'classnames'
 import styles from './container.module.scss'
 
 export type ContainerProps = {
+    /** The container content. */
     children: any,
+    /** A className for customization */
     className?: string;
+    /** Determines whether to style the container as "floating" */
     floatEffect?: boolean
 }
 

@@ -23,7 +23,7 @@ export const useLocalJokes = (): LocalJokes => {
   const getJoke = (): void => {
     const nextJokeIndex = currentJoke.index + 1;
     if (localJokes.current.length === 0) {
-        setCurrentJoke({ index: 0, content: '', error: 'You are out of jokes.' });
+        setCurrentJoke({ index: 0, content: '', error: `Nothing but sadness... (try to save a few jokes)` });
     } else if (!localJokes.current[nextJokeIndex]) {
         setCurrentJoke({ index: 0, content: localJokes.current[0], error: '' });
     } else {

@@ -1,11 +1,7 @@
-import React from 'react';
 import { AppBar } from './app-bar';
-import { Section } from '@teambit/documenter.ui.section';
 
 export default function Overview() {
-    return(
-        <Section />
-    )
+    return null;
 };
 
 Overview.abstract = 'An imperfect app bar with or without a logo.';
@@ -18,12 +14,12 @@ Overview.examples = [
       AppBar,
     },
     title: 'Using the App Bar component',
-    description: <div>Using the App Bar without a logo</div>,
+    description: `A simple app bar.`,
     code: `
     () => {
         const menuItems = [
-            {label: 'First Item', action: () => {console.log('Clicked: first item')}},
-            {label: 'Second Item'}
+            {label: 'First Item', action: () => alert('first')},
+            {label: 'Second Item', action: () => alert('second')}
         ]
     
         return(
@@ -36,12 +32,12 @@ Overview.examples = [
     scope: {
         AppBar,
     },
-    description: 'Using the App Bar without a logo',
+    description: 'An App Bar with a custom element (a logo).',
     code: `
     () => {
         const menuItems = [
-            {label: 'First Item'},
-            {label: 'Second Item'}
+            {label: 'First Item', action: () => alert('first')},
+            {label: 'Second Item', action: () => alert('second')}
         ]
     
         const logoImage = 'https://bad-jokes-app.firebaseapp.com/static/media/smile.46ed6de2.png'
@@ -54,6 +50,26 @@ Overview.examples = [
     }
     `,
   },
+  {
+    scope: {
+        AppBar,
+    },
+    description: 'An App Bar with the sceond item set as its default selection.',
+    code: `
+    () => {
+        const menuItems = [
+            {label: 'First Item', action: () => 'x'},
+            {label: 'Second Item', action: () => 'y'}
+        ]
+    
+        const logoImage = 'https://bad-jokes-app.firebaseapp.com/static/media/smile.46ed6de2.png'
+    
+        return(
+            <AppBar items={menuItems}  defaultItem='Second Item'/>
+        )
+    }
+    `,
+  }
 ];
 
 
