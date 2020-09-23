@@ -5,6 +5,7 @@ importers:
       '@teambit/documenter.code.react-playground': 0.0.8_6c71570cf1eaf82f67c470a9cc4d93bc
       '@teambit/documenter.theme.theme-context': 0.0.5_react@16.13.1
       '@teambit/documenter.ui.code-snippet': 0.0.7_react@16.13.1
+      '@teambit/documenter.ui.highlighted-text': 0.0.6_react@16.13.1
       '@teambit/documenter.ui.linked-heading': 0.0.6_react@16.13.1
       '@teambit/documenter.ui.list': 0.0.5_react@16.13.1
       '@teambit/documenter.ui.paragraph': 0.0.5_react@16.13.1
@@ -25,6 +26,7 @@ importers:
       '@teambit/documenter.code.react-playground': 0.0.8
       '@teambit/documenter.theme.theme-context': 0.0.5
       '@teambit/documenter.ui.code-snippet': ^0.0.7
+      '@teambit/documenter.ui.highlighted-text': 0.0.6
       '@teambit/documenter.ui.linked-heading': 0.0.6
       '@teambit/documenter.ui.list': 0.0.5
       '@teambit/documenter.ui.paragraph': 0.0.5
@@ -47,9 +49,19 @@ importers:
     specifiers: {}
   components/react/hooks/use-get-jokes:
     specifiers: {}
+  components/react/hooks/use-jokes:
+    specifiers: {}
+  components/react/hooks/use-local-jokes:
+    specifiers: {}
+  components/react/hooks/use-remote-jokes:
+    specifiers: {}
   components/react/pages/bad-jokes-viewer:
     specifiers: {}
+  components/react/ui-primitives/app-bar:
+    specifiers: {}
   components/react/ui-primitives/button:
+    specifiers: {}
+  components/react/ui-primitives/container:
     specifiers: {}
   components/react/ui-primitives/label:
     specifiers: {}
@@ -313,6 +325,17 @@ packages:
       react: ^16.13.1
     resolution:
       integrity: sha512-+kL912C+GiO9z180XI9NHVUgNW31JpkGfQJKrECBcykeyJECkLMDw4vQEFcykBaRXFjTiVISnZWgAg080UjLfA==
+  /@teambit/documenter.theme.theme-context/0.0.6_react@16.13.1:
+    dependencies:
+      '@teambit/base-ui.theme.theme-provider': 0.2.10_react@16.13.1
+      classnames: 2.2.6
+      react: 16.13.1
+      reset-css: 5.0.1
+    dev: false
+    peerDependencies:
+      react: ^16.13.1
+    resolution:
+      integrity: sha512-uT5NZBzLfkuyzbteucCBblu+t56EU317/21K+iTny70yEtrJXYRtcaZHGqTNY8vsvuVZi3kjHi4j8co6pvEHog==
   /@teambit/documenter.types.docs-file/0.0.7_react@16.13.1:
     dependencies:
       '@teambit/documenter.ui.code-snippet': 0.0.7_react@16.13.1
@@ -396,6 +419,16 @@ packages:
       react: ^16.13.1
     resolution:
       integrity: sha512-zZeqVe/Q8pG2plxefRBQb9CXkw8shi01ZrIKWa8mM5seSQSIGc0FJlbxW0qLGUKYzMZgeLBt3iMfYpsvIHzxRw==
+  /@teambit/documenter.ui.highlighted-text/0.0.6_react@16.13.1:
+    dependencies:
+      '@teambit/documenter.ui.paragraph': 0.0.6_react@16.13.1
+      classnames: 2.2.6
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.13.1
+    resolution:
+      integrity: sha512-987kqIG1IPhstxN3+jrEBIXmK83spM/FH5aQSsZ1nB6ofkVXuz2w79Do9r3iy6ptvvPGNYk9UuKWuVcOYWIJCA==
   /@teambit/documenter.ui.linked-heading/0.0.6_react@16.13.1:
     dependencies:
       '@teambit/documenter.theme.theme-context': 0.0.5_react@16.13.1
@@ -435,6 +468,18 @@ packages:
       react: ^16.13.1
     resolution:
       integrity: sha512-kV7dKyjluDE4DGZfLXYpD26SDNnleH7RWhUZBJgDWUT8ZNJTEiyRC324/CljwUWsD/TsEmYq8DbBayiXB30ZWg==
+  /@teambit/documenter.ui.paragraph/0.0.6_react@16.13.1:
+    dependencies:
+      '@teambit/base-ui.text.paragraph': 0.2.10_react@16.13.1
+      '@teambit/base-ui.theme.sizes': 0.2.10_react@16.13.1
+      '@teambit/documenter.theme.theme-context': 0.0.6_react@16.13.1
+      classnames: 2.2.6
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.13.1
+    resolution:
+      integrity: sha512-4GN+zFewKIBAXyx2UoCgMmbH1nW96Ik9GqDwKtEWY+mH/duo3wxf/EIs0Ws9gCGKgb2wczzhxy2JYyBK0Eaq5w==
   /@teambit/documenter.ui.section/0.0.5_react@16.13.1:
     dependencies:
       '@teambit/documenter.theme.theme-context': 0.0.5_react@16.13.1
