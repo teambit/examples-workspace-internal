@@ -3,7 +3,7 @@ import { useLocalJokes } from '@teambit/bad-jokes.hooks.use-local-jokes'
 import { useRemoteJokes } from '@teambit/bad-jokes.hooks.use-remote-jokes'
 
 
-export const useJokes = (local:boolean):[(local:boolean) => void, () => void, string, string, boolean, (joke:string) => void, (joke:string) => void] => {
+export const useJokes = (local:boolean):[(local:boolean) => void, () => void, string, string, boolean, (joke:string, callback?: () => any) => void, (joke:string, callback?: () => any) => void] => {
     const [getLocalJoke, localJoke, localJokeError, saveJoke, removeJoke] = useLocalJokes();
     const [getRemoteJoke, remoteJoke, isLoading, remoteJokeError] = useRemoteJokes();
     const [isLocal, setIsLocal] = useState(local)
