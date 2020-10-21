@@ -26,7 +26,7 @@ export const AppBar = ({ items, children, defaultItem, ...rest } : AppBarProps) 
         {items.map(item => (
           <li
             key={Math.random()}
-            className={selectedItem === item.label ? styles.selected : null}
+            className={selectedItem === item.label ? styles.selected : undefined}
             onClick={e => handleItemClick(e, item.action)}
           >
             {item.label}

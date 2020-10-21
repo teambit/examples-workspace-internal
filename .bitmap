@@ -4,34 +4,34 @@
     "extensions/harmony-react": {
         "files": [
             {
+                "name": "harmony-react.docs.tsx",
                 "relativePath": "harmony-react.docs.tsx",
-                "test": false,
-                "name": "harmony-react.docs.tsx"
+                "test": false
             },
             {
+                "name": "harmony-react.extension.ts",
                 "relativePath": "harmony-react.extension.ts",
-                "test": false,
-                "name": "harmony-react.extension.ts"
+                "test": false
             },
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             },
             {
+                "name": "jest.config.js",
                 "relativePath": "jest/jest.config.js",
-                "test": false,
-                "name": "jest.config.js"
+                "test": false
             },
             {
+                "name": "tsconfig.json",
                 "relativePath": "typescript/tsconfig.json",
-                "test": false,
-                "name": "tsconfig.json"
+                "test": false
             },
             {
+                "name": "webpack.config.js",
                 "relativePath": "webpack/webpack.config.js",
-                "test": false,
-                "name": "webpack.config.js"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -43,24 +43,24 @@
     "hooks/use-jokes": {
         "files": [
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             },
             {
+                "name": "use-jokes-docs.module.scss",
                 "relativePath": "use-jokes-docs.module.scss",
-                "test": false,
-                "name": "use-jokes-docs.module.scss"
+                "test": false
             },
             {
+                "name": "use-jokes.docs.tsx",
                 "relativePath": "use-jokes.docs.tsx",
-                "test": false,
-                "name": "use-jokes.docs.tsx"
+                "test": false
             },
             {
+                "name": "use-jokes.ts",
                 "relativePath": "use-jokes.ts",
-                "test": false,
-                "name": "use-jokes.ts"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -72,24 +72,24 @@
     "hooks/use-local-jokes": {
         "files": [
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             },
             {
+                "name": "use-local-jokes-docs.module.scss",
                 "relativePath": "use-local-jokes-docs.module.scss",
-                "test": false,
-                "name": "use-local-jokes-docs.module.scss"
+                "test": false
             },
             {
+                "name": "use-local-jokes.docs.tsx",
                 "relativePath": "use-local-jokes.docs.tsx",
-                "test": false,
-                "name": "use-local-jokes.docs.tsx"
+                "test": false
             },
             {
+                "name": "use-local-jokes.ts",
                 "relativePath": "use-local-jokes.ts",
-                "test": false,
-                "name": "use-local-jokes.ts"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -101,24 +101,24 @@
     "hooks/use-remote-jokes": {
         "files": [
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             },
             {
+                "name": "use-remote-jokes-docs.module.scss",
                 "relativePath": "use-remote-jokes-docs.module.scss",
-                "test": false,
-                "name": "use-remote-jokes-docs.module.scss"
+                "test": false
             },
             {
+                "name": "use-remote-jokes.docs.tsx",
                 "relativePath": "use-remote-jokes.docs.tsx",
-                "test": false,
-                "name": "use-remote-jokes.docs.tsx"
+                "test": false
             },
             {
+                "name": "use-remote-jokes.ts",
                 "relativePath": "use-remote-jokes.ts",
-                "test": false,
-                "name": "use-remote-jokes.ts"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -130,29 +130,29 @@
     "pages/bad-jokes-viewer": {
         "files": [
             {
+                "name": "bad-jokes-viewer.composition.tsx",
                 "relativePath": "bad-jokes-viewer.composition.tsx",
-                "test": false,
-                "name": "bad-jokes-viewer.composition.tsx"
+                "test": false
             },
             {
+                "name": "bad-jokes-viewer.docs.tsx",
                 "relativePath": "bad-jokes-viewer.docs.tsx",
-                "test": false,
-                "name": "bad-jokes-viewer.docs.tsx"
+                "test": false
             },
             {
+                "name": "bad-jokes-viewer.module.scss",
                 "relativePath": "bad-jokes-viewer.module.scss",
-                "test": false,
-                "name": "bad-jokes-viewer.module.scss"
+                "test": false
             },
             {
+                "name": "bad-jokes-viewer.tsx",
                 "relativePath": "bad-jokes-viewer.tsx",
-                "test": false,
-                "name": "bad-jokes-viewer.tsx"
+                "test": false
             },
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -164,24 +164,24 @@
     "toolbox/capitalize": {
         "files": [
             {
+                "name": "capitalize.docs.tsx",
                 "relativePath": "capitalize.docs.tsx",
-                "test": false,
-                "name": "capitalize.docs.tsx"
+                "test": false
             },
             {
+                "name": "capitalize.spec.ts",
                 "relativePath": "capitalize.spec.ts",
-                "test": false,
-                "name": "capitalize.spec.ts"
+                "test": false
             },
             {
+                "name": "capitalize.ts",
                 "relativePath": "capitalize.ts",
-                "test": false,
-                "name": "capitalize.ts"
+                "test": false
             },
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -193,29 +193,29 @@
     "ui-primitives/app-bar": {
         "files": [
             {
+                "name": "app-bar.composition.tsx",
                 "relativePath": "app-bar.composition.tsx",
-                "test": false,
-                "name": "app-bar.composition.tsx"
+                "test": false
             },
             {
+                "name": "app-bar.docs.tsx",
                 "relativePath": "app-bar.docs.tsx",
-                "test": false,
-                "name": "app-bar.docs.tsx"
+                "test": false
             },
             {
+                "name": "app-bar.module.scss",
                 "relativePath": "app-bar.module.scss",
-                "test": false,
-                "name": "app-bar.module.scss"
+                "test": false
             },
             {
+                "name": "app-bar.tsx",
                 "relativePath": "app-bar.tsx",
-                "test": false,
-                "name": "app-bar.tsx"
+                "test": false
             },
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -227,34 +227,34 @@
     "ui-primitives/button": {
         "files": [
             {
+                "name": "button.composition.tsx",
                 "relativePath": "button.composition.tsx",
-                "test": false,
-                "name": "button.composition.tsx"
+                "test": false
             },
             {
+                "name": "button.docs.tsx",
                 "relativePath": "button.docs.tsx",
-                "test": false,
-                "name": "button.docs.tsx"
+                "test": false
             },
             {
+                "name": "button.module.scss",
                 "relativePath": "button.module.scss",
-                "test": false,
-                "name": "button.module.scss"
+                "test": false
             },
             {
+                "name": "button.spec.jsx",
                 "relativePath": "button.spec.jsx",
-                "test": false,
-                "name": "button.spec.jsx"
+                "test": false
             },
             {
+                "name": "button.tsx",
                 "relativePath": "button.tsx",
-                "test": false,
-                "name": "button.tsx"
+                "test": false
             },
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -266,34 +266,34 @@
     "ui-primitives/container": {
         "files": [
             {
+                "name": "container-docs.module.scss",
                 "relativePath": "container-docs.module.scss",
-                "test": false,
-                "name": "container-docs.module.scss"
+                "test": false
             },
             {
+                "name": "container.composition.tsx",
                 "relativePath": "container.composition.tsx",
-                "test": false,
-                "name": "container.composition.tsx"
+                "test": false
             },
             {
+                "name": "container.docs.tsx",
                 "relativePath": "container.docs.tsx",
-                "test": false,
-                "name": "container.docs.tsx"
+                "test": false
             },
             {
+                "name": "container.module.scss",
                 "relativePath": "container.module.scss",
-                "test": false,
-                "name": "container.module.scss"
+                "test": false
             },
             {
+                "name": "container.tsx",
                 "relativePath": "container.tsx",
-                "test": false,
-                "name": "container.tsx"
+                "test": false
             },
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -305,29 +305,29 @@
     "ui-primitives/tag": {
         "files": [
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             },
             {
+                "name": "tag.composition.tsx",
                 "relativePath": "tag.composition.tsx",
-                "test": false,
-                "name": "tag.composition.tsx"
+                "test": false
             },
             {
+                "name": "tag.docs.tsx",
                 "relativePath": "tag.docs.tsx",
-                "test": false,
-                "name": "tag.docs.tsx"
+                "test": false
             },
             {
+                "name": "tag.module.scss",
                 "relativePath": "tag.module.scss",
-                "test": false,
-                "name": "tag.module.scss"
+                "test": false
             },
             {
+                "name": "tag.tsx",
                 "relativePath": "tag.tsx",
-                "test": false,
-                "name": "tag.tsx"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -339,29 +339,29 @@
     "ui-primitives/tag-list": {
         "files": [
             {
+                "name": "index.ts",
                 "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             },
             {
+                "name": "tag-list.composition.tsx",
                 "relativePath": "tag-list.composition.tsx",
-                "test": false,
-                "name": "tag-list.composition.tsx"
+                "test": false
             },
             {
+                "name": "tag-list.docs.tsx",
                 "relativePath": "tag-list.docs.tsx",
-                "test": false,
-                "name": "tag-list.docs.tsx"
+                "test": false
             },
             {
+                "name": "tag-list.module.scss",
                 "relativePath": "tag-list.module.scss",
-                "test": false,
-                "name": "tag-list.module.scss"
+                "test": false
             },
             {
+                "name": "tag-list.tsx",
                 "relativePath": "tag-list.tsx",
-                "test": false,
-                "name": "tag-list.tsx"
+                "test": false
             }
         ],
         "mainFile": "index.ts",
@@ -370,5 +370,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.15"
+    "version": "14.8.9-dev.64"
 }
