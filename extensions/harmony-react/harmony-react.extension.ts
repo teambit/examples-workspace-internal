@@ -7,13 +7,6 @@ const webpackConfig = require('./webpack/webpack.config');
 export class HarmonyReactExtension {
   constructor(private react: ReactMain) {}
 
-  /**
-   * icon of the extension.
-   */
-  icon() {
-    return this.react.icon;
-  }
-
   static dependencies: any = [EnvsAspect, ReactAspect];
 
   static async provider([envs, react]: [EnvsMain, ReactMain]) {
