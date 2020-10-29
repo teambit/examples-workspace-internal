@@ -41,8 +41,7 @@
         "@testing-library/jest-dom": "^5.11.3",
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
-        "classnames": "^2.2.6",
-        "corejs": "1.0.0"
+        "classnames": "^2.2.6"
       },
       "peerDependencies": {
         "react": "^16.13.1",
