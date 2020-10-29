@@ -1,5 +1,5 @@
 {
-  "teambit.bit/workspace": {
+  "teambit.workspace/workspace": {
     /**
      * name of the component workspace. used for development purposes.
      **/
@@ -14,11 +14,11 @@
      */
     "defaultScope": "teambit.bad-jokes"
   },
-  "teambit.bit/dependency-resolver": {
+  "teambit.dependencies/dependency-resolver": {
     /**
      * main configuration for bit's component dependency resolution.
      **/
-    "packageManager": "teambit.bit/pnpm",
+    "packageManager": "teambit.dependencies/pnpm",
     /**
      * dependency policy allows to configure dependencies quickly and efficiently.
      * it helps to automate and manage dependency configuration for components.
@@ -41,7 +41,8 @@
         "@testing-library/jest-dom": "^5.11.3",
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
-        "classnames": "^2.2.6"
+        "classnames": "^2.2.6",
+        "corejs": "1.0.0"
       },
       "peerDependencies": {
         "react": "^16.13.1",
@@ -55,9 +56,9 @@
    * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
    **/
-  "teambit.bit/variants": {
+  "teambit.workspace/variants": {
     "extensions": {
-      "teambit.bit/aspect": {}
+      "teambit.harmony/aspect": {}
     },
     /**
      * configure all components under directory `components/react`
@@ -75,7 +76,7 @@
       /**
        * configure the react environment for all components in the `components/modules` directory.
        **/
-      "teambit.bit/node": {},
+      "teambit.harmony/node": {},
       /**
        * these components has different scope
        **/
