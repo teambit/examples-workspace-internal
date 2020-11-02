@@ -2,7 +2,7 @@
 
 **IMPORTANT** the pre-release binary is called `bbit`, not `bit`. **IMPORTANT**
 
-See docs [here](https://bit-new-docs.netlify.app/docs/workspace/overview).
+See docs [here](https://bit-harmony.netlify.app/docs/workspace/overview).
 
 ## Install pre-release
 
