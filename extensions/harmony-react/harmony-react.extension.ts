@@ -1,4 +1,4 @@
-import { EnvsMain, EnvsAspect } from '@teambit/environments';
+import { EnvsMain, EnvsAspect } from '@teambit/envs';
 import { ReactAspect, ReactMain } from '@teambit/react';
 
 const tsconfig = require('./typescript/tsconfig.json');
