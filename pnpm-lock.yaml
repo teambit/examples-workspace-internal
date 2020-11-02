@@ -2,15 +2,15 @@ importers:
   .:
     dependencies:
       '@babel/runtime': 7.12.1
-      '@teambit/documenter.code.react-playground': 0.1.1_29152bc2e696475afa6418b6f8e53d32
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.code-snippet': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.highlighted-text': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.linked-heading': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.list': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.paragraph': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.section': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.separator': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.code.react-playground': 0.2.1_29152bc2e696475afa6418b6f8e53d32
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.code-snippet': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.highlighted-text': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.linked-heading': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.list': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.paragraph': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.section': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.separator': 0.2.1_react-dom@16.14.0+react@16.14.0
       '@testing-library/jest-dom': 5.11.5
       '@testing-library/react': 10.4.8_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
@@ -18,24 +18,24 @@ importers:
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     devDependencies:
-      '@types/classnames': 2.2.10
+      '@types/classnames': 2.2.11
       '@types/jest': 26.0.15
       '@types/react': 16.9.43
       '@types/react-router-dom': 5.1.6
     specifiers:
       '@babel/runtime': ^7.12.1
-      '@teambit/documenter.code.react-playground': 0.1.1
-      '@teambit/documenter.theme.theme-context': 0.1.1
-      '@teambit/documenter.ui.code-snippet': ^0.1.1
-      '@teambit/documenter.ui.highlighted-text': 0.1.1
-      '@teambit/documenter.ui.linked-heading': 0.1.1
-      '@teambit/documenter.ui.list': 0.1.1
-      '@teambit/documenter.ui.paragraph': 0.1.1
-      '@teambit/documenter.ui.section': 0.1.1
-      '@teambit/documenter.ui.separator': 0.1.1
+      '@teambit/documenter.code.react-playground': ^0.2.1
+      '@teambit/documenter.theme.theme-context': ^0.2.1
+      '@teambit/documenter.ui.code-snippet': ^0.2.1
+      '@teambit/documenter.ui.highlighted-text': ^0.2.1
+      '@teambit/documenter.ui.linked-heading': ^0.2.1
+      '@teambit/documenter.ui.list': ^0.2.1
+      '@teambit/documenter.ui.paragraph': ^0.2.1
+      '@teambit/documenter.ui.section': ^0.2.1
+      '@teambit/documenter.ui.separator': ^0.2.1
       '@testing-library/jest-dom': ^5.11.5
       '@testing-library/react': 10.4.8
-      '@types/classnames': ^2.2.10
+      '@types/classnames': ^2.2.11
       '@types/jest': ~26.0.15
       '@types/react': 16.9.43
       '@types/react-router-dom': ^5.1.6
@@ -111,15 +111,16 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
       '@types/istanbul-reports': 3.0.0
-      '@types/node': 14.14.5
+      '@types/node': 14.14.6
       '@types/yargs': 15.0.9
       chalk: 4.1.0
     engines:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-ywHavIKNpAVrStiRY5wiyehvcktpijpItvGiK72RAn5ctqmzvPk8OvKnvHeBqa1XdQr959CTWAJMqxI8BTibyg==
-  /@teambit/base-ui.elements.icon/0.4.3_react-dom@16.14.0+react@16.14.0:
+  /@teambit/base-ui.elements.icon/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -128,9 +129,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-U4BPWm3janoYdk4siQ58AxLPYnBl4thFES5q/r2N6+Sy7vAIseAufLfGuN4o1oTx/ygLBLu0Felu7UGGzP9sgA==
-  /@teambit/base-ui.input.error/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-giSQfk5pNkrt9l8ELFi5mBDk4fOwLSZkph6QSS3f/CZSvhniiEg1/o718u9ZNbnDL38nKQyyVSTWVsU7tP6TOA==
+  /@teambit/base-ui.input.error/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -139,9 +141,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-Y/TAAe+/tVMSeg8JL94w3U1/+uCCVVTdypyP/eaAYvgGQKHxoRhvZZvYc5AExNFwuIaXLu5wgr/QCGzpC3nMVQ==
-  /@teambit/base-ui.layout.breakpoints/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-yaf/zpi5TPc2GCdUrtTpMNO8MIyHV2wbEArLp+D/ZSVNuZOWJs6/XjMDh8xs6jJnT2F8y5IyYSjwi65aN0RFbQ==
+  /@teambit/base-ui.layout.breakpoints/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -149,10 +152,11 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-0kYi8bAPI/fdA4diiJw9nL1sNzx1H/kuSTuQnq17YfFqOR0sg9VGtxKjSUdpxsUyunYqzBGCnDoqgee6U6Kokg==
-  /@teambit/base-ui.layout.grid-component/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-H4xLTUAFfJgDeKkZ/d8/Cu1PRcb9qq2tuVkm6Br/fSqO0BueEDIg4rE0blaQ7/QpDNnfk5K8mpBlrPBdXbExFQ==
+  /@teambit/base-ui.layout.grid-component/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.layout.breakpoints': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@babel/runtime': 7.12.1
+      '@teambit/base-ui.layout.breakpoints': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -161,10 +165,11 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-FBgHBDdmfXN/n/AzB2g9nZR3+ZJ0pCqbFUxzS9S9qqWVIJc37mYLRkMxQXwsv/+/yTcTF619TDRc2U8KZ6Fc9g==
-  /@teambit/base-ui.surfaces.split-pane.fat-splitter/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-mkSVJ58P09pMBrlSFf6AbR8Ee2aoHvUgVTekoT7mU8L7EF2nlpgaT+pd+QrHLkM7dSGyWLya2zUnF4BCmuCHhw==
+  /@teambit/base-ui.surfaces.split-pane.fat-splitter/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.surfaces.split-pane.splitter': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@babel/runtime': 7.12.1
+      '@teambit/base-ui.surfaces.split-pane.splitter': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -173,10 +178,11 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-GPBaEpod4k4wiyPlFCpbFFzmduUD0CgxSaguLTpYcyYPNLSGbiSgI3g9LFWXhqlDcAoEauQ9a5wzadWcvhybOQ==
-  /@teambit/base-ui.surfaces.split-pane.hover-splitter/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-eXxwxs4Gw4D9U/P+9RsEhPhYmn5lVm9Lzqcko36pBqFOADvslGPy+tdaMMCjc4F8zqJxFaCbhOZrb1mCn/yG+A==
+  /@teambit/base-ui.surfaces.split-pane.hover-splitter/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.surfaces.split-pane.splitter': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@babel/runtime': 7.12.1
+      '@teambit/base-ui.surfaces.split-pane.splitter': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -185,9 +191,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-5aDkCI83lnIjERgCnvIOXbmdTCtsrF2SJtimIFEUIllL24ZuK0DpQclo2nAyk/9f01xTx2BEAovghHK259DJVQ==
-  /@teambit/base-ui.surfaces.split-pane.layout/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-inBunIkvFPATHJj5WlTPRq9Hi4bXge/UARHAtgPZoia89dvyUsrAB0pFpMf57B2+hZTMtG7izzb/wfHR87XZBg==
+  /@teambit/base-ui.surfaces.split-pane.layout/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -195,10 +202,11 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-m5cJrd/gLEyvsNofPaBMYk+n3uiWWu4/x6SJH5ZkIu1zIIElhZGmRC0fEvQzIEnvsscswTqer17EkhYEk4L9jQ==
-  /@teambit/base-ui.surfaces.split-pane.pane/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-T+mUEZTLYIGJA/AXf1k+hYhflRiawwe3BJY3fnWpwC0Nz9Rltxb3rHoatVfpFDilj71LsRIPZXzgZDh0vMKBwg==
+  /@teambit/base-ui.surfaces.split-pane.pane/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.surfaces.split-pane.layout': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@babel/runtime': 7.12.1
+      '@teambit/base-ui.surfaces.split-pane.layout': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -207,13 +215,14 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-cRjOgGSLe1UW56QiMscA9tNXCmFRA9y3giN8vFrrDzWvgVnOKVYS1EQXgbDuP3N9YVeuor1UcVZXQVEaPqu1Rg==
-  /@teambit/base-ui.surfaces.split-pane.split-pane/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-dj/S5KPbVsfjwHKSkHfJvqKCwVKJcn1pA1Iau2amvm/zt+kgFGh2wXAg3s4uR5uSzSNLkXugHoW29u5nC0I5nw==
+  /@teambit/base-ui.surfaces.split-pane.split-pane/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.surfaces.split-pane.fat-splitter': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.surfaces.split-pane.layout': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.surfaces.split-pane.pane': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.surfaces.split-pane.splitter': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@babel/runtime': 7.12.1
+      '@teambit/base-ui.surfaces.split-pane.fat-splitter': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.surfaces.split-pane.layout': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.surfaces.split-pane.pane': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.surfaces.split-pane.splitter': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -222,9 +231,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-rMBnZ2/BlPiWjiG9ft3EALo3UgQYAr1wQ9/mzCnI2227Z2HzL16/wsrJmd5y4V66P1Wob2O2P870bXnns3xA4w==
-  /@teambit/base-ui.surfaces.split-pane.splitter/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-4N6426R4u75imkfDb2vU1hhVgRzWyn2XPNE+k/Gq/XuuNqGX5XH9JxjxpyoZcabkO08RyebnbpuBsFGcAYm+wA==
+  /@teambit/base-ui.surfaces.split-pane.splitter/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -233,9 +243,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-MZlMugLzBvfE3dHEGrF72m75Fr+E+eYyqLS1a5t5DoWnydbMxxzc7yFXv1iYV3UalK+AgzwV2LkYa/oMMxuGzw==
-  /@teambit/base-ui.text.heading/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-vkEwZbdHYKKoz40te/tmy16QwFQ6Jbsz/KYuxTMhUnn8e4vKwOSheTGjRvpQxhQJt1RFl5RarmV+g9gYGc2ERQ==
+  /@teambit/base-ui.text.heading/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -243,10 +254,11 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-zjOj8DdDnJ+ucN10IDuDgNrSFEFuKGWs+2JjOi3PwKbpStOYlHFF6Tgcb2e9VBbWJQC6FF6i+f6pwfatjhloTg==
-  /@teambit/base-ui.text.paragraph/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-kNQkVCLgRCaRMcgj3KciKqHyFQY4eMKFidX3tcybBOgaF5e65dQpwQ+zjwlLlvf0I+7lZgGZck30Wx1SpDjKsA==
+  /@teambit/base-ui.text.paragraph/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.theme.sizes': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@babel/runtime': 7.12.1
+      '@teambit/base-ui.theme.sizes': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -255,10 +267,11 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-UyeKCSjFkWnTUHySUUl/qG3vHHR2xodcozO9LHqhtEqVHMu/G8SmV6zs1flrifxj8TPd/xK16Z9LPvY6/b708g==
-  /@teambit/base-ui.theme.brand-definition/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-Yevcf6CDRNJjKj+7zsD64R+8pGart0oKeyfAHh+bbFWUKTpROkAi9kcoOkrdVpkdoCyYBGpe9JIgyDZ8ftL1pg==
+  /@teambit/base-ui.theme.brand-definition/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.theme.colors': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@babel/runtime': 7.12.1
+      '@teambit/base-ui.theme.colors': 0.5.2_react-dom@16.14.0+react@16.14.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -266,10 +279,11 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-lQ4SBM8na81BsSzJCFfTVJZ/cxQZ9OJkOjnkPxzsz6JNZnISRXAsMXrpyYmulGs/7DM4XwoMP4CJaeWXJ5Qogg==
-  /@teambit/base-ui.theme.color-definition/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-80B0snbLICnfWQkEQy3Jm6MkGT7vilDi15+EOoa5zPkmn67CsfURfWj4Ap5SaRMKSJDdup8ybSkT2kAVvlqmXQ==
+  /@teambit/base-ui.theme.color-definition/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.theme.colors': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@babel/runtime': 7.12.1
+      '@teambit/base-ui.theme.colors': 0.5.2_react-dom@16.14.0+react@16.14.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -277,9 +291,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-V3JFMuCdEfIZqWcwu8uNSOuu6xhL5VcLSHpSnLyzK99gOC04P2NluWNEqMt1rldR3z1OonkxmiNTFmvl/KFiFQ==
-  /@teambit/base-ui.theme.colors/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-4edasK84fnY/BP0blMe3RQdOfn7YrsUR9zoQx09KJae2uuuvBEZQmwylOdsg5XWfd4yjAm+7gVP4yI71JQJs+w==
+  /@teambit/base-ui.theme.colors/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -287,9 +302,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-Cwy787tKzzVNuB832QaZluG0naG1lFA8NKyUDKYkumsdhj6zu/54Ec1ZZl33A7G9qBZLlT+tnC7yqRAJl0rcMg==
-  /@teambit/base-ui.theme.fonts.book/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-f5/JqS5BBgpPorz4QVYZTQQhhMl8i8cphFf66KZp/viZqZSQO88GwaHpSUa/SRPSUz+ttk5poePD+AsTdX5q9A==
+  /@teambit/base-ui.theme.fonts.book/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -297,9 +313,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-TDiCklrILuuOqpOm4JUKuEx7SjJN7+vd5iC33tOiJrJslBVxH9aTn932lLYM7tBxCzHnbjhVYlzd8eWSaMyxDw==
-  /@teambit/base-ui.theme.heading-margin-definition/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-FvQptdOtCU2jV6cW91Z74g1PLWxT1o98lcFBhknU/evrVxJnZxzhdu0SinQ1LOnkyAnyWq/J7UGz6YVYW+YqUw==
+  /@teambit/base-ui.theme.heading-margin-definition/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -307,9 +324,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-VDE/oWX6SISWLu9y7BeWpdbxDI9MQHiayNSKBQGSgqnZIvhcWCRqqXSBXEHYuCTZaK3sc4Hq0eq4rkhk0wi01w==
-  /@teambit/base-ui.theme.shadow-definition/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-NN2g5p6egCN6DmcBzIszSE3RitWFMBzza1QxEioCPBVlPiwKNGK5doCJFMuF23XPGqsiOAblcgsvYCajNqZ7pQ==
+  /@teambit/base-ui.theme.shadow-definition/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -317,9 +335,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-M8zQO/RjQVva5IMBR84z+EG112pBSefl8giLyrWfMyATQaN+jlN3OMYkno3j6SArgHMFwDqtqp2ReUxOp9yOEA==
-  /@teambit/base-ui.theme.size-definition/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-7xZEdnFTRuGG3oBShK8+nim6oNzAYO0uiGCplFQvlUSkaQfjyBENgIfmrSmvN5uyW9fnW+t8D8acGE3NHV96Xw==
+  /@teambit/base-ui.theme.size-definition/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -327,9 +346,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-lKSfEnA2kKuQ6Swk6u1Cqj9sgIgDmkfIrc7gb5tjo3w4smyMuT+zS78FT3W3jZiKCIMU8+cIvxgwXN3G2sDXbA==
-  /@teambit/base-ui.theme.sizes/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-ltWNrKkm8nmzrSwbHrQIGTBYnC7iLIIiQKU+LqTpqCgPY3r5ExHBHc7HxNPKq3ElLTexUZtwaptVjuAX8BJIKw==
+  /@teambit/base-ui.theme.sizes/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      '@babel/runtime': 7.12.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -337,15 +357,16 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-2ZFcV3pH1eF4S6J4jEtb1tzaVCVuS9SeA0W7LLlm3uacuR7S4A9sb90sTDetIo3MdB8BSe8bprFH+J/+lZKDdA==
-  /@teambit/base-ui.theme.theme-provider/0.4.3_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-o4yLgsQminDvgaeO9GWEDMwzfEqRIv1ubOevXZDtFmLlpf1Zi4aVtU3CMkxL4nrqS5RdKCK6MJJGpKDOUIMNzw==
+  /@teambit/base-ui.theme.theme-provider/0.5.2_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.theme.brand-definition': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.theme.color-definition': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.theme.fonts.book': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.theme.heading-margin-definition': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.theme.shadow-definition': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.theme.size-definition': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@babel/runtime': 7.12.1
+      '@teambit/base-ui.theme.brand-definition': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.theme.color-definition': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.theme.fonts.book': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.theme.heading-margin-definition': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.theme.shadow-definition': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.theme.size-definition': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -354,15 +375,15 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-u+PZ5t1s3JGQX9F+h23zp0dgDY5mcWVIz/B8TbF7oUyeCO2hbxreJhDJtfHrFySWgNfI3XcArND/iKY1vSxLoA==
-  /@teambit/documenter.code.react-playground/0.1.1_29152bc2e696475afa6418b6f8e53d32:
+      integrity: sha512-33YMAVChWQo31KXfmJxaN4uF9AqA9zc6pwRrnNMsYMQJx+ETGkk+R+UVTS2nG7e3Z5Mn8mv0EIy6KEX+FLpy3g==
+  /@teambit/documenter.code.react-playground/0.2.1_29152bc2e696475afa6418b6f8e53d32:
     dependencies:
-      '@teambit/base-ui.input.error': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.surfaces.split-pane.hover-splitter': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.surfaces.split-pane.split-pane': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.types.docs-file': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.highlighted-text': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.input.error': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.surfaces.split-pane.hover-splitter': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.surfaces.split-pane.split-pane': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.types.docs-file': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.highlighted-text': 0.2.1_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       prism-react-renderer: 1.1.1_react@16.14.0
       react: 16.14.0
@@ -376,10 +397,12 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-x6WBHX4U7SLHppM7E8JYb9sar/j8HXC2dgyS+IU+13+MpHn6GdNdYAhOEETMac388WQTfrDHVVlQclmvvPHi+A==
-  /@teambit/documenter.theme.theme-context/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-t5FiYH/sQR8fgNGMoqka2Eyv6N8OZ5nKDqKCzbCDVqqKIu6M+rav6b+wKNM4e+mLY3hxx2FMecRRb6J2qdSoNQ==
+  /@teambit/documenter.theme.theme-context/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.theme.theme-provider': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.theme.theme-provider': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.label': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.paragraph': 0.2.1_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -389,11 +412,11 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-lhh9a+HyZiwhAFjFId1bkIdYJDIGhe3UgkQ3VdyXhBpfAY/4OArW6wo/xSJkR8aumIU/SmuqlgnVgZDg6ODlnw==
-  /@teambit/documenter.types.docs-file/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-Xh3Hg2ZYQv9q5nZur3LIanAv+kGbtpr43PJ5rCw/zTsi3iBgoXORXWRArBNvtT6n0rOHmgB4ZcAbB2wVfkiFfw==
+  /@teambit/documenter.types.docs-file/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/documenter.ui.code-snippet': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.heading': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.code-snippet': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.heading': 0.2.1_react-dom@16.14.0+react@16.14.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -401,12 +424,12 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-6MljAAjDAQe6KjnDiCAi/ZPcsDNdpvyrDKgt5VTfLOdr96WyRAzIvrGWwCE61fFEbqAx2ObbhWo92eB5+76CJg==
-  /@teambit/documenter.ui.anchor/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-IRoJGukCqEzBWQ78y9e/XNYUeMFPgpqiZVGKqaOZBXM3zVIvCVfrqxer/suxsaYo1e+cPjPcFRhA7NafU72D6Q==
+  /@teambit/documenter.ui.anchor/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.heading': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/evangelist.elements.icon': 0.4.4_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.heading': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/evangelist.elements.icon': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -415,12 +438,12 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-q3BvsYPRg30wjtUWDwnDpw/fh1bNzAq6qek2AolXZNvVMuBuFt6XPAuqjJgsVyx7hqtdCODGhpHE/tQOyb+lTQ==
-  /@teambit/documenter.ui.code-snippet/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-FlN6b8JHBcK2Xaf5SMAc5K4JXKkCH+Q6Xk40xLpIu9zksKzVLUfeoEW6Out3h5goDwrxJkTP5+MOZC8AfamF3g==
+  /@teambit/documenter.ui.code-snippet/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.copied-message': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/evangelist.elements.icon': 0.4.4_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.copied-message': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/evangelist.elements.icon': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       copy-to-clipboard: 3.3.1
       react: 16.14.0
@@ -431,12 +454,12 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-MTLKh0RLjj1SapvBxErYJ4PE4x2JkPSr1vEYA/3ngaCLLe/+bKOgwmbkv7PJTJByAH7OtcBATemncCLHssZCmQ==
-  /@teambit/documenter.ui.copied-message/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-TSPO77oX1sx26+lvICKnz4oGtE9QwbK0uPB5oxW1wiBHvgroEhkAWqedyG9F8GgwgiqfKU98C6zLXvccvv/4QQ==
+  /@teambit/documenter.ui.copied-message/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.heading': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/evangelist.elements.icon': 0.4.4_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.heading': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/evangelist.elements.icon': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -445,13 +468,13 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-DzHr37dfD5i8xYhpAiQ2Y+E90DveIimgWQ+4gmAsXgNU1buRQawnmiLGguV0joqr2QDptX8yRQXma8AUPvSELQ==
-  /@teambit/documenter.ui.copy-box/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-bdRsSdmHKpgXfayCh3o42NFb+Ic0RMLbGW9DC2v5lTcfXfq0sB5BDEqLayl7Y4PFXi8J0fFbQYU0pmBB09/yeQ==
+  /@teambit/documenter.ui.copy-box/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.layout.grid-component': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.copied-message': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/evangelist.elements.icon': 0.4.4_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.layout.grid-component': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.copied-message': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/evangelist.elements.icon': 0.5.2_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       copy-to-clipboard: 3.3.1
       react: 16.14.0
@@ -461,11 +484,11 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-pcnA03t2oDv2gH8e+iy4Pstt2wGRF+Z0Gz25pPmUHRSXGizppkr3v4+YVIev3GYsR98LVNsJsXX9OmRWWsuKdw==
-  /@teambit/documenter.ui.heading/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-M61+QLeIQtptUnFY+fy351d50lbW6rYmwUpDr+oUVSDWWbmYOyhl/zmt0oxySzsDYWrcNW/3DQdzt5qJIqGstA==
+  /@teambit/documenter.ui.heading/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.text.heading': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.text.heading': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -474,10 +497,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-vDsG5/M5y+uvAe320F3YVQ3wKcSvEzXCgbsq1NJ6+3grkcHAvF1SjhasTpZAuiJbJ1YJZ1/MHv1GUhoJqjOj1A==
-  /@teambit/documenter.ui.highlighted-text/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-WIk8E6mkt9UatT0gDXBPoTatiN0PzELkyp8iVSlpI1zHP3jFbH6kdGNlIMA+/GPl86XHNQC7jfQnn9K8GS3eSA==
+  /@teambit/documenter.ui.highlighted-text/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/documenter.ui.paragraph': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.paragraph': 0.2.1_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -486,14 +509,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-hEbE6mxWHYZFENMx0JZXJLAZXJOFupCY0SWzn7Dd4y9fmpYNXFI5BcI7wMYJEXAsdaK70AO6nYUJrxQgvpplgg==
-  /@teambit/documenter.ui.linked-heading/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-xjqkVn0arLK8+fBb8wzTk8jK3p8dfKlZJJKDgIx8h6NGfJlV4FmCtLntOUXhamrnOtiUr7/xs83lHSTEBJIuHA==
+  /@teambit/documenter.ui.label/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.anchor': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.heading': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.paragraph': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.section': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -502,13 +521,12 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-Krbsu55IClUDWymmVEUvMopCpPtiJ5CL7I1og8g3GO8u3KvXIGTl7y3oYvDlpQ5KdMd4445r9unFvyE6Bj5RlQ==
-  /@teambit/documenter.ui.list/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-57mgfS9aKor8SPiSPIuMDZXNkf2QJKZ4bZMxte5GYYnf2oe1ClaXYm+aPNOas6T769/hiWBwWMYxB4tOD5bT8w==
+  /@teambit/documenter.ui.linked-heading/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.copy-box': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.heading': 0.1.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.ui.highlighted-text': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.anchor': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.heading': 0.2.1_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -517,12 +535,13 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-qYz6pyervrgd+HgKXWfQQC/X6RZdNiBR+dKUPirP4VynvamVH04K1s+IOO29kMD9BEAOFXG3hh9kD1dUIXqIMw==
-  /@teambit/documenter.ui.paragraph/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-qzqfgT3qSbAYYMhs6xsI38FSr/3XUjGBt53FRBjH1IFsMni0OT7yr7qkTyXgbKhUimQZJjOrX7+Mkue2BjRpcQ==
+  /@teambit/documenter.ui.list/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.text.paragraph': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/base-ui.theme.sizes': 0.4.3_react-dom@16.14.0+react@16.14.0
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.copy-box': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.heading': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.highlighted-text': 0.2.1_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -531,10 +550,12 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-nClIL4QZv97grHUcpMUCuZl2gqhiAInZk6xPPDzKOFQi0hZ0V0FD0nQJ/JssjIejA4oDKPx0lyW9N3LHazuu+A==
-  /@teambit/documenter.ui.section/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-po2EMOFchUvLbd2jzGjPUXxiyiOv8qKSpAoAP8NEv4QdleseelMX1M2Vm0M0v2NIjYyPO520kRXtA7rYgoQ+QQ==
+  /@teambit/documenter.ui.paragraph/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.text.paragraph': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.theme.sizes': 0.5.2_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -543,10 +564,10 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-fYRoM+ZwsB7op52DkI0GzgCnOZLQXnOCR90d5QSjeAysZys4fTe2ox1mTf3KdZpnFyBQwu6GLidYI8b2m1lwBw==
-  /@teambit/documenter.ui.separator/0.1.1_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-UmzjYXQFKf3gPARIlQokDAb4nVcqHSA1KPGZ6uvkrVeD+Bp7GpsWT5Puby4ERcSPDKOzMF0Jp2Np3fJVVmMkug==
+  /@teambit/documenter.ui.section/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/documenter.theme.theme-context': 0.1.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
       classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -555,10 +576,12 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-6rXMeye4jy39Q91zEhY6bm+9weCEKSbsFum3VP2lj8tpMnCkLP3GGzgqxF0EkxS3hSTsEqp9tBNVbYsEjGSBtQ==
-  /@teambit/evangelist.elements.icon/0.4.4_react-dom@16.14.0+react@16.14.0:
+      integrity: sha512-wogLUMaQ97zoT8va6zfp4nluocucn4cTSE6skEN0ZQZTj1uMgUB1V8PrPYZL+E3l2KuIyvAagbaCHW6pUGfKkQ==
+  /@teambit/documenter.ui.separator/0.2.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
-      '@teambit/base-ui.elements.icon': 0.4.3_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.theme.theme-context': 0.2.1_react-dom@16.14.0+react@16.14.0
+      '@teambit/documenter.ui.section': 0.2.1_react-dom@16.14.0+react@16.14.0
+      classnames: 2.2.6
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
@@ -566,7 +589,18 @@ packages:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-s+RRUhR2ZbEJGD7dal6WITAuad5TTcBNgPXv4qCBZZAfJsKyGFpXtZH8EIuOwacVWHZQG5j1WE0slnG9T6lMVQ==
+      integrity: sha512-CiTlnl5BPYPFPcJljcBgS4/UrpcFYxfs2B27Q6ROrpBp6bX+Ae/K5dOY0z0ZJ9PPwpJdNqzckBqdFigwONYV2Q==
+  /@teambit/evangelist.elements.icon/0.5.2_react-dom@16.14.0+react@16.14.0:
+    dependencies:
+      '@teambit/base-ui.elements.icon': 0.5.2_react-dom@16.14.0+react@16.14.0
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+    dev: false
+    peerDependencies:
+      react: ^16.13.1
+      react-dom: ^16.13.1
+    resolution:
+      integrity: sha512-5aEHzI/1c6Rs0YEWTPO/s9vJXZqqUS4yECNYu07dZsONNKKFm1IcevGetAgHL1x6LClxpy6ER5tAWEhQniZOvw==
   /@testing-library/dom/7.22.1:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -658,9 +692,9 @@ packages:
       pretty-format: 26.6.1
     resolution:
       integrity: sha512-s2VMReFXRg9XXxV+CW9e5Nz8fH2K1aEhwgjUqPPbQd7g95T0laAcvLv032EhFHIa5GHsZ8W7iJEQVaJq6k3Gog==
-  /@types/node/14.14.5:
+  /@types/node/14.14.6:
     resolution:
-      integrity: sha512-H5Wn24s/ZOukBmDn03nnGTp18A60ny9AmCwnEcgJiTgSGsCO7k+NWP7zjCCbhlcnVCoI+co52dUAt9GMhOSULw==
+      integrity: sha512-6QlRuqsQ/Ox/aJEQWBEJG7A9+u7oSYl3mem/K8IzxXG/kAGbV1YPD9Bg9Zw3vyxC/YP+zONKwy8hGkSt1jxFMw==
   /@types/prop-types/15.7.3:
     dev: true
     resolution:
@@ -1004,24 +1038,24 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
-  /hast-util-parse-selector/2.2.4:
+  /hast-util-parse-selector/2.2.5:
     dev: false
     resolution:
-      integrity: sha512-gW3sxfynIvZApL4L07wryYF4+C9VvH3AUi7LAnVXV4MneGEgwOByXvFo18BgmTWnm7oHAe874jKbIB1YhHSIzA==
+      integrity: sha512-7j6mrk/qqkSehsM92wQjdIgWM2/BW61u/53G6xmC8i1OmEdKLHbk419QKQUjz6LglWsfqoiHmyMRkP1BGjecNQ==
   /hastscript/6.0.0:
     dependencies:
       '@types/hast': 2.3.1
       comma-separated-tokens: 1.0.8
-      hast-util-parse-selector: 2.2.4
+      hast-util-parse-selector: 2.2.5
       property-information: 5.6.0
       space-separated-tokens: 1.1.5
     dev: false
     resolution:
       integrity: sha512-nDM6bvd7lIqDUiYEiu5Sl/+6ReP0BMk/2f4U/Rooccxkj0P5nm+acM5PrGJ/t5I8qPGiqZSE6hVAwZEdZIvP4w==
-  /highlight.js/10.3.1:
+  /highlight.js/10.3.2:
     dev: false
     resolution:
-      integrity: sha512-jeW8rdPdhshYKObedYg5XGbpVgb1/DT4AHvDFXhkU7UnGSIjy9kkJ7zHG7qplhFHMitTSzh5/iClKQk3Kb2RFQ==
+      integrity: sha512-3jRT7OUYsVsKvukNKZCtnvRcFyCJqSEIuIMsEybAXRiFSwpt65qjPd/Pr+UOdYt7WJlt+lj3+ypUsHiySBp/Jw==
   /iconv-lite/0.6.2:
     dependencies:
       safer-buffer: 2.1.2
@@ -1116,7 +1150,7 @@ packages:
   /lowlight/1.16.0:
     dependencies:
       fault: 1.0.4
-      highlight.js: 10.3.1
+      highlight.js: 10.3.2
     dev: false
     resolution:
       integrity: sha512-ECLdzIJvBEjK4ef51sWiGZyz21yx4IEPaF/62DRxLehoOHkWqN3OsLB1GUMfc6Mcf87rR5eW7z6lI9cNEXZDsQ==
@@ -1272,7 +1306,7 @@ packages:
   /react-syntax-highlighter/13.5.3_react@16.14.0:
     dependencies:
       '@babel/runtime': 7.12.1
-      highlight.js: 10.3.1
+      highlight.js: 10.3.2
       lowlight: 1.16.0
       prismjs: 1.22.0
       react: 16.14.0
@@ -1322,23 +1356,23 @@ packages:
       integrity: sha512-hSo+EyMIZTLBvNNgIU5lW4yjCzNYMZ4dcEhBq/3nReGfqzd2JfVhdlPDfU9rEsgcAyWx+OimIIUoL4ZU7NtYHQ==
   /regenerate-unicode-properties/8.2.0:
     dependencies:
-      regenerate: 1.4.1
+      regenerate: 1.4.2
     dev: false
     engines:
       node: '>=4'
     resolution:
       integrity: sha512-F9DjY1vKLo/tPePDycuH3dn9H1OTPIkVD9Kz4LODu+F2C75mgjAJ7x/gwy6ZcSNRAAkhNlJSOHRe8k3p+K9WhA==
-  /regenerate/1.4.1:
+  /regenerate/1.4.2:
     dev: false
     resolution:
-      integrity: sha512-j2+C8+NtXQgEKWk49MMP5P/u2GhnahTtVkRIHr5R5lVRlbKvmQ+oS+A5aLKWp2ma5VkT8sh6v+v4hbH0YHR66A==
+      integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==
   /regenerator-runtime/0.13.7:
     dev: false
     resolution:
       integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
   /regexpu-core/4.7.1:
     dependencies:
-      regenerate: 1.4.1
+      regenerate: 1.4.2
       regenerate-unicode-properties: 8.2.0
       regjsgen: 0.5.2
       regjsparser: 0.6.4
