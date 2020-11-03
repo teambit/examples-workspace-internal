@@ -102,25 +102,25 @@ The variants define three directories for components:
 
 #### `components/modules`
 
-Directory to contain many helpers, tools and various Node modules to be shared across the project. All components tracked from that directory are configured with the base `teambit.bit/node` base **Component Development Environment** for Node modules.
+Directory to contain many helpers, tools and various Node modules to be shared across the project. All components tracked from that directory are configured with the base `teambit.node/node` base **Component Development Environment** for Node modules.
 
 #### `components/react`
 
 Directory to manage all React components. Note that it has sub-directories for types of React components - `ui-primitives`, `pages` and `hooks`. These directories are not defined as `variants`. Components tracked in these directories gets their configuration from the `components/react` variant.  
-The **Component Development Environment** defined for all React component is a local extension for Bit that uses the base `teambit.bit/react` environment and overrides certain parts of its implementation to fit the requirements of the project (more about it in the next section).
+The **Component Development Environment** defined for all React component is a local extension for Bit that uses the base `teambit.react/react` environment and overrides certain parts of its implementation to fit the requirements of the project (more about it in the next section).
 
 > This project aims to support additional frameworks as well, so it has a base `react` directory for components developed with React. In the future it'll contain sub-directories for Angular and other frameworks.
 
 #### `extensions`
 
-This workspace demoes the ability for extending Bit from the project. In this example the extension takes the `teambit.bit/react` **Component Development Environment** and uses it's APIs to override parts of its configuration.  
-Extensions in Bit are components as well. This means that the `extensions/harmony-react` is tracked as a Bit component. For Bit to build this component as an extension the `extensions` variant configures `teambit.bit/aspect` as the Component Development Environment for all components managed in that directory.
+This workspace demoes the ability for extending Bit from the project. In this example the extension takes the `teambit.react/react` **Component Development Environment** and uses it's APIs to override parts of its configuration.  
+Extensions in Bit are components as well. This means that the `extensions/harmony-react` is tracked as a Bit component. For Bit to build this component as an extension the `extensions` variant configures `teambit.harmony/aspect` as the Component Development Environment for all components managed in that directory.
 
 ### Component structure
 
 #### Default component scope
 
-The workspace is aimed at publishing components to a remote component collection called **teambit.bad-jokes**. This is managed in the `workspce.jsonc` file via the `teambit.bit/workspace` configuration entry. The `defaultScope` configured in that entry is set as the default prefix for all components in the workspace (a `variant` can override it).
+The workspace is aimed at publishing components to a remote component collection called **teambit.bad-jokes**. This is managed in the `workspce.jsonc` file via the `teambit.workspace/workspace` configuration entry. The `defaultScope` configured in that entry is set as the default prefix for all components in the workspace (a `variant` can override it).
 
 #### Component module names
 
