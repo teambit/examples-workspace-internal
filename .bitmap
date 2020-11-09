@@ -4,6 +4,11 @@
     "extensions/harmony-react": {
         "files": [
             {
+                "name": "echo.task.ts",
+                "relativePath": "echo.task.ts",
+                "test": false
+            },
+            {
                 "name": "harmony-react.docs.tsx",
                 "relativePath": "harmony-react.docs.tsx",
                 "test": false
@@ -370,5 +375,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.111"
+    "version": "14.8.9-dev.126"
 }
