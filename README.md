@@ -1,3 +1,6 @@
+# THIS IS AN INTERNAL VERSION OF THE HARMONY BETA PROJECT - to be used for sandboxing various workflows and configs to both try them out and make sure they aren't broken by changes to Bit. 
+We don't want to confuse customers with all the various possibilities and options (e.g. js + ts + scss + stlyedJsx, etc etc) so it is highly preferable NOT to share outside of Bit.
+
 # Bad-jokes app with Harmony
 
 **IMPORTANT** the pre-release binary is called `bbit`, not `bit`. **IMPORTANT**
