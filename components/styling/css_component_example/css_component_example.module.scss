@@ -1,0 +1,25 @@
+
+@import "~@teambit/styling.styling.variables/variables.module.scss";
+
+
+.minWidth450 {
+  min-width: 450px;
+}
+
+.maxWidth800 {
+  max-width: 800px;
+}
+
+.reddish {
+  background-color: $reddish;
+  color: white;
+}
+
+.blueish {
+  background-color: $blueish;
+  color: white;
+}
+
+.padding {
+  padding: 5px;
+}
