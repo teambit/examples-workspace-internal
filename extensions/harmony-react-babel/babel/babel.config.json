@@ -1,0 +1,5 @@
+{
+    "presets": ["@babel/preset-react", "@babel/preset-flow"],
+    "plugins": ["module:@babel/plugin-syntax-class-properties", ["styled-jsx/babel", {"plugins": ["styled-jsx-plugin-sass"]}]],
+    "sourceMaps": true
+  }
