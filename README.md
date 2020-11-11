@@ -1,6 +1,6 @@
 # THIS IS AN INTERNAL VERSION OF THE HARMONY BETA PROJECT 
 To be used for sandboxing various workflows and configs to both try them out and make sure they aren't broken by changes to Bit. 
-We don't want to confuse customers with all the various possibilities and options (e.g. js + ts + scss + stlyedJsx, etc etc) so it is highly preferable NOT to share outside of Bit.
+We don't want to confuse customers with all the various possibilities and options (e.g. js + ts + scss + stlyedJsx, etc etc) so please check before sharing outside of Bit.
 
 Please see the [public Harmony Beta Project](https://github.com/teambit/bad-jokes-workspace) readme for guidance on using Harmony Bit.
 
