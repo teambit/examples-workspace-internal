@@ -4,11 +4,6 @@
     "extensions/harmony-react": {
         "files": [
             {
-                "name": "echo.task.ts",
-                "relativePath": "echo.task.ts",
-                "test": false
-            },
-            {
                 "name": "harmony-react.docs.tsx",
                 "relativePath": "harmony-react.docs.tsx",
                 "test": false
@@ -41,6 +36,50 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "extensions/harmony-react",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "extensions/harmony-react-babel": {
+        "files": [
+            {
+                "name": "babel.config.json",
+                "relativePath": "babel/babel.config.json",
+                "test": false
+            },
+            {
+                "name": "harmony-react-babel.docs.tsx",
+                "relativePath": "harmony-react-babel.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "harmony-react-babel.extension.ts",
+                "relativePath": "harmony-react-babel.extension.ts",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "jest.config.js",
+                "relativePath": "jest/jest.config.js",
+                "test": false
+            },
+            {
+                "name": "tsconfig.json",
+                "relativePath": "typescript/tsconfig.json",
+                "test": false
+            },
+            {
+                "name": "webpack.config.js",
+                "relativePath": "webpack/webpack.config.js",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "extensions/harmony-react-babel",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -132,6 +171,83 @@
         "exported": false,
         "lanes": []
     },
+    "javascript/chart": {
+        "files": [
+            {
+                "name": "chart.composition.jsx",
+                "relativePath": "chart.composition.jsx",
+                "test": false
+            },
+            {
+                "name": "chart.css",
+                "relativePath": "chart.css",
+                "test": false
+            },
+            {
+                "name": "chart.d.ts",
+                "relativePath": "chart.d.ts",
+                "test": false
+            },
+            {
+                "name": "chart.docs.jsx",
+                "relativePath": "chart.docs.jsx",
+                "test": false
+            },
+            {
+                "name": "chart.js",
+                "relativePath": "chart.js",
+                "test": false
+            }
+        ],
+        "mainFile": "chart.js",
+        "rootDir": "components/javascript/chart",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "javascript/fade": {
+        "files": [
+            {
+                "name": "fade.js",
+                "relativePath": "fade.js",
+                "test": false
+            },
+            {
+                "name": "fade.spec.js",
+                "relativePath": "fade.spec.js",
+                "test": false
+            }
+        ],
+        "mainFile": "fade.js",
+        "rootDir": "components/javascript/fade",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "javascript/utils": {
+        "files": [
+            {
+                "name": "utils.docs.tsx",
+                "relativePath": "utils.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "utils.js",
+                "relativePath": "utils.js",
+                "test": false
+            },
+            {
+                "name": "utils.spec.jsx",
+                "relativePath": "utils.spec.jsx",
+                "test": false
+            }
+        ],
+        "mainFile": "utils.js",
+        "rootDir": "components/javascript/utils",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "pages/bad-jokes-viewer": {
         "files": [
             {
@@ -162,6 +278,54 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/react/pages/bad-jokes-viewer",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "styling/css_component_example": {
+        "files": [
+            {
+                "name": "css_component_example.composition.jsx",
+                "relativePath": "css_component_example.composition.jsx",
+                "test": false
+            },
+            {
+                "name": "css_component_example.docs.jsx",
+                "relativePath": "css_component_example.docs.jsx",
+                "test": false
+            },
+            {
+                "name": "css_component_example.module.scss",
+                "relativePath": "css_component_example.module.scss",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/styling/css_component_example",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "styling/variables": {
+        "files": [
+            {
+                "name": "variables.docs.jsx",
+                "relativePath": "variables.docs.jsx",
+                "test": false
+            },
+            {
+                "name": "variables.module.scss",
+                "relativePath": "variables.module.scss",
+                "test": false
+            }
+        ],
+        "mainFile": "variables.module.scss",
+        "rootDir": "components/styling/variables",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -375,5 +539,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.114"
+    "version": "14.8.9-dev.132"
 }
