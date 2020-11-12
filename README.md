@@ -14,11 +14,13 @@ Components which dont need a typescript compiler. Generally they have been setup
 
 Under the `javascript` namespace.
 
-### StyledJsx (Not Added Yet)
+### StyledJsx 
 
 Another use-case from a beta-program partner. StyledJsx is almost exclusively used in conjunction with next.js (because why would you choose it as your styling method otherwise...). Here we've implemented a version of the babel-only env below, which includes the plugins required to compile styledJsx, as well as the correct dependencies for being able to consume the components in a next.js application.
 
-### Css components (NAY)
+This is implemented on the Container component, where the css has been replaced with styledjsx.
+
+### Css components
 
 These are key to creating themes and templates via Bit components. There is *very* little documentation available anywhere on how to componentize and then consume css content (in all its flavours), so this is an important section of this project. 
 
