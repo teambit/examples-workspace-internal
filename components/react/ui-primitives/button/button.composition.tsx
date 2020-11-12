@@ -9,7 +9,7 @@ export const PrimaryButton = () => {
   );
 };
 
-export const SecondaryButton = () => {
+export const SecondaryButtonPreview = () => {
   return <Button variant="secondary">Secondary Button</Button>;
 };
 
