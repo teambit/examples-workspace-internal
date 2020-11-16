@@ -5,6 +5,7 @@ import { ThemeContext } from '@teambit/documenter.theme.theme-context';
 import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
 import { List } from '@teambit/documenter.ui.list';
 import { Separator } from '@teambit/documenter.ui.separator';
+import mockData from './mockData';
 
 export default function Overview() {
   return (
@@ -30,48 +31,6 @@ Overview.abstract = 'A responsive chart by Primereasct, based on Chart.js';
 
 Overview.labels = ['react', 'javascript', 'chart'];
 
-
-const data1 = {
-  labels: ['A', 'B', 'C'],
-  datasets: [
-    {
-      data: [300, 50, 300],
-      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-      hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
-    }
-  ]
-};
-
-const data2 = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-  datasets: [
-    {
-      label: 'First Dataset',
-      data: [65, 59, 80, 81, 56, 55, 40],
-      fill: false,
-      borderColor: '#4bc0c0'
-    },
-    { 
-      label: 'Second Dataset',
-      data: [28, 48, 40, 19, 86, 27, 90],
-      fill: false,
-      borderColor: '#565656'
-    }
-  ]
-};
-
-const options2 = {
-  title: {
-    display: true,
-    text: 'My Title',
-    fontSize: 16
-  },
-  legend: {
-    position: 'bottom'
-  }
-};
-
-
 Overview.examples = [
   {
     scope: {
@@ -82,7 +41,7 @@ Overview.examples = [
     jsx: 
     (
         <div style={{ width: 400 }}>
-            <Chart type='pie' data={data1} />
+            <Chart type='pie' data={mockData.firstDataset} />
         </div>)
   },
   {
@@ -93,7 +52,7 @@ Overview.examples = [
     jsx: 
     (
         <div style={{ width: 400 }}>
-            <Chart type='line' data={data2} options={options2} />
+            <Chart type='line' data={mockData.secondDataSet} options={mockData.secondOptions} />
         </div>)
   },
 ];
