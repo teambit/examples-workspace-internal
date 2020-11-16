@@ -24,6 +24,11 @@
                 "test": false
             },
             {
+                "name": "jest.setup.js",
+                "relativePath": "jest/jest.setup.js",
+                "test": false
+            },
+            {
                 "name": "tsconfig.json",
                 "relativePath": "typescript/tsconfig.json",
                 "test": false

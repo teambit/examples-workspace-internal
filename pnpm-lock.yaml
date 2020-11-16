@@ -2,6 +2,7 @@ importers:
   .:
     dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.3
+      '@babel/plugin-proposal-class-properties': registry.npmjs.org/@babel/plugin-proposal-class-properties/7.12.1_@babel+core@7.12.3
       '@babel/plugin-syntax-class-properties': registry.npmjs.org/@babel/plugin-syntax-class-properties/7.12.1_@babel+core@7.12.3
       '@babel/preset-flow': registry.npmjs.org/@babel/preset-flow/7.12.1_@babel+core@7.12.3
       '@babel/preset-react': registry.npmjs.org/@babel/preset-react/7.12.5_@babel+core@7.12.3
@@ -41,6 +42,7 @@ importers:
       '@types/react-router-dom': registry.npmjs.org/@types/react-router-dom/5.1.6
     specifiers:
       '@babel/core': 7.12.3
+      '@babel/plugin-proposal-class-properties': 7.12.1
       '@babel/plugin-syntax-class-properties': 7.12.1
       '@babel/preset-flow': 7.12.1
       '@babel/preset-react': 7.12.5
@@ -1333,6 +1335,24 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/helper-builder-react-jsx/-/helper-builder-react-jsx-7.10.4.tgz'
     version: 7.10.4
+  registry.npmjs.org/@babel/helper-create-class-features-plugin/7.12.1_@babel+core@7.12.3:
+    dependencies:
+      '@babel/core': registry.npmjs.org/@babel/core/7.12.3
+      '@babel/helper-function-name': registry.npmjs.org/@babel/helper-function-name/7.10.4
+      '@babel/helper-member-expression-to-functions': registry.npmjs.org/@babel/helper-member-expression-to-functions/7.12.1
+      '@babel/helper-optimise-call-expression': registry.npmjs.org/@babel/helper-optimise-call-expression/7.10.4
+      '@babel/helper-replace-supers': registry.npmjs.org/@babel/helper-replace-supers/7.12.5
+      '@babel/helper-split-export-declaration': registry.npmjs.org/@babel/helper-split-export-declaration/7.11.0
+    dev: false
+    id: registry.npmjs.org/@babel/helper-create-class-features-plugin/7.12.1
+    name: '@babel/helper-create-class-features-plugin'
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    resolution:
+      integrity: sha512-hkL++rWeta/OVOBTRJc9a5Azh5mt5WgZUGAKMD8JM141YsE08K//bp1unBBieO6rUKkIPyUE0USQ30jAy3Sk1w==
+      registry: 'https://node.bit.dev/'
+      tarball: 'https://registry.npmjs.org/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.12.1.tgz'
+    version: 7.12.1
   registry.npmjs.org/@babel/helper-function-name/7.10.4:
     dependencies:
       '@babel/helper-get-function-arity': registry.npmjs.org/@babel/helper-get-function-arity/7.10.4
@@ -1485,6 +1505,21 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/parser/-/parser-7.12.5.tgz'
     version: 7.12.5
+  registry.npmjs.org/@babel/plugin-proposal-class-properties/7.12.1_@babel+core@7.12.3:
+    dependencies:
+      '@babel/core': registry.npmjs.org/@babel/core/7.12.3
+      '@babel/helper-create-class-features-plugin': registry.npmjs.org/@babel/helper-create-class-features-plugin/7.12.1_@babel+core@7.12.3
+      '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.10.4
+    dev: false
+    id: registry.npmjs.org/@babel/plugin-proposal-class-properties/7.12.1
+    name: '@babel/plugin-proposal-class-properties'
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-cKp3dlQsFsEs5CWKnN7BnSHOd0EOW8EKpEjkoz1pO2E5KzIDNV9Ros1b0CnmbVgAGXJubOYVBOGCT1OmJwOI7w==
+      registry: 'https://node.bit.dev/'
+      tarball: 'https://registry.npmjs.org/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.12.1.tgz'
+    version: 7.12.1
   registry.npmjs.org/@babel/plugin-syntax-async-generators/7.8.4_@babel+core@7.12.3:
     dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.3
