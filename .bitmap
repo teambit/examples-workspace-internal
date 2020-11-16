@@ -68,6 +68,11 @@
                 "test": false
             },
             {
+                "name": "jest.setup.js",
+                "relativePath": "jest/jest.setup.js",
+                "test": false
+            },
+            {
                 "name": "tsconfig.json",
                 "relativePath": "typescript/tsconfig.json",
                 "test": false
@@ -174,6 +179,11 @@
     "javascript/chart": {
         "files": [
             {
+                "name": "chart.spec.js.snap",
+                "relativePath": "__snapshots__/chart.spec.js.snap",
+                "test": false
+            },
+            {
                 "name": "chart.composition.jsx",
                 "relativePath": "chart.composition.jsx",
                 "test": false
@@ -196,6 +206,16 @@
             {
                 "name": "chart.js",
                 "relativePath": "chart.js",
+                "test": false
+            },
+            {
+                "name": "chart.spec.js",
+                "relativePath": "chart.spec.js",
+                "test": false
+            },
+            {
+                "name": "mockData.js",
+                "relativePath": "mockData.js",
                 "test": false
             }
         ],
@@ -435,6 +455,11 @@
     "ui-primitives/container": {
         "files": [
             {
+                "name": "containter.spec.js.snap",
+                "relativePath": "__snapshots__/containter.spec.js.snap",
+                "test": false
+            },
+            {
                 "name": "container-docs.module.scss",
                 "relativePath": "container-docs.module.scss",
                 "test": false
@@ -450,13 +475,13 @@
                 "test": false
             },
             {
-                "name": "container.module.scss",
-                "relativePath": "container.module.scss",
+                "name": "container.tsx",
+                "relativePath": "container.tsx",
                 "test": false
             },
             {
-                "name": "container.tsx",
-                "relativePath": "container.tsx",
+                "name": "containter.spec.js",
+                "relativePath": "containter.spec.js",
                 "test": false
             },
             {
@@ -539,5 +564,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.136"
+    "version": "14.8.9-dev.142"
 }
