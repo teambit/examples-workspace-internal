@@ -1,5 +1,22 @@
 {
     "presets": ["@babel/preset-react", "@babel/preset-flow"],
-    "plugins": ["module:@babel/plugin-syntax-class-properties", ["styled-jsx/babel", {"plugins": ["styled-jsx-plugin-sass"]}]],
+    "plugins": [
+      "module:@babel/plugin-syntax-class-properties"
+    ],
+    "env": {
+      "production": {
+        "plugins": [[
+          "styled-jsx/babel", {"plugins": ["styled-jsx-plugin-sass"]}
+        ]]
+      },
+      "development": {
+        "plugins": [[
+          "styled-jsx/babel", {"plugins": ["styled-jsx-plugin-sass"]}
+        ]]
+      },
+      "test": {
+        "plugins": ["styled-jsx/babel-test"]
+      }
+    },
     "sourceMaps": true
   }
