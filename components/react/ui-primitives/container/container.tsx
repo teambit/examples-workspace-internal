@@ -1,4 +1,4 @@
-import React, {ReactElement} from 'react';
+import React from 'react';
 import cs from 'classnames';
 
 export type ContainerProps = {
@@ -15,6 +15,7 @@ export const Container = ({className, children, floatEffect = true} : ContainerP
     <div>
         <style jsx global>
             {`@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');`}
+
         </style>
         <style jsx>{`
           .container {
