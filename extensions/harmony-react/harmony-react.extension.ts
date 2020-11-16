@@ -4,12 +4,12 @@ import ts from 'typescript';
 
 const jest = require('jest');
 const tsconfig = require('./typescript/tsconfig.json');
-const webpackConfig = require('./webpack/webpack.config');
+// const webpackConfig = require('./webpack/webpack.config');
 
 export class HarmonyReactExtension {
   constructor(private react: ReactMain) {}
 
-  static dependencies = [EnvsAspect, ReactAspect];
+  static dependencies: any = [EnvsAspect, ReactAspect];
 
   static async provider([envs, react]: [EnvsMain, ReactMain]) {
     const harmonyReactEnv = react.compose([

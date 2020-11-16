@@ -12,7 +12,7 @@ const babelConfig = require('./babel/babel.config.json');
 export class HarmonyReactBabelExtension {
   constructor(private react: ReactMain) {}
 
-  static dependencies = [EnvsAspect, ReactAspect, BabelAspect];
+  static dependencies: any = [EnvsAspect, ReactAspect, BabelAspect];
 
   static async provider([envs, react, babel]: [EnvsMain, ReactMain, BabelMain]) {
 
@@ -23,7 +23,7 @@ export class HarmonyReactBabelExtension {
        react.overrideTsConfig(tsconfig, ts),
       react.overrideJestConfig(require.resolve('./jest/jest.config'), jest),
       react.overrideCompiler(babelCompiler),
-      react.overrideCompilerTasks([babelCompiler.createTask()])
+      react.overrideCompilerTasks([babelCompiler!.createTask!()])
       // react.overrideDevServerConfig(webpackConfig),
     ]);
 
