@@ -1,7 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { TransitionGroup } from 'react-transition-group';
-import { Fade } from './fade';
+import {jest} from '@jest/globals';
+import Fade from './fade';
 
 class Helper extends React.Component {
   constructor(props) {
