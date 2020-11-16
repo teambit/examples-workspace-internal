@@ -29,6 +29,7 @@
        * For example, library will be devDependency when the file that imports it is a test file.
        **/
       "dependencies": {
+        "@jest/globals": "26.6.2",
         "@teambit/documenter.code.react-playground": "^0.2.1",
         "@teambit/documenter.theme.theme-context": "^0.2.1",
         "@teambit/documenter.ui.code-snippet": "^0.2.1",
@@ -41,8 +42,10 @@
         "@testing-library/jest-dom": "^5.11.3",
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
+        "@types/styled-jsx": "2.2.8",
         "chart.js": "2.9.4",
         "classnames": "^2.2.6",
+        "enzyme-to-json": "3.6.1",
         "node-sass": "4.14.1",
         "prop-types": "15.7.2",
         "react-transition-group": "4.4.1",
@@ -85,7 +88,8 @@
             "@babel/preset-flow": "7.12.1",
             "@babel/preset-react": "7.12.5",
             "enzyme": "3.11.0",
-            "enzyme-adapter-react-16": "1.15.5"
+            "enzyme-adapter-react-16": "1.15.5",
+            "enzyme-to-json": "3.6.1"
           }
         }
       }
@@ -137,6 +141,15 @@
        * these components has different scope
        **/
       "defaultScope": "teambit.styling"
+    },
+    "components/react/ui-primitives/container": {
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "@types/styled-jsx": "2.2.8"
+          }
+        }
+      }
     }
   }
 }
