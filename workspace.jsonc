@@ -3,7 +3,7 @@
     /**
      * name of the component workspace. used for development purposes.
      **/
-    "name": "bad-jokes",
+    "name": "bad-jokes-internal",
     /**
      * icon of the workspace.
      **/
@@ -12,7 +12,7 @@
      * default scope of the workspace. this setting will apply a default remote scope
      * to any which had no more concrete (e.g. see variants) match.
      */
-    "defaultScope": "teambit.bad-jokes"
+    "defaultScope": "bit.bit-examples"
   },
   "teambit.dependencies/dependency-resolver": {
     /**
@@ -43,6 +43,9 @@
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
         "@types/styled-jsx": "2.2.8",
+        "@types/jest": "~26.0.9",
+        "@types/react": "16.9.43",
+        "@types/react-router-dom": "^5.1.5",
         "chart.js": "2.9.4",
         "classnames": "^2.2.6",
         "enzyme-to-json": "3.6.1",
@@ -102,7 +105,8 @@
       /**
        * configure the react environment on all components under the react directory.
        */
-      "teambit.bad-jokes/extensions/harmony-react-babel": {}
+      "teambit.bad-jokes/extensions/harmony-react-babel": {},
+      "defaultScope": "teambit.bad-jokes"
     },
     /**
      * configure all components under directory `components/modules`
@@ -124,11 +128,7 @@
       /**
        * configure the react environment for all components in the `components/modules` directory.
        **/
-      "teambit.bad-jokes/extensions/harmony-react-babel": {},
-      /**
-       * these components has different scope
-       **/
-      "defaultScope": "teambit.javascript"
+      "teambit.bad-jokes/extensions/harmony-react-babel": {}
     },
     /**
      * configure all components under directory `components/modules`
@@ -138,19 +138,18 @@
        * configure the react environment for all components in the `components/modules` directory.
        **/
       "teambit.bad-jokes/extensions/harmony-react-babel": {},
-      /**
-       * these components has different scope
-       **/
-      "defaultScope": "teambit.styling"
+
     },
     "components/react/ui-primitives/container": {
-      "teambit.dependencies/dependency-resolver": {
-        "policy": {
-          "dependencies": {
-            "@types/styled-jsx": "2.2.8"
-          }
-        }
-      }
+      "defaultScope": "bit.bit-examples"
+      // "teambit.dependencies/dependency-resolver": {
+      //   "policy": {
+      //     "dependencies": {
+      //       "@types/styled-jsx": "2.2.8"
+      //     }
+      //   }
+      // }
+
     }
   }
 }
