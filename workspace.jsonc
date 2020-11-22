@@ -137,8 +137,7 @@
       /**
        * configure the react environment for all components in the `components/modules` directory.
        **/
-      "teambit.bad-jokes/extensions/harmony-react-babel": {},
-
+      "teambit.bad-jokes/extensions/harmony-react-babel": {}
     },
     "components/react/ui-primitives/container": {
       "defaultScope": "bit.bit-examples"
@@ -149,7 +148,6 @@
       //     }
       //   }
       // }
-
     }
   }
 }
