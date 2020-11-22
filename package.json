@@ -1,27 +1,7 @@
 {
-  "name": "workspace",
+  "name": "bad-jokes-workspace",
   "version": "1.0.0",
-  "dependencies": {
-    "@babel/runtime": "^7.11.2",
-    "@teambit/documenter.code.react-playground": "^0.2.1",
-    "@teambit/documenter.theme.theme-context": "^0.2.1",
-    "@teambit/documenter.ui.code-snippet": "^0.2.1",
-    "@teambit/documenter.ui.highlighted-text": "^0.2.1",
-    "@teambit/documenter.ui.linked-heading": "^0.2.1",
-    "@teambit/documenter.ui.list": "^0.2.1",
-    "@teambit/documenter.ui.paragraph": "^0.2.1",
-    "@teambit/documenter.ui.section": "^0.2.1",
-    "@teambit/documenter.ui.separator": "^0.2.1",
-    "@testing-library/jest-dom": "^5.11.3",
-    "@testing-library/react": "10.4.8",
-    "classnames": "^2.2.6",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "@types/classnames": "^2.2.10",
-    "@types/jest": "~26.0.9",
-    "@types/react": "16.9.43",
-    "@types/react-router-dom": "^5.1.5"
+  "scripts":{
+    "postUpdate": "rm -rf node_modules && bbit install && bbit compile && bbit status"
   }
 }
