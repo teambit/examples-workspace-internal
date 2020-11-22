@@ -9,7 +9,7 @@ import {
   TransitionPropTypeKeys, 
   TransitionTimeouts, 
   tagPropType 
-} from '@teambit/javascript.javascript.utils';
+} from '@bit/bit.bit-examples.javascript.utils';
 
 const propTypes = {
   ...Transition.propTypes,
