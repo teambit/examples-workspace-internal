@@ -105,7 +105,7 @@
       /**
        * configure the react environment on all components under the react directory.
        */
-      "teambit.bad-jokes/extensions/harmony-react-babel": {},
+      "bit.bit-examples/extensions/harmony-react-babel": {},
       "defaultScope": "teambit.bad-jokes"
     },
     /**
@@ -128,7 +128,7 @@
       /**
        * configure the react environment for all components in the `components/modules` directory.
        **/
-      "teambit.bad-jokes/extensions/harmony-react-babel": {}
+      "bit.bit-examples/extensions/harmony-react-babel": {}
     },
     /**
      * configure all components under directory `components/modules`
@@ -137,7 +137,7 @@
       /**
        * configure the react environment for all components in the `components/modules` directory.
        **/
-      "teambit.bad-jokes/extensions/harmony-react-babel": {}
+      "bit.bit-examples/extensions/harmony-react-babel": {}
     },
     "components/react/ui-primitives/container": {
       "defaultScope": "bit.bit-examples"
