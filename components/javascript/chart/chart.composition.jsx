@@ -13,7 +13,7 @@ export const PieChartBasic = () => {
 export const LineChartBasic = () => {
   return (
     <div style={{ width: 400 }}>
-      <Chart type='line' data={mockData.secondDataSet} options={mockData.secondOptions} />
+      <Chart type='line' data={mockData.secondDataset} options={mockData.secondOptions} />
     </div>
   )
 }
