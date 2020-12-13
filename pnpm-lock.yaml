@@ -25,7 +25,7 @@ importers:
       '@types/styled-jsx': registry.npmjs.org/@types/styled-jsx/2.2.8
       chart.js: registry.npmjs.org/chart.js/2.9.4
       classnames: registry.npmjs.org/classnames/2.2.6
-      core-js: registry.npmjs.org/core-js/3.7.0
+      core-js: registry.npmjs.org/core-js/3.8.1
       enzyme: registry.npmjs.org/enzyme/3.11.0
       enzyme-adapter-react-16: registry.npmjs.org/enzyme-adapter-react-16/1.15.5_4f82faf5e8cab057bc46d4d95079ec42
       enzyme-to-json: registry.npmjs.org/enzyme-to-json/3.6.1_enzyme@3.11.0
@@ -39,7 +39,7 @@ importers:
       styled-jsx-plugin-sass: registry.npmjs.org/styled-jsx-plugin-sass/1.0.0_node-sass@4.14.1
       typescript: registry.npmjs.org/typescript/3.9.6
     devDependencies:
-      '@types/jest': registry.npmjs.org/@types/jest/26.0.15
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.18
     specifiers:
       '@babel/core': 7.12.3
       '@babel/plugin-proposal-class-properties': 7.12.1
@@ -60,13 +60,13 @@ importers:
       '@testing-library/jest-dom': ^5.11.6
       '@testing-library/react': 10.4.8
       '@types/classnames': ^2.2.11
-      '@types/jest': ~26.0.15
+      '@types/jest': ~26.0.18
       '@types/react': 16.9.43
       '@types/react-router-dom': ^5.1.6
       '@types/styled-jsx': 2.2.8
       chart.js: 2.9.4
       classnames: ^2.2.6
-      core-js: ^3.7.0
+      core-js: ^3.8.1
       enzyme: 3.11.0
       enzyme-adapter-react-16: 1.15.5
       enzyme-to-json: 3.6.1
@@ -928,7 +928,7 @@ packages:
     version: 7.12.5
   registry.npmjs.org/@babel/runtime-corejs3/7.12.5:
     dependencies:
-      core-js-pure: registry.npmjs.org/core-js-pure/3.7.0
+      core-js-pure: registry.npmjs.org/core-js-pure/3.8.1
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.7
     dev: false
     name: '@babel/runtime-corejs3'
@@ -2032,16 +2032,16 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@types/istanbul-reports/-/istanbul-reports-3.0.0.tgz'
     version: 3.0.0
-  registry.npmjs.org/@types/jest/26.0.15:
+  registry.npmjs.org/@types/jest/26.0.18:
     dependencies:
       jest-diff: registry.npmjs.org/jest-diff/26.6.2
       pretty-format: registry.npmjs.org/pretty-format/26.6.2
     name: '@types/jest'
     resolution:
-      integrity: sha512-s2VMReFXRg9XXxV+CW9e5Nz8fH2K1aEhwgjUqPPbQd7g95T0laAcvLv032EhFHIa5GHsZ8W7iJEQVaJq6k3Gog==
+      integrity: sha512-scDPs+mELZgsFetTgBSsIxKGrlitn9t/d2ecP+S1QSIGD+31fkMBEftLfOAX5k3tU06/0PjreJIQ+gWEbbHqpw==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/jest/-/jest-26.0.15.tgz'
-    version: 26.0.15
+      tarball: 'https://registry.npmjs.org/@types/jest/-/jest-26.0.18.tgz'
+    version: 26.0.18
   registry.npmjs.org/@types/node/14.14.7:
     name: '@types/node'
     resolution:
@@ -2127,7 +2127,7 @@ packages:
     version: 2.2.8
   registry.npmjs.org/@types/testing-library__jest-dom/5.9.5:
     dependencies:
-      '@types/jest': registry.npmjs.org/@types/jest/26.0.15
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.18
     dev: false
     name: '@types/testing-library__jest-dom'
     resolution:
@@ -3305,34 +3305,34 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/copy-to-clipboard/-/copy-to-clipboard-3.3.1.tgz'
     version: 3.3.1
-  registry.npmjs.org/core-js-pure/3.7.0:
+  registry.npmjs.org/core-js-pure/3.8.1:
     dev: false
     name: core-js-pure
     requiresBuild: true
     resolution:
-      integrity: sha512-EZD2ckZysv8MMt4J6HSvS9K2GdtlZtdBncKAmF9lr2n0c9dJUaUN88PSTjvgwCgQPWKTkERXITgS6JJRAnljtg==
+      integrity: sha512-Se+LaxqXlVXGvmexKGPvnUIYC1jwXu1H6Pkyb3uBM5d8/NELMYCHs/4/roD7721NxrTLyv7e5nXd5/QLBO+10g==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.7.0.tgz'
-    version: 3.7.0
-  registry.npmjs.org/core-js/2.6.11:
+      tarball: 'https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.8.1.tgz'
+    version: 3.8.1
+  registry.npmjs.org/core-js/2.6.12:
     deprecated: 'core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.'
     dev: false
     name: core-js
     requiresBuild: true
     resolution:
-      integrity: sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
+      integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/core-js/-/core-js-2.6.11.tgz'
-    version: 2.6.11
-  registry.npmjs.org/core-js/3.7.0:
+      tarball: 'https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz'
+    version: 2.6.12
+  registry.npmjs.org/core-js/3.8.1:
     dev: false
     name: core-js
     requiresBuild: true
     resolution:
-      integrity: sha512-NwS7fI5M5B85EwpWuIwJN4i/fbisQUwLwiSNUWeXlkAZ0sbBjLEvLvFLf1uzAUV66PcEPt4xCGCmOZSxVf3xzA==
+      integrity: sha512-9Id2xHY1W7m8hCl8NkhQn5CufmF/WuR30BTRewvCXc1aZd3kMECwNZ69ndLbekKfakw9Rf2Xyc+QR6E7Gg+obg==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/core-js/-/core-js-3.7.0.tgz'
-    version: 3.7.0
+      tarball: 'https://registry.npmjs.org/core-js/-/core-js-3.8.1.tgz'
+    version: 3.8.1
   registry.npmjs.org/core-util-is/1.0.2:
     dev: false
     name: core-util-is
@@ -4815,14 +4815,14 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/hastscript/-/hastscript-6.0.0.tgz'
     version: 6.0.0
-  registry.npmjs.org/highlight.js/10.4.0:
+  registry.npmjs.org/highlight.js/10.4.1:
     dev: false
     name: highlight.js
     resolution:
-      integrity: sha512-EfrUGcQ63oLJbj0J0RI9ebX6TAITbsDBLbsjr881L/X5fMO9+oadKzEF21C7R3ULKG6Gv3uoab2HiqVJa/4+oA==
+      integrity: sha512-yR5lWvNz7c85OhVAEAeFhVCc/GV4C30Fjzc/rCP0aCWzc1UUOPUk55dK/qdwTZHBvMZo+eZ2jpk62ndX/xMFlg==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/highlight.js/-/highlight.js-10.4.0.tgz'
-    version: 10.4.0
+      tarball: 'https://registry.npmjs.org/highlight.js/-/highlight.js-10.4.1.tgz'
+    version: 10.4.1
   registry.npmjs.org/hosted-git-info/2.8.8:
     dev: false
     name: hosted-git-info
@@ -6442,7 +6442,7 @@ packages:
   registry.npmjs.org/lowlight/1.17.0:
     dependencies:
       fault: registry.npmjs.org/fault/1.0.4
-      highlight.js: registry.npmjs.org/highlight.js/10.4.0
+      highlight.js: registry.npmjs.org/highlight.js/10.4.1
     dev: false
     name: lowlight
     resolution:
@@ -7702,7 +7702,7 @@ packages:
   registry.npmjs.org/react-live/2.2.3_react-dom@16.14.0+react@16.14.0:
     dependencies:
       buble: registry.npmjs.org/buble/0.19.6
-      core-js: registry.npmjs.org/core-js/2.6.11
+      core-js: registry.npmjs.org/core-js/2.6.12
       dom-iterator: registry.npmjs.org/dom-iterator/1.0.0
       prism-react-renderer: registry.npmjs.org/prism-react-renderer/1.1.1_react@16.14.0
       prop-types: registry.npmjs.org/prop-types/15.7.2
@@ -7740,7 +7740,7 @@ packages:
   registry.npmjs.org/react-syntax-highlighter/13.5.3_react@16.14.0:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.5
-      highlight.js: registry.npmjs.org/highlight.js/10.4.0
+      highlight.js: registry.npmjs.org/highlight.js/10.4.1
       lowlight: registry.npmjs.org/lowlight/1.17.0
       prismjs: registry.npmjs.org/prismjs/1.22.0
       react: registry.npmjs.org/react/16.14.0

@@ -12,7 +12,8 @@
      * default scope of the workspace. this setting will apply a default remote scope
      * to any which had no more concrete (e.g. see variants) match.
      */
-    "defaultScope": "bit.bit-examples"
+    "defaultScope": "bit.bit-examples", 
+    
   },
   "teambit.dependencies/dependency-resolver": {
     /**
@@ -141,13 +142,6 @@
     },
     "components/react/ui-primitives/container": {
       "defaultScope": "bit.bit-examples"
-      // "teambit.dependencies/dependency-resolver": {
-      //   "policy": {
-      //     "dependencies": {
-      //       "@types/styled-jsx": "2.2.8"
-      //     }
-      //   }
-      // }
     }
   }
 }
