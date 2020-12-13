@@ -9,6 +9,11 @@
                 "test": false
             },
             {
+                "name": "deps.js",
+                "relativePath": "dependencies/deps.js",
+                "test": false
+            },
+            {
                 "name": "harmony-react-babel.docs.tsx",
                 "relativePath": "harmony-react-babel.docs.tsx",
                 "test": false
@@ -65,6 +70,50 @@
         ],
         "mainFile": "index.js",
         "rootDir": "components/helpers/enzyme-adapter-helper",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
+    "bit.bit-examples/ui-primitives/container@0.0.1": {
+        "files": [
+            {
+                "name": "containter.spec.js.snap",
+                "relativePath": "__snapshots__/containter.spec.js.snap",
+                "test": false
+            },
+            {
+                "name": "container-docs.module.scss",
+                "relativePath": "container-docs.module.scss",
+                "test": false
+            },
+            {
+                "name": "container.composition.tsx",
+                "relativePath": "container.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "container.docs.tsx",
+                "relativePath": "container.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "container.tsx",
+                "relativePath": "container.tsx",
+                "test": false
+            },
+            {
+                "name": "containter.spec.js",
+                "relativePath": "containter.spec.js",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/react/ui-primitives/container",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
@@ -140,7 +189,11 @@
         "rootDir": "components/react/hooks/use-jokes",
         "origin": "AUTHORED",
         "exported": false,
-        "lanes": []
+        "lanes": [],
+        "nextVersion": {
+            "version": "patch",
+            "message": ""
+        }
     },
     "hooks/use-local-jokes": {
         "files": [
@@ -476,50 +529,6 @@
         "exported": false,
         "lanes": []
     },
-    "ui-primitives/container": {
-        "files": [
-            {
-                "name": "containter.spec.js.snap",
-                "relativePath": "__snapshots__/containter.spec.js.snap",
-                "test": false
-            },
-            {
-                "name": "container-docs.module.scss",
-                "relativePath": "container-docs.module.scss",
-                "test": false
-            },
-            {
-                "name": "container.composition.tsx",
-                "relativePath": "container.composition.tsx",
-                "test": false
-            },
-            {
-                "name": "container.docs.tsx",
-                "relativePath": "container.docs.tsx",
-                "test": false
-            },
-            {
-                "name": "container.tsx",
-                "relativePath": "container.tsx",
-                "test": false
-            },
-            {
-                "name": "containter.spec.js",
-                "relativePath": "containter.spec.js",
-                "test": false
-            },
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/react/ui-primitives/container",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
     "ui-primitives/tag": {
         "files": [
             {
@@ -588,5 +597,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.162"
+    "version": "14.8.9-dev.199"
 }
