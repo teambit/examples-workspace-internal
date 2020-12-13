@@ -4,12 +4,7 @@ import { TransitionGroup } from 'react-transition-group';
 import {jest} from '@jest/globals';
 import Fade from './fade';
 
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
 // import '@testing-library/jest-dom/extend-expect';
-
-configure({ adapter: new Adapter() });
-
 class Helper extends React.Component {
   constructor(props) {
     super(props);

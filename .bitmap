@@ -50,25 +50,6 @@
         "exported": true,
         "lanes": []
     },
-    "bit.bit-examples/helpers/enzyme-adapter-helper@0.0.1": {
-        "files": [
-            {
-                "name": "enzyme-adapter-helper.js",
-                "relativePath": "enzyme-adapter-helper.js",
-                "test": false
-            },
-            {
-                "name": "index.js",
-                "relativePath": "index.js",
-                "test": false
-            }
-        ],
-        "mainFile": "index.js",
-        "rootDir": "components/helpers/enzyme-adapter-helper",
-        "origin": "AUTHORED",
-        "exported": true,
-        "lanes": []
-    },
     "extensions/harmony-react": {
         "files": [
             {
@@ -588,5 +569,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.162"
+    "version": "14.8.9-dev.210"
 }
