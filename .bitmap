@@ -58,11 +58,6 @@
     "bit.bit-examples/ui-primitives/container@0.0.1": {
         "files": [
             {
-                "name": "containter.spec.js.snap",
-                "relativePath": "__snapshots__/containter.spec.js.snap",
-                "test": false
-            },
-            {
                 "name": "container-docs.module.scss",
                 "relativePath": "container-docs.module.scss",
                 "test": false
@@ -85,7 +80,7 @@
             {
                 "name": "containter.spec.js",
                 "relativePath": "containter.spec.js",
-                "test": false
+                "test": true
             },
             {
                 "name": "index.ts",
@@ -408,6 +403,25 @@
         "exported": false,
         "lanes": []
     },
+    "test/test-button": {
+        "files": [
+            {
+                "name": "index.tsx",
+                "relativePath": "index.tsx",
+                "test": false
+            },
+            {
+                "name": "test-button.css",
+                "relativePath": "test-button.css",
+                "test": false
+            }
+        ],
+        "mainFile": "index.tsx",
+        "rootDir": "components/react/ui-primitives/test-button",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "toolbox/capitalize": {
         "files": [
             {
@@ -578,5 +592,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.210"
+    "version": "14.8.9-dev.223"
 }
