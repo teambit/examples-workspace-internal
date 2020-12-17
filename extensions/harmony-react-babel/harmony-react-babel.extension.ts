@@ -6,8 +6,8 @@ import ts from 'typescript';
 
 const jest = require('jest');
 const tsconfig = require('./typescript/tsconfig.json');
-// const webpackConfig = require('./webpack/webpack.config');
 const babelConfig = require('./babel/babel.config.json');
+const webpackConfig = require('./webpack/webpack.config');
 
 const deps = {
   dependencies: {
@@ -32,7 +32,11 @@ const deps = {
     'enzyme-to-json': {
       version: '3.6.1',
       resolveFromEnv: true
-    }
+    },
+    'regenerator-runtime':{
+      version: '0.13.7',
+      resolveFromEnv: true
+    },
   },
 }
 
@@ -51,7 +55,8 @@ export class HarmonyReactBabelExtension {
       react.overrideJestConfig(require.resolve('./jest/jest.config'), jest),
       react.overrideCompiler(babelCompiler),
       react.overrideCompilerTasks([babelCompiler!.createTask!()]),
-      react.overrideDependencies(deps)
+      react.overrideDependencies(deps),
+      react.overridePreviewConfig(webpackConfig),
       // react.overrideDevServerConfig(webpackConfig),
     ]);
 

@@ -24,11 +24,9 @@
      * it helps to automate and manage dependency configuration for components.
      **/
     "policy": {
-      /**
-       * Dependency type is defined by the file that import it.
-       * For example, library will be devDependency when the file that imports it is a test file.
-       **/
       "dependencies": {
+        "@babel/plugin-transform-regenerator": "7.12.1",
+        "@babel/plugin-transform-runtime": "7.12.10",
         "@jest/globals": "26.6.2",
         "@teambit/documenter.code.react-playground": "^0.2.1",
         "@teambit/documenter.theme.theme-context": "^0.2.1",
@@ -42,26 +40,32 @@
         "@testing-library/jest-dom": "^5.11.3",
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
-        "@types/styled-jsx": "2.2.8",
         "@types/jest": "~26.0.9",
         "@types/react": "16.9.43",
         "@types/react-router-dom": "^5.1.5",
+        "@types/styled-jsx": "2.2.8",
         "chart.js": "2.9.4",
         "classnames": "^2.2.6",
         "enzyme-to-json": "3.6.1",
         "node-sass": "4.14.1",
         "prop-types": "15.7.2",
         "react-transition-group": "4.4.1",
+        "regenerator-runtime": "0.13.7",
         "styled-jsx-plugin-sass": "1.0.0",
         "typescript": "3.9.6"
       },
       "peerDependencies": {
-        "react": "^16.13.1",
         "@babel/runtime": "^7.11.2",
+        "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "styled-jsx": "3.3.1"
       }
-    }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "*.spec.ts"
+    ],
+    "strictPeerDependencies": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
@@ -93,7 +97,8 @@
             "@babel/preset-react": "7.12.5",
             "enzyme": "3.11.0",
             "enzyme-adapter-react-16": "1.15.5",
-            "enzyme-to-json": "3.6.1"
+            "enzyme-to-json": "3.6.1",
+            "regenerator-runtime": "0.13.7"
           }
         }
       }

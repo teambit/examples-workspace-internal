@@ -10,6 +10,8 @@ export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function Button({ children, variant, ...rest }: IButton) {
+  console.log('before')
+  console.log('after')
   return (
     <button className={cs(styles.base, styles[variant])} {...rest}>
       {children}
@@ -20,3 +22,4 @@ export function Button({ children, variant, ...rest }: IButton) {
 Button.defaultProps = {
   variant: 'primary',
 };
+

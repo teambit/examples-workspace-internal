@@ -2,7 +2,8 @@
     "presets": ["@babel/preset-react", "@babel/preset-flow"],
     "plugins": [
       "module:@babel/plugin-syntax-class-properties",
-      "@babel/plugin-proposal-class-properties"
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-runtime"
     ],
     "env": {
       "production": {

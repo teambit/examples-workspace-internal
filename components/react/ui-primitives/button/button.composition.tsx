@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from './button';
 
+
+
 export const PrimaryButton = () => {
   return (
     <Button variant="primary" onClick={() => alert('Clicked!')}>
@@ -10,7 +12,11 @@ export const PrimaryButton = () => {
 };
 
 export const SecondaryButtonPreview = () => {
-  return <Button variant="secondary">Secondary Button</Button>;
+  // function* a() {
+  //   console.log('inside a')
+  //   yield 1;
+  // }
+  return <Button variant="secondary" onClick={async () => alert('Clicked!')}>Secondary Button</Button>;
 };
 
 export const DisabledButton = () => {
@@ -20,3 +26,5 @@ export const DisabledButton = () => {
     </Button>
   );
 };
+
+
