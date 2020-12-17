@@ -12,7 +12,7 @@
      * default scope of the workspace. this setting will apply a default remote scope
      * to any which had no more concrete (e.g. see variants) match.
      */
-    "defaultScope": "bit.bit-examples", 
+    "defaultScope": "teambit.bit-examples"
     
   },
   "teambit.dependencies/dependency-resolver": {
@@ -141,7 +141,7 @@
       "bit.bit-examples/extensions/harmony-react-babel": {}
     },
     "components/react/ui-primitives/container": {
-      "defaultScope": "bit.bit-examples"
+      "defaultScope": "teambit.bit-examples"
     }
   }
 }
