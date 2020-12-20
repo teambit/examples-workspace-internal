@@ -58,6 +58,11 @@
     "bit.bit-examples/ui-primitives/container@0.0.1": {
         "files": [
             {
+                "name": "container.spec.js.snap",
+                "relativePath": "__snapshots__/container.spec.js.snap",
+                "test": false
+            },
+            {
                 "name": "container-docs.module.scss",
                 "relativePath": "container-docs.module.scss",
                 "test": false
@@ -73,14 +78,14 @@
                 "test": false
             },
             {
-                "name": "container.tsx",
-                "relativePath": "container.tsx",
+                "name": "container.spec.js",
+                "relativePath": "container.spec.js",
                 "test": false
             },
             {
-                "name": "containter.spec.js",
-                "relativePath": "containter.spec.js",
-                "test": true
+                "name": "container.tsx",
+                "relativePath": "container.tsx",
+                "test": false
             },
             {
                 "name": "index.ts",
@@ -134,6 +139,35 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "extensions/harmony-react",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "handlebar-example": {
+        "files": [
+            {
+                "name": "handlebar-example.compositions.tsx",
+                "relativePath": "handlebar-example.compositions.tsx",
+                "test": false
+            },
+            {
+                "name": "handlebar-example.handlebars",
+                "relativePath": "handlebar-example.handlebars",
+                "test": false
+            },
+            {
+                "name": "handlebar-example.js",
+                "relativePath": "handlebar-example.js",
+                "test": false
+            },
+            {
+                "name": "index.js",
+                "relativePath": "index.js",
+                "test": false
+            }
+        ],
+        "mainFile": "index.js",
+        "rootDir": "components/handlebar/handlebar-example",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -405,6 +439,11 @@
     },
     "test/test-button": {
         "files": [
+            {
+                "name": "index.spec.tsx",
+                "relativePath": "index.spec.tsx",
+                "test": false
+            },
             {
                 "name": "index.tsx",
                 "relativePath": "index.tsx",

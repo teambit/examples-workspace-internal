@@ -21,6 +21,10 @@ export const deps = {
       'enzyme-to-json': {
         version: '3.6.1',
         resolveFromEnv: true
+      },
+      "handlebars-loader": {
+        version: "1.7.1",
+        resolveFromEnv: true
       }
     },
   }

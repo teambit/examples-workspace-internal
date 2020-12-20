@@ -2,6 +2,8 @@
 
 module.exports = {
   module: {
-    rules: []
+    rules: [
+      { test: /\.handlebars$/, loader: "handlebars-loader" }
+    ]
   }
 };
