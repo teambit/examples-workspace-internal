@@ -8,7 +8,7 @@ const jest = require('jest');
 const tsconfig = require('./typescript/tsconfig.json');
 // const webpackConfig = require('./webpack/webpack.config');
 const babelConfig = require('./babel/babel.config.json');
-const deps = require('./dependencies/deps.js');
+const { deps } = require('./dependencies/deps.js');
 
 export class HarmonyReactBabelExtension {
   constructor(private react: ReactMain) {}
