@@ -24,6 +24,7 @@ export class HarmonyReactBabelExtension {
       react.overrideTsConfig(tsconfig, ts),
       react.overrideJestConfig(require.resolve('./jest/jest.config'), jest),
       react.overrideCompiler(babelCompiler),
+      
       react.overrideCompilerTasks([babelCompiler!.createTask!()]),
       react.overrideDependencies(deps),
       react.overrideDevServerConfig(webpackConfig),
