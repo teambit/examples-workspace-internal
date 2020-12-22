@@ -99,6 +99,50 @@
         "exported": true,
         "lanes": []
     },
+    "extensions/handlebars-node@0.0.1": {
+        "files": [
+            {
+                "name": "babel.config.json",
+                "relativePath": "babel/babel.config.json",
+                "test": false
+            },
+            {
+                "name": "deps.js",
+                "relativePath": "dependencies/deps.js",
+                "test": false
+            },
+            {
+                "name": "handlebars-node.docs.tsx",
+                "relativePath": "handlebars-node.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "handlebars-node.extension.ts",
+                "relativePath": "handlebars-node.extension.ts",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "tsconfig.json",
+                "relativePath": "typescript/tsconfig.json",
+                "test": false
+            },
+            {
+                "name": "webpack.config.js",
+                "relativePath": "webpack/webpack.config.js",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "extensions/handlebars-node",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "extensions/harmony-react": {
         "files": [
             {
@@ -440,9 +484,9 @@
     "test/test-button": {
         "files": [
             {
-                "name": "index.spec.tsx",
-                "relativePath": "index.spec.tsx",
-                "test": false
+                "name": "index.i-spec.tsx",
+                "relativePath": "index.i-spec.tsx",
+                "test": true
             },
             {
                 "name": "index.tsx",
@@ -631,5 +675,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.223"
+    "version": "14.8.9-dev.230"
 }
