@@ -12,7 +12,7 @@
      * default scope of the workspace. this setting will apply a default remote scope
      * to any which had no more concrete (e.g. see variants) match.
      */
-    "defaultScope": "teambit.bit-examples"
+    "defaultScope": "teambit.harmony-examples"
   },
   "teambit.dependencies/dependency-resolver": {
     /**
@@ -26,15 +26,15 @@
     "policy": {
       "dependencies": {
         "@jest/globals": "26.6.2",
-        "@teambit/documenter.code.react-playground": "^0.2.1",
-        "@teambit/documenter.theme.theme-context": "^0.2.1",
-        "@teambit/documenter.ui.code-snippet": "^0.2.1",
-        "@teambit/documenter.ui.highlighted-text": "^0.2.1",
-        "@teambit/documenter.ui.linked-heading": "^0.2.1",
-        "@teambit/documenter.ui.list": "^0.2.1",
-        "@teambit/documenter.ui.paragraph": "^0.2.1",
-        "@teambit/documenter.ui.section": "^0.2.1",
-        "@teambit/documenter.ui.separator": "^0.2.1",
+        "@teambit/documenter.code.react-playground": "^1.0.3",
+        "@teambit/documenter.theme.theme-context": "^1.0.3",
+        "@teambit/documenter.ui.code-snippet": "^1.0.3",
+        "@teambit/documenter.ui.highlighted-text": "^1.0.3",
+        "@teambit/documenter.ui.linked-heading": "^1.0.3",
+        "@teambit/documenter.ui.list": "^1.0.3",
+        "@teambit/documenter.ui.paragraph": "^1.0.3",
+        "@teambit/documenter.ui.section": "^1.0.3",
+        "@teambit/documenter.ui.separator": "^1.0.3",
         "@testing-library/jest-dom": "^5.11.3",
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
@@ -119,7 +119,7 @@
       "bit.bit-examples/extensions/harmony-react-babel": {}
     },
     "components/react/ui-primitives/container": {
-      "defaultScope": "teambit.bit-examples"
+      "defaultScope": "teambit.harmony-examples"
     }
   }
 }
