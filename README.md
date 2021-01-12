@@ -1,6 +1,8 @@
-# THIS IS AN INTERNAL VERSION OF THE HARMONY BETA PROJECT 
+# This is an internal workspace for various mini POCs and use cases for Harmony
 To be used for sandboxing various workflows and configs to both try them out and make sure they aren't broken by changes to Bit. 
 We don't want to confuse customers with all the various possibilities and options (e.g. js + ts + scss + stlyedJsx, etc etc) so please check before sharing outside of Bit.
+
+Thebidea is eventually to export all the stable examples to an examples Scope under Teambit in bit.dev
 
 Please see the [public Harmony Beta Project](https://github.com/teambit/bad-jokes-workspace) readme for guidance on using Harmony Bit.
 
@@ -27,6 +29,10 @@ These are key to creating themes and templates via Bit components. There is *ver
 Under the `styling` namespace.
 
 Note: they are currently created with a react environment. Hopefully by the time you read this we'll have made a css-specific environment.
+
+### Handlebars
+
+Use case for creating handlebars components, in which data is passed to the component and inserted into the handlebars template, to output html.
 
 
 ## Environments and Compilers
