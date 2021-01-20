@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './bad-jokes-viewer.module.scss';
 import { Button } from '@teambit/bad-jokes.ui-primitives.button';
 import { useJokes } from '@teambit/bad-jokes.hooks.use-jokes';
-import { Container } from '@bit/bit.bit-examples.ui-primitives.container';
+import { Container } from '@teambit/use-case-examples.ui-primitives.container';
 
 export type BadJokesProps = {
   local: boolean;

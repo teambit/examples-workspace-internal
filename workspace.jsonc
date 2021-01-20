@@ -3,7 +3,7 @@
     /**
      * name of the component workspace. used for development purposes.
      **/
-    "name": "bad-jokes-internal",
+    "name": "harmony-examples-internal",
     /**
      * icon of the workspace.
      **/
@@ -12,7 +12,7 @@
      * default scope of the workspace. this setting will apply a default remote scope
      * to any which had no more concrete (e.g. see variants) match.
      */
-    "defaultScope": "teambit.harmony-examples"
+    "defaultScope": "teambit.use-case-examples"
   },
   "teambit.dependencies/dependency-resolver": {
     /**
@@ -72,6 +72,9 @@
    * new set of dependencies.
    **/
   "teambit.workspace/variants": {
+    "*": {
+      "teambit.use-case-examples/extensions/harmony-react-babel": {}
+    },
     "extensions": {
       "teambit.harmony/aspect": {}
     },
@@ -95,14 +98,13 @@
             "@babel/preset-flow": "7.12.1",
             "@babel/preset-react": "7.12.5",
             "enzyme": "3.11.0",
-            "enzyme-adapter-react-16": "1.15.5",
-            "enzyme-to-json": "3.6.1"
+            "enzyme-adapter-react-16": "1.15.5"
           }
         }
       }
     },
     "components/react": {
-      "bit.bit-examples/extensions/harmony-react-babel": {},
+      "teambit.use-case-examples/extensions/harmony-react-babel": {},
       "defaultScope": "teambit.bad-jokes"
     },
     "components/modules": {
@@ -110,16 +112,10 @@
       "defaultScope": "teambit.toolbox"
     },
     "components/javascript": {
-      "bit.bit-examples/extensions/harmony-react-babel": {}
+      "teambit.harmony/node": {}
     },
-    "components/styling": {
-      "bit.bit-examples/extensions/harmony-react-babel": {}
-    },
-    "components/handlebar": {
-      "bit.bit-examples/extensions/harmony-react-babel": {}
-    },
-    "components/react/ui-primitives/container": {
-      "defaultScope": "teambit.harmony-examples"
+    "components/customers/urbansharing/liveness": {
+      "teambit.use-case-examples/extensions/urbansharing-node": {}
     }
   }
 }
