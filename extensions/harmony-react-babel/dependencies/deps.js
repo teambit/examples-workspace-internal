@@ -4,7 +4,6 @@ export const deps = {
     },
     // TODO: add this only if using ts
     devDependencies: {
-      'core-js': '^3.6.5',
       '@types/react': '16.9.43',
       '@types/jest': '~26.0.9',
       '@types/mocha': '-',
