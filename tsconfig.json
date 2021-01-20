@@ -5,6 +5,7 @@
     "module": "commonjs",
     "target": "es2015",
     "resolveJsonModule": true,
+    "experimentalDecorators": true,
     "noEmit": true,
     "esModuleInterop": true
   },
