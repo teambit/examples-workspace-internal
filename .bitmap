@@ -23,7 +23,7 @@
     },
     "handlebar-example": {
         "mainFile": "index.js",
-        "rootDir": "components/handlebar/handlebar-example",
+        "rootDir": "components/examples/handlebar",
         "exported": false
     },
     "hooks/use-jokes": {
