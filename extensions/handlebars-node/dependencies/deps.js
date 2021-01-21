@@ -11,8 +11,8 @@ export const deps = {
     peerDependencies: {    
       react: '^16.13.1',
       'react-dom': '^16.13.1',
-      "handlebars-loader": {
-        version: "1.7.1",
+      "handlebars": {
+        version: "4.7.6",
         resolveFromEnv: true
       }
     },

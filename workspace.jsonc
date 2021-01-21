@@ -45,8 +45,6 @@
         "chart.js": "2.9.4",
         "classnames": "^2.2.6",
         "enzyme-to-json": "3.6.1",
-        "handlebars": "4.7.6",
-        "handlebars-loader": "1.7.1",
         "node-sass": "4.14.1",
         "prop-types": "15.7.2",
         "react-transition-group": "4.4.1",
@@ -73,7 +71,7 @@
    **/
   "teambit.workspace/variants": {
     "*": {
-      "teambit.use-case-examples/extensions/harmony-react-babel": {}
+      // "teambit.use-case-examples/extensions/harmony-react-babel": {}
     },
     "extensions": {
       "teambit.harmony/aspect": {}
@@ -116,6 +114,21 @@
     },
     "components/customers/urbansharing/liveness": {
       "teambit.use-case-examples/extensions/urbansharing-node": {}
+    },
+    "extensions/handlebars-node": {
+      "defaultScope": "giladshoham.handlebars",
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "handlebars": "4.7.6",
+            "handlebars-loader": "1.7.1"
+          }
+        }
+      }
+    },
+    "components/handlebar/handlebar-example":{
+      "giladshoham.handlebars/extensions/handlebars-node":{},
+      "defaultScope": "giladshoham.handlebars"
     }
   }
 }
