@@ -116,6 +116,10 @@
     },
     "components/customers/urbansharing/liveness": {
       "teambit.use-case-examples/extensions/urbansharing-node": {}
+    },
+    "components/examples/handlebar": {
+      "teambit.use-case-examples/extensions/handlebars-node": {}
+    },
     }
   }
 }
