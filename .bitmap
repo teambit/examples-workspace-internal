@@ -7,24 +7,28 @@
         "exported": false
     },
     "extensions/harmony-react": {
+        "scope": "",
+        "version": "",
         "mainFile": "index.ts",
-        "rootDir": "extensions/harmony-react",
-        "exported": false
+        "rootDir": "extensions/harmony-react"
     },
     "extensions/harmony-react-babel": {
+        "scope": "teambit.use-case-examples",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "extensions/harmony-react-babel",
-        "exported": false
+        "rootDir": "extensions/harmony-react-babel"
     },
-    "extensions/urbansharing-node": {
+    "extenstions/with-preview-react": {
+        "scope": "",
+        "version": "",
         "mainFile": "index.ts",
-        "rootDir": "extensions/urbansharing-node",
-        "exported": false
+        "rootDir": "extensions/withPreviewReact"
     },
     "handlebar-example": {
+        "scope": "",
+        "version": "",
         "mainFile": "index.js",
-        "rootDir": "components/examples/handlebar",
-        "exported": false
+        "rootDir": "components/examples/handlebar"
     },
     "hooks/use-jokes": {
         "mainFile": "index.ts",
@@ -60,50 +64,23 @@
         "rootDir": "components/javascript/utils",
         "exported": false
     },
-    "liveness": {
-        "mainFile": "index.ts",
-        "rootDir": "components/customers/urbansharing/liveness",
-        "exported": false
-    },
-    "pages/bad-jokes-viewer": {
-        "mainFile": "index.ts",
-        "rootDir": "components/react/pages/bad-jokes-viewer",
-        "exported": false
-    },
     "styling/css_component_example": {
+        "scope": "",
+        "version": "",
         "mainFile": "index.ts",
-        "rootDir": "components/styling/css_component_example",
-        "exported": false
+        "rootDir": "components/styling/css_component_example"
     },
     "styling/variables": {
+        "scope": "",
+        "version": "",
         "mainFile": "variables.module.scss",
-        "rootDir": "components/styling/variables",
-        "exported": false
+        "rootDir": "components/styling/variables"
     },
     "test/test-button": {
+        "scope": "",
+        "version": "",
         "mainFile": "index.tsx",
-        "rootDir": "components/react/ui-primitives/test-button",
-        "exported": false
-    },
-    "toolbox/capitalize": {
-        "mainFile": "index.ts",
-        "rootDir": "components/modules/capitalize",
-        "exported": false
-    },
-    "ui-primitives/app-bar": {
-        "mainFile": "index.ts",
-        "rootDir": "components/react/ui-primitives/app-bar",
-        "exported": false
-    },
-    "ui-primitives/button": {
-        "mainFile": "index.ts",
-        "rootDir": "components/react/ui-primitives/button",
-        "exported": false
-    },
-    "ui-primitives/container": {
-        "mainFile": "index.ts",
-        "rootDir": "components/examples/styled-jsx",
-        "exported": false
+        "rootDir": "components/react/ui-primitives/test-button"
     },
     "ui-primitives/tag": {
         "mainFile": "index.ts",
@@ -115,5 +92,5 @@
         "rootDir": "components/react/ui-primitives/tag-list",
         "exported": false
     },
-    "version": "14.8.9-dev.271"
+    "version": "14.8.9-dev.288"
 }
