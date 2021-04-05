@@ -75,15 +75,17 @@
         "mainFile": "index.tsx",
         "rootDir": "components/react/ui-primitives/test-button"
     },
-    "ui-primitives/tag": {
+    "theme/base-theme": {
+        "scope": "",
+        "version": "",
         "mainFile": "index.ts",
-        "rootDir": "components/react/ui-primitives/tag",
-        "exported": false
+        "rootDir": "components/theme/base-theme"
     },
-    "ui-primitives/tag-list": {
+    "theme/theme-context": {
+        "scope": "",
+        "version": "",
         "mainFile": "index.ts",
-        "rootDir": "components/react/ui-primitives/tag-list",
-        "exported": false
+        "rootDir": "components/theme/theme-context"
     },
     "version": "14.8.9-dev.288"
 }
