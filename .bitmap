@@ -36,24 +36,11 @@
         "mainFile": "index.js",
         "rootDir": "components/examples/handlebar"
     },
-    "hooks/use-jokes": {
+    "styling/bootstrap-as-module": {
+        "scope": "",
+        "version": "",
         "mainFile": "index.ts",
-        "rootDir": "components/react/hooks/use-jokes",
-        "exported": false,
-        "nextVersion": {
-            "version": "patch",
-            "message": ""
-        }
-    },
-    "hooks/use-local-jokes": {
-        "mainFile": "index.ts",
-        "rootDir": "components/react/hooks/use-local-jokes",
-        "exported": false
-    },
-    "hooks/use-remote-jokes": {
-        "mainFile": "index.ts",
-        "rootDir": "components/react/hooks/use-remote-jokes",
-        "exported": false
+        "rootDir": "components/styling/bootstrap-as-module"
     },
     "javascript/chart": {
         "mainFile": "chart.js",
