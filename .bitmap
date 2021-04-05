@@ -8,9 +8,10 @@
         "rootDir": "components/context/api-context-provider"
     },
     "extensions/handlebars-node": {
+        "scope": "",
+        "version": "",
         "mainFile": "index.ts",
-        "rootDir": "extensions/handlebars-node",
-        "exported": false
+        "rootDir": "extensions/handlebars-node"
     },
     "extensions/harmony-react": {
         "scope": "",
@@ -42,21 +43,6 @@
         "mainFile": "index.ts",
         "rootDir": "components/styling/bootstrap-as-module"
     },
-    "javascript/chart": {
-        "mainFile": "chart.js",
-        "rootDir": "components/javascript/chart",
-        "exported": false
-    },
-    "javascript/fade": {
-        "mainFile": "fade.js",
-        "rootDir": "components/javascript/fade",
-        "exported": false
-    },
-    "javascript/utils": {
-        "mainFile": "utils.js",
-        "rootDir": "components/javascript/utils",
-        "exported": false
-    },
     "styling/css_component_example": {
         "scope": "",
         "version": "",
@@ -68,12 +54,6 @@
         "version": "",
         "mainFile": "variables.module.scss",
         "rootDir": "components/styling/variables"
-    },
-    "test/test-button": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.tsx",
-        "rootDir": "components/react/ui-primitives/test-button"
     },
     "theme/base-theme": {
         "scope": "",
