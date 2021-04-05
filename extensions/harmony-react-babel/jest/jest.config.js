@@ -7,6 +7,5 @@ module.exports = {
   transformIgnorePatterns: [
     "/node_modules/(?!(prop-types|@teambit|@bit))",
   ],
-  snapshotSerializers: [require.resolve("enzyme-to-json/serializer")],
-  testRegex: "(\/__tests__\/.*|(\\.|\/)(.*\.)(test|spec|i-spec)+)\.[jt]sx?$"
+  snapshotSerializers: [require.resolve("enzyme-to-json/serializer")]
 };
