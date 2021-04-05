@@ -26,6 +26,8 @@
     "policy": {
       "dependencies": {
         "@jest/globals": "26.6.2",
+        "@nestjs/common": "7.6.5",
+        "@nestjs/swagger": "4.7.11",
         "@teambit/documenter.code.react-playground": "^1.0.3",
         "@teambit/documenter.theme.theme-context": "^1.0.3",
         "@teambit/documenter.ui.code-snippet": "^1.0.3",
@@ -42,6 +44,7 @@
         "@types/react": "16.9.43",
         "@types/react-router-dom": "^5.1.5",
         "@types/styled-jsx": "2.2.8",
+        "bootstrap": "4.6.0",
         "chart.js": "2.9.4",
         "classnames": "^2.2.6",
         "enzyme-to-json": "3.6.1",
@@ -49,6 +52,7 @@
         "handlebars-loader": "1.7.1",
         "node-sass": "4.14.1",
         "prop-types": "15.7.2",
+        "react-bootstrap": "1.5.1",
         "react-transition-group": "4.4.1",
         "styled-jsx-plugin-sass": "1.0.0",
         "typescript": "3.9.6"
@@ -72,9 +76,7 @@
    * new set of dependencies.
    **/
   "teambit.workspace/variants": {
-    "*": {
-      "teambit.use-case-examples/extensions/harmony-react-babel": {}
-    },
+    "*": {},
     "extensions": {
       "teambit.harmony/aspect": {}
     },
@@ -114,12 +116,8 @@
     "components/javascript": {
       "teambit.harmony/node": {}
     },
-    "components/customers/urbansharing/liveness": {
-      "teambit.use-case-examples/extensions/urbansharing-node": {}
-    },
     "components/examples/handlebar": {
       "teambit.use-case-examples/extensions/handlebars-node": {}
-    },
     }
   }
 }
